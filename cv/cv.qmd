@@ -1,0 +1,41 @@
+---
+title: CV
+bibliography: pubs.bib
+nocite: |
+  @*
+csl: american-physical-society.csl
+format: 
+  html:
+    theme: [litera, litera-custom.scss]
+    mainfont: Inter, sans-serif;
+---
+
+::: {style="text-align:center;"}
+# Eli Mizrachi
+:::
+
+::: {style="font-size:0.75em; text-align:center;"}
+(they/them/theirs)
+:::
+
+[Email](mailto:emiz@umd.edu)
+[GitHub](github.com/e-miz)
+
+## Education
+
+## Work
+
+### Teaching
+
+### Research
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tempor auctor leo vel tincidunt. In at porta orci, non gravida neque. Aliquam consequat et felis ac finibus. Sed cursus tellus tellus, sit amet tristique ex viverra et. Cras quis diam diam. Vivamus sagittis lacus felis, eget aliquam erat gravida in. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris dictum, erat in mattis condimentum, metus enim ornare magna, quis consequat turpis sem ut odio. Maecenas gravida vestibulum rhoncus. Maecenas vitae vulputate erat. Donec fermentum lectus felis, a egestas sapien cursus ut. Maecenas ullamcorper ipsum sed massa posuere, ac efficitur justo ultrices. Nunc imperdiet urna et commodo tristique. 
+
+## Awards
+
+## Skills
+
+## Publications
+
+::: {#refs}
+:::
