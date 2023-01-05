@@ -6,7 +6,6 @@ website:
   navbar:
     right:
       - about.qmd
-      - CV/cv.qmd
       - icon: github
         href: https://github.com/
 format:

@@ -1,22 +1,28 @@
 ---
-title: CV
 bibliography: pubs.bib
 nocite: |
   @*
-csl: american-physical-society.csl
 format: 
-  html:
-    theme: [litera, litera-custom.scss]
-    mainfont: Inter, sans-serif;
+  pdf:
+    template-partials:
+    - biblio.tex
+    documentclass: scrartcl
+    geometry:
+    - margin=1in
+    - includefoot
+    cite-method: biblatex
+    biblatexoptions: [bibstyle=publist, plnumbering=none]
+    pagestyle: empty
+    keep-tex: true
+    include-before-body:
+      text: |
+        \plauthorname[Eli]{Mizrachi}
+
 ---
 
-::: {style="text-align:center;"}
 # Eli Mizrachi
-:::
 
-::: {style="font-size:0.75em; text-align:center;"}
 (they/them/theirs)
-:::
 
 [Email](mailto:emiz@umd.edu)
 [GitHub](github.com/e-miz)
@@ -37,5 +43,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tempor auctor leo
 
 ## Publications
 
-::: {#refs}
-:::
+\newrefcontext[sorting=ddt]
+\printbibliography[heading=none]
+\endrefcontext
