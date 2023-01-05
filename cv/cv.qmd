@@ -11,12 +11,11 @@ format:
     - margin=1in
     - includefoot
     cite-method: biblatex
-    biblatexoptions: [bibstyle=publist, plnumbering=none]
+    biblatexoptions: [bibstyle=publist, plauthorfirstinit=true, plauthorhandling=highlight, plnumbering=none, hlyear=false, marginyear=true]
     pagestyle: empty
-    keep-tex: true
     include-before-body:
       text: |
-        \plauthorname[Eli]{Mizrachi}
+        \plauthorname[E]{Mizrachi}
 
 ---
 
