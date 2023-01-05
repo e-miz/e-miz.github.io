@@ -1,0 +1,7 @@
+*.synctex.gz
+*.aux
+*.log
+*.fls
+*.toc
+*.fdb_latexmk
+/.quarto/
