@@ -4,27 +4,35 @@ nocite: |
   @*
 format: 
   pdf:
-    template-partials:
-    - biblio.tex
     documentclass: scrartcl
     geometry:
     - margin=1in
     - includefoot
-    cite-method: biblatex
-    biblatexoptions: [bibstyle=publist, plauthorfirstinit=true, plauthorhandling=highlight, plnumbering=none, hlyear=false, marginyear=true]
+    filters:
+      - latex-environment
+    environments: [center]
     pagestyle: empty
-    include-before-body:
-      text: |
-        \plauthorname[E]{Mizrachi}
+    #template-partials:
+    #- biblio.tex
+    #cite-method: biblatex
+    #biblatexoptions: [bibstyle=publist, plauthorfirstinit=true, plauthorhandling=highlight, plnumbering=none, hlyear=false, marginyear=true]
+    #include-before-body:
+    #  text: |
+    #    \plauthorname[E]{Mizrachi}
 
 ---
 
-# Eli Mizrachi
+::: {.center} 
 
-{{< fa transgender-alt title="pronouns">}}they/them/theirs 
+\begin{LARGE}Eli Mizrachi\end{LARGE}
+
+\begin{small}(they/them/theirs)\end{small}
+
 [{{< fa envelope title="e-mail">}}](mailto:emiz@umd.edu) 
 [{{< fa github title="github">}}](https://github.com/e-miz) 
 [{{< fa house-user title="homepage">}}](https://e-miz.github.io)
+
+:::
 
 ## Education
 
@@ -42,6 +50,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tempor auctor leo
 
 ## Publications
 
-\newrefcontext[sorting=ddt]
-\printbibliography[heading=none]
-\endrefcontext
+newrefcontext[sorting=ddt]
+printbibliography[heading=none]
+endrefcontext
