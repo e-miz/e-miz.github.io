@@ -21,10 +21,10 @@ format:
 
 # Eli Mizrachi
 
-(they/them/theirs)
-
-[Email](mailto:emiz@umd.edu)
-[GitHub](github.com/e-miz)
+{{< fa transgender-alt title="pronouns">}}they/them/theirs 
+[{{< fa envelope title="e-mail">}}](mailto:emiz@umd.edu) 
+[{{< fa github title="github">}}](https://github.com/e-miz) 
+[{{< fa house-user title="homepage">}}](https://e-miz.github.io)
 
 ## Education
 
