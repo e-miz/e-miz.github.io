@@ -36,13 +36,17 @@ format:
 
 # {{< fa user-graduate >}} Education
 
-# {{< fa briefcase >}} Work
-
 ```{python}
 #| echo: false
 #| output: asis
-print("hello")
+import pandas as pd
+
+cv_df = pd.read_csv("cv_data.csv")
+
+edu_df = cv_df.loc[cv_df["Group"] == "Degrees"].loc[:, ["Item", "Description", "Start Date", "End Date"]]
 ```
+
+# {{< fa briefcase >}} Work
 
 ## {{< fa school >}} Teaching
 
