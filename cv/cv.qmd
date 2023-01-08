@@ -38,6 +38,12 @@ format:
 
 # {{< fa briefcase >}} Work
 
+```{python}
+#| echo: false
+#| output: asis
+print("hello")
+```
+
 ## {{< fa school >}} Teaching
 
 ## {{< fa atom >}} Research
