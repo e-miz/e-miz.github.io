@@ -2,6 +2,9 @@
 bibliography: pubs.bib
 nocite: |
   @*
+execute:
+  echo: false
+  output: asis
 format: 
   pdf:
     documentclass: scrartcl
@@ -22,6 +25,26 @@ format:
 
 ---
 
+```{python}
+import pandas as pd
+
+def print_items(df: pd.DataFrame):
+    for i in range(len(df)):
+      print(f"{df.iloc[i]['Start Date'].strftime('%b %Y')} {df.iloc[i]['Item']} {df.iloc[i]['Description']}\n")
+
+cv_df = pd.read_csv("cv_data.csv", parse_dates=[3,4])
+
+edu_df = cv_df.loc[cv_df["Type"] == "Degree"].loc[:, ["Item", "Description", "Start Date", "End Date"]]
+
+teach_df = cv_df.loc[cv_df["Type"] == "Teaching"].loc[:, ["Item", "Description", "Start Date", "End Date"]]
+
+research_df = cv_df.loc[cv_df["Type"] == "Research"].loc[:, ["Item", "Description", "Start Date", "End Date"]]
+
+service_df = cv_df.loc[cv_df["Type"] == "Service"].loc[:, ["Item", "Description", "Start Date", "End Date"]]
+
+award_df = cv_df.loc[cv_df["Type"] == "Award"].loc[:, ["Item", "Description", "Start Date", "End Date"]]
+```
+
 ::: {.center} 
 
 \begin{LARGE}Eli Mizrachi\end{LARGE}
@@ -37,24 +60,32 @@ format:
 # {{< fa user-graduate >}} Education
 
 ```{python}
-#| echo: false
-#| output: asis
-import pandas as pd
-
-cv_df = pd.read_csv("cv_data.csv")
-
-edu_df = cv_df.loc[cv_df["Group"] == "Degrees"].loc[:, ["Item", "Description", "Start Date", "End Date"]]
+print_items(edu_df)
 ```
 
-# {{< fa briefcase >}} Work
+# {{< fa school >}} Teaching
 
-## {{< fa school >}} Teaching
+```{python}
+print_items(teach_df)
+```
 
-## {{< fa atom >}} Research
+# {{< fa atom >}} Research
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tempor auctor leo vel tincidunt. In at porta orci, non gravida neque. Aliquam consequat et felis ac finibus. Sed cursus tellus tellus, sit amet tristique ex viverra et. Cras quis diam diam. Vivamus sagittis lacus felis, eget aliquam erat gravida in. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris dictum, erat in mattis condimentum, metus enim ornare magna, quis consequat turpis sem ut odio. Maecenas gravida vestibulum rhoncus. Maecenas vitae vulputate erat. Donec fermentum lectus felis, a egestas sapien cursus ut. Maecenas ullamcorper ipsum sed massa posuere, ac efficitur justo ultrices. Nunc imperdiet urna et commodo tristique. 
+```{python}
+print_items(research_df)
+```
 
 # {{< fa trophy >}} Awards
+
+```{python}
+print_items(award_df)
+```
+
+# {{< fa people-carry >}} Service
+
+```{python}
+print_items(service_df)
+```
 
 # {{< fa tools >}} Skills
 
