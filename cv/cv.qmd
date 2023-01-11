@@ -18,7 +18,7 @@ format:
     template-partials:
     - biblio.tex
     cite-method: biblatex
-    biblatexoptions: [bibstyle=publist, plauthorfirstinit=true, plauthorhandling=highlight, plnumbering=none, hlyear=false, marginyear=true]
+    biblatexoptions: [bibstyle=publist, plauthorfirstinit=true, plauthorhandling=highlight, plnumbering=none, hlyear=false, marginyear=true, doi=false, url=false]
     include-before-body:
       text: |
         \plauthorname[E]{Mizrachi}
