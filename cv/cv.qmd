@@ -108,5 +108,11 @@ print_items(service_df)
 # {{< fa pen-nib >}} Publications
 
 \newrefcontext[sorting=ddt]
-\printbibliography[heading=none]
+\printbibliography[heading=none, keyword={mypublication}, keyword={selectedworks}]
+\endrefcontext
+
+# {{< fa chart-bar >}} Presentations
+
+\newrefcontext[sorting=ddt]
+\printbibliography[heading=none, keyword={mypresentation}, keyword={selectedworks}]
 \endrefcontext
