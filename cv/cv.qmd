@@ -15,13 +15,13 @@ format:
       - latex-environment
     environments: [center]
     pagestyle: empty
-    #template-partials:
-    #- biblio.tex
-    #cite-method: biblatex
-    #biblatexoptions: [bibstyle=publist, plauthorfirstinit=true, plauthorhandling=highlight, plnumbering=none, hlyear=false, marginyear=true]
-    #include-before-body:
-    #  text: |
-    #    \plauthorname[E]{Mizrachi}
+    template-partials:
+    - biblio.tex
+    cite-method: biblatex
+    biblatexoptions: [bibstyle=publist, plauthorfirstinit=true, plauthorhandling=highlight, plnumbering=none, hlyear=false, marginyear=true]
+    include-before-body:
+      text: |
+        \plauthorname[E]{Mizrachi}
 
 ---
 
@@ -30,7 +30,23 @@ import pandas as pd
 
 def print_items(df: pd.DataFrame):
     for i in range(len(df)):
-      print(f"{df.iloc[i]['Start Date'].strftime('%b %Y')} {df.iloc[i]['Item']} {df.iloc[i]['Description']}\n")
+
+      start_date_str = df.iloc[i]['Start Date'].strftime('%b %Y')
+      end_date_str = df.iloc[i]['End Date'].strftime('%b %Y')
+      
+      date_str = ""
+      if start_date_str == end_date_str:
+        date_str = start_date_str
+      else:
+        date_str = start_date_str + " to " + end_date_str
+      
+      desc_str = ""
+      if pd.isnull(df.iloc[i]["Description"]):
+        desc_str = ""
+      else:
+          desc_str = f", **{df.iloc[i]['Description']}**"
+
+      print(date_str + f": {df.iloc[i]['Item']}" + desc_str + "\n")
 
 cv_df = pd.read_csv("cv_data.csv", parse_dates=[3,4])
 
@@ -91,6 +107,6 @@ print_items(service_df)
 
 # {{< fa pen-nib >}} Publications
 
-newrefcontext[sorting=ddt]
-printbibliography[heading=none]
-endrefcontext
+\newrefcontext[sorting=ddt]
+\printbibliography[heading=none]
+\endrefcontext
