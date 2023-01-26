@@ -10,21 +10,28 @@ format:
   pdf:
     documentclass: scrartcl
     geometry:
-    - margin=0.75in
-    - includefoot
+      - margin=0.75in
+      - includefoot
     filters:
       - latex-environment
     environments: [center]
     pdf-engine: lualatex
     mainfont: inter
+    fontsize: 10pt
     pagestyle: empty
-    template-partials:
-    - biblio.tex
-    cite-method: biblatex
-    biblatexoptions: [bibstyle=publist, plauthorfirstinit=true, plauthorhandling=highlight, plnumbering=none, hlyear=false, marginyear=true, doi=false, url=false]
-    include-before-body:
+    colorlinks: false
+    include-in-header:
       text: |
-        \plauthorname[E]{Mizrachi}
+        \RedeclareSectionCommand[beforeskip=0.5\baselineskip]{section} % Less space after section heading
+        \RedeclareSectionCommand[afterskip=0.2\baselineskip]{section} % Less space after section heading
+        \setlength{\parskip}{0.5\baselineskip}
+#    template-partials:
+#    - biblio.tex
+#    cite-method: biblatex
+#    biblatexoptions: [bibstyle=publist, plauthorfirstinit=true, plauthorhandling=highlight, plnumbering=none, hlyear=false, marginyear=true, doi=false, url=false]
+#    include-before-body:
+#      text: |
+#        \plauthorname[E]{Mizrachi}
 
 ---
 
@@ -41,7 +48,7 @@ def print_items(df: pd.DataFrame):
       if start_date_str == end_date_str:
         date_str = start_date_str
       else:
-        date_str = start_date_str + " to " + end_date_str
+        date_str = start_date_str + " - " + end_date_str
       
       desc_str = ""
       if pd.isnull(df.iloc[i]["Description"]):
@@ -49,7 +56,7 @@ def print_items(df: pd.DataFrame):
       else:
           desc_str = f", **{df.iloc[i]['Description']}**"
 
-      print(date_str + f": {df.iloc[i]['Item']}" + desc_str + "\n")
+      print(f"\\textcolor{{darkgray}}{{{date_str}}}" + f": {df.iloc[i]['Item']}" + desc_str + "\n")
 
 cv_df = pd.read_csv("cv_data.csv", parse_dates=[3,4])
 
@@ -68,10 +75,9 @@ award_df = cv_df.loc[cv_df["Type"] == "Award"].loc[:, ["Item", "Description", "S
 
 \begin{LARGE}Eli Mizrachi\end{LARGE}
 
-\begin{small}(they/them/theirs)\end{small}
+\begin{small}(they/them/theirs) | PhD Candidate | Physics\end{small}
 
 [{{< fa envelope title="e-mail">}}](mailto:emiz@umd.edu) 
-[{{< fa github title="github">}}](https://github.com/e-miz) 
 [{{< fa house-user title="homepage">}}](https://e-miz.github.io)
 
 :::
@@ -110,12 +116,12 @@ print_items(service_df)
 
 # {{< fa pen-nib >}} Publications
 
-\newrefcontext[sorting=ddt]
-\printbibliography[heading=none, keyword={mypublication}, keyword={selectedworks}]
-\endrefcontext
+newrefcontext[sorting=ddt]
+printbibliography[heading=none, keyword={mypublication}, keyword={selectedworks}]
+endrefcontext
 
 # {{< fa chart-bar >}} Presentations
 
-\newrefcontext[sorting=ddt]
-\printbibliography[heading=none, keyword={mypresentation}, keyword={selectedworks}]
-\endrefcontext
+newrefcontext[sorting=ddt]
+printbibliography[heading=none, keyword={mypresentation}, keyword={selectedworks}]
+endrefcontext
