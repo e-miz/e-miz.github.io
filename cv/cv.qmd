@@ -5,15 +5,18 @@ nocite: |
 execute:
   echo: false
   output: asis
+keep-tex: true
 format: 
   pdf:
     documentclass: scrartcl
     geometry:
-    - margin=1in
+    - margin=0.75in
     - includefoot
     filters:
       - latex-environment
     environments: [center]
+    pdf-engine: lualatex
+    mainfont: inter
     pagestyle: empty
     template-partials:
     - biblio.tex
