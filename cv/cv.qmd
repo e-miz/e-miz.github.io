@@ -2,46 +2,139 @@
 bibliography: pubs.bib
 nocite: |
   @*
+execute:
+  echo: false
+  output: asis
+keep-tex: true
 format: 
   pdf:
-    template-partials:
-    - biblio.tex
     documentclass: scrartcl
     geometry:
-    - margin=1in
-    - includefoot
-    cite-method: biblatex
-    biblatexoptions: [bibstyle=publist, plauthorfirstinit=true, plauthorhandling=highlight, plnumbering=none, hlyear=false, marginyear=true]
+      - margin=0.75in
+      - includefoot
+    filters:
+      - latex-environment
+    environments: [center]
+    pdf-engine: lualatex
+    mainfont: inter
+    fontsize: 10pt
     pagestyle: empty
-    include-before-body:
+    colorlinks: false
+    include-in-header:
       text: |
-        \plauthorname[E]{Mizrachi}
+        \RedeclareSectionCommand[beforeskip=0.5\baselineskip]{section} % Less space after section heading
+        \RedeclareSectionCommand[afterskip=0.2\baselineskip]{section} % Less space after section heading
+        \setlength{\parskip}{0.5\baselineskip}
+        \definecolor{mygray}{gray}{0.4}
+        % Section Lines
+        \makeatletter
+        \renewcommand{\sectionlinesformat}[4]{%
+        \ifstr{#1}{section}{%
+            \parbox[t]{\linewidth}{%
+              \raggedsection\@hangfrom{\hskip #2#3}{#4}\par%
+              \kern-.75\ht\strutbox\rule{\linewidth}{.6pt}%
+            }%
+          }{%
+            \@hangfrom{\hskip #2#3}{#4}}% 
+        }
+        \makeatother
+#    template-partials:
+#    - biblio.tex
+#    cite-method: biblatex
+#    biblatexoptions: [bibstyle=publist, plauthorfirstinit=true, plauthorhandling=highlight, plnumbering=none, hlyear=false, marginyear=true, doi=false, url=false]
+#    include-before-body:
+#      text: |
+#        \plauthorname[E]{Mizrachi}
 
 ---
 
-# Eli Mizrachi
+```{python}
+import pandas as pd
 
-{{< fa transgender-alt title="pronouns">}}they/them/theirs 
+def print_items(df: pd.DataFrame):
+    for i in range(len(df)):
+
+      start_date_str = df.iloc[i]['Start Date'].strftime('%b %Y')
+      end_date_str = df.iloc[i]['End Date'].strftime('%b %Y')
+      
+      date_str = ""
+      if start_date_str == end_date_str:
+        date_str = start_date_str
+      else:
+        date_str = start_date_str + " - " + end_date_str
+      
+      desc_str = ""
+      if pd.isnull(df.iloc[i]["Description"]):
+        desc_str = ""
+      else:
+          desc_str = f", **{df.iloc[i]['Description']}**"
+
+      print(f"\\textcolor{{mygray}}{{\\textit{{{date_str}}}}}" + f": {df.iloc[i]['Item']}" + desc_str + "\n")
+
+cv_df = pd.read_csv("cv_data.csv", parse_dates=[3,4])
+
+edu_df = cv_df.loc[cv_df["Type"] == "Degree"].loc[:, ["Item", "Description", "Start Date", "End Date"]]
+
+teach_df = cv_df.loc[cv_df["Type"] == "Teaching"].loc[:, ["Item", "Description", "Start Date", "End Date"]]
+
+research_df = cv_df.loc[cv_df["Type"] == "Research"].loc[:, ["Item", "Description", "Start Date", "End Date"]]
+
+service_df = cv_df.loc[cv_df["Type"] == "Service"].loc[:, ["Item", "Description", "Start Date", "End Date"]]
+
+award_df = cv_df.loc[cv_df["Type"] == "Award"].loc[:, ["Item", "Description", "Start Date", "End Date"]]
+```
+
+::: {.center} 
+
+\begin{LARGE}Eli Mizrachi\end{LARGE}
+
+\begin{small}(they/them/theirs) | PhD Candidate | Physics\end{small}
+
 [{{< fa envelope title="e-mail">}}](mailto:emiz@umd.edu) 
-[{{< fa github title="github">}}](https://github.com/e-miz) 
 [{{< fa house-user title="homepage">}}](https://e-miz.github.io)
 
-## Education
+:::
 
-## Work
+# {{< fa user-graduate >}} Education
 
-### Teaching
+```{python}
+print_items(edu_df)
+```
 
-### Research
+# {{< fa school >}} Teaching
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tempor auctor leo vel tincidunt. In at porta orci, non gravida neque. Aliquam consequat et felis ac finibus. Sed cursus tellus tellus, sit amet tristique ex viverra et. Cras quis diam diam. Vivamus sagittis lacus felis, eget aliquam erat gravida in. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris dictum, erat in mattis condimentum, metus enim ornare magna, quis consequat turpis sem ut odio. Maecenas gravida vestibulum rhoncus. Maecenas vitae vulputate erat. Donec fermentum lectus felis, a egestas sapien cursus ut. Maecenas ullamcorper ipsum sed massa posuere, ac efficitur justo ultrices. Nunc imperdiet urna et commodo tristique. 
+```{python}
+print_items(teach_df)
+```
 
-## Awards
+# {{< fa atom >}} Research
 
-## Skills
+```{python}
+print_items(research_df)
+```
 
-## Publications
+# {{< fa trophy >}} Awards
 
-\newrefcontext[sorting=ddt]
-\printbibliography[heading=none]
-\endrefcontext
+```{python}
+print_items(award_df)
+```
+
+# {{< fa people-carry >}} Service
+
+```{python}
+print_items(service_df)
+```
+
+# {{< fa tools >}} Skills
+
+# {{< fa pen-nib >}} Publications
+
+newrefcontext[sorting=ddt]
+printbibliography[heading=none, keyword={mypublication}, keyword={selectedworks}]
+endrefcontext
+
+# {{< fa chart-bar >}} Presentations
+
+newrefcontext[sorting=ddt]
+printbibliography[heading=none, keyword={mypresentation}, keyword={selectedworks}]
+endrefcontext
