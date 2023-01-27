@@ -25,6 +25,19 @@ format:
         \RedeclareSectionCommand[beforeskip=0.5\baselineskip]{section} % Less space after section heading
         \RedeclareSectionCommand[afterskip=0.2\baselineskip]{section} % Less space after section heading
         \setlength{\parskip}{0.5\baselineskip}
+        \definecolor{mygray}{gray}{0.4}
+        % Section Lines
+        \makeatletter
+        \renewcommand{\sectionlinesformat}[4]{%
+        \ifstr{#1}{section}{%
+            \parbox[t]{\linewidth}{%
+              \raggedsection\@hangfrom{\hskip #2#3}{#4}\par%
+              \kern-.75\ht\strutbox\rule{\linewidth}{.6pt}%
+            }%
+          }{%
+            \@hangfrom{\hskip #2#3}{#4}}% 
+        }
+        \makeatother
 #    template-partials:
 #    - biblio.tex
 #    cite-method: biblatex
@@ -56,7 +69,7 @@ def print_items(df: pd.DataFrame):
       else:
           desc_str = f", **{df.iloc[i]['Description']}**"
 
-      print(f"\\textcolor{{darkgray}}{{{date_str}}}" + f": {df.iloc[i]['Item']}" + desc_str + "\n")
+      print(f"\\textcolor{{mygray}}{{\\textit{{{date_str}}}}}" + f": {df.iloc[i]['Item']}" + desc_str + "\n")
 
 cv_df = pd.read_csv("cv_data.csv", parse_dates=[3,4])
 

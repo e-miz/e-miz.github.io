@@ -104,6 +104,19 @@
 \RedeclareSectionCommand[beforeskip=0.5\baselineskip]{section} % Less space after section heading
 \RedeclareSectionCommand[afterskip=0.2\baselineskip]{section} % Less space after section heading
 \setlength{\parskip}{0.5\baselineskip}
+\definecolor{mygray}{gray}{0.4}
+% Section Lines
+\makeatletter
+\renewcommand{\sectionlinesformat}[4]{%
+\ifstr{#1}{section}{%
+    \parbox[t]{\linewidth}{%
+      \raggedsection\@hangfrom{\hskip #2#3}{#4}\par%
+      \kern-.75\ht\strutbox\rule{\linewidth}{.6pt}%
+    }%
+  }{%
+    \@hangfrom{\hskip #2#3}{#4}}%
+}
+\makeatother
 \KOMAoption{captions}{tableheading}
 \makeatletter
 \makeatother
@@ -173,7 +186,7 @@
 \date{}
 
 \begin{document}
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[breakable, frame hidden, enhanced, borderline west={3pt}{0pt}{shadecolor}, interior hidden, boxrule=0pt, sharp corners]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[boxrule=0pt, enhanced, borderline west={3pt}{0pt}{shadecolor}, interior hidden, breakable, sharp corners, frame hidden]}{\end{tcolorbox}}\fi
 
 \begin{center}
 
@@ -190,159 +203,160 @@
 \section{\texorpdfstring{\faIcon{user-graduate}
 Education}{ Education}}\label{fa-user-graduate-education}}
 
-\textcolor{darkgray}{Aug 2017}: University of Maryland at College Park,
-\textbf{PhD Physics (exp. Dec 2023)}
+\textcolor{mygray}{\textit{Aug 2017}}: University of Maryland at College
+Park, \textbf{PhD Physics (exp. Dec 2023)}
 
-\textcolor{darkgray}{Aug 2013 - Dec 2015}: UC Berkeley, \textbf{B.A.
-Physics}
+\textcolor{mygray}{\textit{Aug 2013 - Dec 2015}}: UC Berkeley,
+\textbf{B.A. Physics}
 
-\textcolor{darkgray}{Aug 2011 - May 2013}: San Diego Mesa Community
-College, \textbf{A.S. Physics with High Honors}
+\textcolor{mygray}{\textit{Aug 2011 - May 2013}}: San Diego Mesa
+Community College, \textbf{A.S. Physics with High Honors}
 
-\textcolor{darkgray}{Sep 2008 - Jun 2011}: Bonita Vista High School,
-\textbf{International Baccalaureate Diploma}
+\textcolor{mygray}{\textit{Sep 2008 - Jun 2011}}: Bonita Vista High
+School, \textbf{International Baccalaureate Diploma}
 
 \hypertarget{fa-school-teaching}{%
 \section{\texorpdfstring{\faIcon{school}
 Teaching}{ Teaching}}\label{fa-school-teaching}}
 
-\textcolor{darkgray}{Aug 2019 - Dec 2019}: UMD PHYS 132 Physics for
-Biologists II, \textbf{Graduate Teaching Assistant}
+\textcolor{mygray}{\textit{Aug 2019 - Dec 2019}}: UMD PHYS 132 Physics
+for Biologists II, \textbf{Graduate Teaching Assistant}
 
-\textcolor{darkgray}{Jan 2019 - May 2019}: UMD PHYS 131 Physics for
-Biologists I, \textbf{Graduate Teaching Assistant}
+\textcolor{mygray}{\textit{Jan 2019 - May 2019}}: UMD PHYS 131 Physics
+for Biologists I, \textbf{Graduate Teaching Assistant}
 
-\textcolor{darkgray}{Aug 2018 - Dec 2018}: UMD PHYS 132 Physics for
-Biologists II, \textbf{Graduate Teaching Assistant}
+\textcolor{mygray}{\textit{Aug 2018 - Dec 2018}}: UMD PHYS 132 Physics
+for Biologists II, \textbf{Graduate Teaching Assistant}
 
-\textcolor{darkgray}{Jan 2018 - May 2018}: UMD PHYS 131 Physics for
-Biologists I, \textbf{Graduate Teaching Assistant}
+\textcolor{mygray}{\textit{Jan 2018 - May 2018}}: UMD PHYS 131 Physics
+for Biologists I, \textbf{Graduate Teaching Assistant}
 
-\textcolor{darkgray}{Aug 2017 - Dec 2017}: UMD PHYS 132 Physics for
-Biologists II, \textbf{Graduate Teaching Assistant}
+\textcolor{mygray}{\textit{Aug 2017 - Dec 2017}}: UMD PHYS 132 Physics
+for Biologists II, \textbf{Graduate Teaching Assistant}
 
-\textcolor{darkgray}{Jan 2016 - May 2016}: UC Berkeley PHYS 198
+\textcolor{mygray}{\textit{Jan 2016 - May 2016}}: UC Berkeley PHYS 198
 Frontiers of Physics, \textbf{Co-teacher}
 
-\textcolor{darkgray}{Aug 2015 - Dec 2015}: UC Berkeley PHYS 129 Particle
-Physics, \textbf{Grader}
+\textcolor{mygray}{\textit{Aug 2015 - Dec 2015}}: UC Berkeley PHYS 129
+Particle Physics, \textbf{Grader}
 
 \hypertarget{fa-atom-research}{%
 \section{\texorpdfstring{\faIcon{atom}
 Research}{ Research}}\label{fa-atom-research}}
 
-\textcolor{darkgray}{Dec 2019}: LLNL RED Group, \textbf{Graduate
+\textcolor{mygray}{\textit{Dec 2019}}: LLNL RED Group, \textbf{Graduate
 Research Assistant}
 
-\textcolor{darkgray}{Jun 2019 - Aug 2019}: LLNL RED Group,
+\textcolor{mygray}{\textit{Jun 2019 - Aug 2019}}: LLNL RED Group,
 \textbf{Graduate Research Assistant}
 
-\textcolor{darkgray}{Sep 2018}: UMD Hall Group, \textbf{Graduate
+\textcolor{mygray}{\textit{Sep 2018}}: UMD Hall Group, \textbf{Graduate
 Research Assistant}
 
-\textcolor{darkgray}{Jun 2018 - Aug 2018}: UMD Lobb Group,
+\textcolor{mygray}{\textit{Jun 2018 - Aug 2018}}: UMD Lobb Group,
 \textbf{Graduate Research Assistant}
 
-\textcolor{darkgray}{Jul 2016 - Jun 2017}: SLAC PAC Noble Liquids Group,
-\textbf{Technician}
+\textcolor{mygray}{\textit{Jul 2016 - Jun 2017}}: SLAC PAC Noble Liquids
+Group, \textbf{Technician}
 
-\textcolor{darkgray}{Aug 2015 - Jun 2016}: LBNL Sorensen Group,
+\textcolor{mygray}{\textit{Aug 2015 - Jun 2016}}: LBNL Sorensen Group,
 \textbf{Research Affiliate}
 
-\textcolor{darkgray}{Jun 2015 - Aug 2015}: UC Davis Tripathi Group,
-\textbf{Research Assistant}
+\textcolor{mygray}{\textit{Jun 2015 - Aug 2015}}: UC Davis Tripathi
+Group, \textbf{Research Assistant}
 
-\textcolor{darkgray}{Jan 2015 - May 2015}: LBNL Sorensen Group,
+\textcolor{mygray}{\textit{Jan 2015 - May 2015}}: LBNL Sorensen Group,
 \textbf{Research Affiliate}
 
-\textcolor{darkgray}{Jun 2014 - Dec 2014}: UC Berkeley Mueller Group,
-\textbf{Research Assistant}
+\textcolor{mygray}{\textit{Jun 2014 - Dec 2014}}: UC Berkeley Mueller
+Group, \textbf{Research Assistant}
 
 \hypertarget{fa-trophy-awards}{%
 \section{\texorpdfstring{\faIcon{trophy}
 Awards}{ Awards}}\label{fa-trophy-awards}}
 
-\textcolor{darkgray}{Aug 2020 - Aug 2021}: US Department of Energy
-Office of Science, \textbf{Graduate Student Research Award}
+\textcolor{mygray}{\textit{Aug 2020 - Aug 2021}}: US Department of
+Energy Office of Science, \textbf{Graduate Student Research Award}
 
-\textcolor{darkgray}{May 2019}: Ralph Meyers \& Friends of Physics
-Outstanding Teaching Abilities, \textbf{2nd Place}
+\textcolor{mygray}{\textit{May 2019}}: Ralph Meyers \& Friends of
+Physics Outstanding Teaching Abilities, \textbf{2nd Place}
 
-\textcolor{darkgray}{Apr 2019}: University of Maryland Graduate School,
-\textbf{Summer Research Fellowship}
+\textcolor{mygray}{\textit{Apr 2019}}: University of Maryland Graduate
+School, \textbf{Summer Research Fellowship}
 
-\textcolor{darkgray}{May 2018}: Ralph Meyers \& Friends of Physics
-Outstanding Teaching Abilities, \textbf{Honorable Mention}
+\textcolor{mygray}{\textit{May 2018}}: Ralph Meyers \& Friends of
+Physics Outstanding Teaching Abilities, \textbf{Honorable Mention}
 
-\textcolor{darkgray}{Aug 2017}: University of Maryland Graduate School,
-\textbf{Dean's Fellowship}
+\textcolor{mygray}{\textit{Aug 2017}}: University of Maryland Graduate
+School, \textbf{Dean's Fellowship}
 
-\textcolor{darkgray}{Mar 2015}: UC Leadership Excellence through
+\textcolor{mygray}{\textit{Mar 2015}}: UC Leadership Excellence through
 Advanced Degrees (LEADS) Leadership \& Research Symposium,
 \textbf{Honorable Mention Research Poster}
 
-\textcolor{darkgray}{Feb 2015}: National Science Foundation (NSF) Louis
-Stokes Alliance for Minority Participation (LSAMP) California Statewide
-Undergraduate Research Symposium, \textbf{Physical Sciences Special
-Merit}
+\textcolor{mygray}{\textit{Feb 2015}}: National Science Foundation (NSF)
+Louis Stokes Alliance for Minority Participation (LSAMP) California
+Statewide Undergraduate Research Symposium, \textbf{Physical Sciences
+Special Merit}
 
-\textcolor{darkgray}{Aug 2014}: NSF LSAMP Research Scholar
+\textcolor{mygray}{\textit{Aug 2014}}: NSF LSAMP Research Scholar
 
-\textcolor{darkgray}{Aug 2014}: UC LEADS Scholar
+\textcolor{mygray}{\textit{Aug 2014}}: UC LEADS Scholar
 
-\textcolor{darkgray}{May 2014}: UC Berkeley, \textbf{Physics Research,
-Outreach, Training, and Opportunities Network (PROTON) Scholar}
+\textcolor{mygray}{\textit{May 2014}}: UC Berkeley, \textbf{Physics
+Research, Outreach, Training, and Opportunities Network (PROTON)
+Scholar}
 
-\textcolor{darkgray}{May 2013}: San Diego Mesa Community College,
+\textcolor{mygray}{\textit{May 2013}}: San Diego Mesa Community College,
 \textbf{Honors Program Certificate of Completion}
 
-\textcolor{darkgray}{Jan 2011 - May 2013}: San Diego Mesa Community
-College, \textbf{Dean's List}
+\textcolor{mygray}{\textit{Jan 2011 - May 2013}}: San Diego Mesa
+Community College, \textbf{Dean's List}
 
 \hypertarget{fa-people-carry-service}{%
 \section{\texorpdfstring{\faIcon{people-carry}
 Service}{ Service}}\label{fa-people-carry-service}}
 
-\textcolor{darkgray}{Dec 2022}: LZ Equity and Inclusion Committee,
-\textbf{Member}
+\textcolor{mygray}{\textit{Dec 2022}}: LZ Equity and Inclusion
+Committee, \textbf{Member}
 
-\textcolor{darkgray}{Nov 2021 - Dec 2022}: LZ Graduates Engineers
+\textcolor{mygray}{\textit{Nov 2021 - Dec 2022}}: LZ Graduates Engineers
 Technicians Undergraduates and Postdocs (GETUP), \textbf{Institutional
 Board Representative}
 
-\textcolor{darkgray}{Aug 2018 - Aug 2019}: UMD Women in Physics
+\textcolor{mygray}{\textit{Aug 2018 - Aug 2019}}: UMD Women in Physics
 Mentoring Program, \textbf{Mentor}
 
-\textcolor{darkgray}{Aug 2018 - Aug 2019}: UMD Physics Graduate Student
-Committee, \textbf{Elected Member}
+\textcolor{mygray}{\textit{Aug 2018 - Aug 2019}}: UMD Physics Graduate
+Student Committee, \textbf{Elected Member}
 
-\textcolor{darkgray}{Mar 2018}: American Association for the Advancement
-of Science; Catalyzing Advocacy in Science and Engineering Workshop,
-\textbf{Representative on Behalf of UMD}
+\textcolor{mygray}{\textit{Mar 2018}}: American Association for the
+Advancement of Science; Catalyzing Advocacy in Science and Engineering
+Workshop, \textbf{Representative on Behalf of UMD}
 
-\textcolor{darkgray}{Feb 2017 - Sep 2019}: UMD Physics Equity
+\textcolor{mygray}{\textit{Feb 2017 - Sep 2019}}: UMD Physics Equity
 Constellation, \textbf{Member}
 
-\textcolor{darkgray}{Jul 2015 - Dec 2015}: Berkeley Connect Student
-Advisory Board, \textbf{Member}
+\textcolor{mygray}{\textit{Jul 2015 - Dec 2015}}: Berkeley Connect
+Student Advisory Board, \textbf{Member}
 
-\textcolor{darkgray}{Feb 2015 - Feb 2016}: Berkeley Physics
+\textcolor{mygray}{\textit{Feb 2015 - Feb 2016}}: Berkeley Physics
 Undergraduate Lab Committee, \textbf{Student Chair}
 
-\textcolor{darkgray}{Sep 2014 - May 2016}: Berkeley Society of Women in
-the Physical Sciences, \textbf{Member}
+\textcolor{mygray}{\textit{Sep 2014 - May 2016}}: Berkeley Society of
+Women in the Physical Sciences, \textbf{Member}
 
-\textcolor{darkgray}{Sep 2014 - May 2016}: Berkeley Society of Physics
-Students, \textbf{Member}
+\textcolor{mygray}{\textit{Sep 2014 - May 2016}}: Berkeley Society of
+Physics Students, \textbf{Member}
 
-\textcolor{darkgray}{Sep 2014 - Sep 2015}: Berkeley Society of Physics
-Students, \textbf{Social Activities Coordinator}
+\textcolor{mygray}{\textit{Sep 2014 - Sep 2015}}: Berkeley Society of
+Physics Students, \textbf{Social Activities Coordinator}
 
-\textcolor{darkgray}{Aug 2012 - Aug 2013}: San Diego Mesa Community
-College Honors Club, \textbf{Treasurer}
+\textcolor{mygray}{\textit{Aug 2012 - Aug 2013}}: San Diego Mesa
+Community College Honors Club, \textbf{Treasurer}
 
-\textcolor{darkgray}{Apr 2012 - Apr 2013}: San Diego Reuben H. Fleet
-Science Center Museum, \textbf{Gallery Volunteer}
+\textcolor{mygray}{\textit{Apr 2012 - Apr 2013}}: San Diego Reuben H.
+Fleet Science Center Museum, \textbf{Gallery Volunteer}
 
 \hypertarget{fa-tools-skills}{%
 \section{\texorpdfstring{\faIcon{tools}
