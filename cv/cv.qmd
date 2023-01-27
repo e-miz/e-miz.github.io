@@ -39,9 +39,9 @@ format:
         }
         \makeatother
 #    template-partials:
-#    - biblio.tex
+#      - biblio.tex
 #    cite-method: biblatex
-#    biblatexoptions: [bibstyle=publist, plauthorfirstinit=true, plauthorhandling=highlight, plnumbering=none, hlyear=false, marginyear=true, doi=false, url=false]
+#    biblatexoptions: [bibstyle=publist, plauthorfirstinit=true, plauthorhandling=highlight, plnumbering=none, hlyear=true, marginyear=false, linktitles=all, doi=false, url=false, isbn=false]
 #    include-before-body:
 #      text: |
 #        \plauthorname[E]{Mizrachi}
@@ -79,9 +79,9 @@ teach_df = cv_df.loc[cv_df["Type"] == "Teaching"].loc[:, ["Item", "Description",
 
 research_df = cv_df.loc[cv_df["Type"] == "Research"].loc[:, ["Item", "Description", "Start Date", "End Date"]]
 
-service_df = cv_df.loc[cv_df["Type"] == "Service"].loc[:, ["Item", "Description", "Start Date", "End Date"]]
+service_df = cv_df.loc[(cv_df["Type"] == "Service") & (cv_df["Start Date"] > "2017-01-01")].loc[:, ["Item", "Description", "Start Date", "End Date"]]
 
-award_df = cv_df.loc[cv_df["Type"] == "Award"].loc[:, ["Item", "Description", "Start Date", "End Date"]]
+award_df = cv_df.loc[(cv_df["Type"] == "Award") & (cv_df["Start Date"] > "2017-01-01")].loc[:, ["Item", "Description", "Start Date", "End Date"]]
 ```
 
 ::: {.center} 
@@ -113,13 +113,13 @@ print_items(teach_df)
 print_items(research_df)
 ```
 
-# {{< fa trophy >}} Awards
+# {{< fa trophy >}} Recent Awards
 
 ```{python}
 print_items(award_df)
 ```
 
-# {{< fa people-carry >}} Service
+# {{< fa people-carry >}} Recent Service
 
 ```{python}
 print_items(service_df)
@@ -127,7 +127,7 @@ print_items(service_df)
 
 # {{< fa tools >}} Skills
 
-# {{< fa pen-nib >}} Publications
+# {{< fa pen-nib >}} Selected Publications
 
 newrefcontext[sorting=ddt]
 printbibliography[heading=none, keyword={mypublication}, keyword={selectedworks}]
