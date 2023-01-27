@@ -38,13 +38,13 @@ format:
             \@hangfrom{\hskip #2#3}{#4}}% 
         }
         \makeatother
-#    template-partials:
-#      - biblio.tex
-#    cite-method: biblatex
-#    biblatexoptions: [bibstyle=publist, plauthorfirstinit=true, plauthorhandling=highlight, plnumbering=none, hlyear=true, marginyear=false, linktitles=all, doi=false, url=false, isbn=false]
-#    include-before-body:
-#      text: |
-#        \plauthorname[E]{Mizrachi}
+    template-partials:
+      - biblio.tex
+    cite-method: biblatex
+    biblatexoptions: [bibstyle=publist, plauthorfirstinit=true, plauthorhandling=highlight, plnumbering=none, hlyear=true, marginyear=false, linktitles=all, doi=false, url=false, isbn=false, eprint=false]
+    include-before-body:
+      text: |
+        \plauthorname[E]{Mizrachi}
 
 ---
 
@@ -129,12 +129,12 @@ print_items(service_df)
 
 # {{< fa pen-nib >}} Selected Publications
 
-newrefcontext[sorting=ddt]
-printbibliography[heading=none, keyword={mypublication}, keyword={selectedworks}]
-endrefcontext
+\newrefcontext[sorting=ddt]
+\printbibliography[heading=none, keyword={mypublication}, keyword={selectedworks}]
+\endrefcontext
 
 # {{< fa chart-bar >}} Presentations
 
-newrefcontext[sorting=ddt]
-printbibliography[heading=none, keyword={mypresentation}, keyword={selectedworks}]
-endrefcontext
+\newrefcontext[sorting=ddt]
+\printbibliography[heading=none, keyword={mypresentation}, keyword={selectedworks}]
+\endrefcontext

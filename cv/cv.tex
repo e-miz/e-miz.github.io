@@ -4,9 +4,7 @@
 %
 \documentclass[
   10pt,
-  letterpaper,
-  DIV=11,
-  numbers=noendperiod]{scrartcl}
+]{scrartcl}
 
 \usepackage{amsmath,amssymb}
 \usepackage{lmodern}
@@ -77,29 +75,6 @@
 \makeatletter
 \def\fps@figure{htbp}
 \makeatother
-\newlength{\cslhangindent}
-\setlength{\cslhangindent}{1.5em}
-\newlength{\csllabelwidth}
-\setlength{\csllabelwidth}{3em}
-\newlength{\cslentryspacingunit} % times entry-spacing
-\setlength{\cslentryspacingunit}{\parskip}
-\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
- {% don't indent paragraphs
-  \setlength{\parindent}{0pt}
-  % turn on hanging indent if param 1 is 1
-  \ifodd #1
-  \let\oldpar\par
-  \def\par{\hangindent=\cslhangindent\oldpar}
-  \fi
-  % set entry spacing
-  \setlength{\parskip}{#2\cslentryspacingunit}
- }%
- {}
-\usepackage{calc}
-\newcommand{\CSLBlock}[1]{#1\hfill\break}
-\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
-\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
-\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 
 \RedeclareSectionCommand[beforeskip=0.5\baselineskip]{section} % Less space after section heading
 \RedeclareSectionCommand[afterskip=0.2\baselineskip]{section} % Less space after section heading
@@ -117,7 +92,6 @@
     \@hangfrom{\hskip #2#3}{#4}}%
 }
 \makeatother
-\KOMAoption{captions}{tableheading}
 \makeatletter
 \makeatother
 \makeatletter
@@ -175,6 +149,9 @@
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
+\usepackage[bibstyle=publist,plauthorfirstinit=true,plauthorhandling=highlight,plnumbering=none,hlyear=true,marginyear=false,linktitles=all,doi=false,url=false,isbn=false,eprint=false]{biblatex}
+\addbibresource{pubs.bib}
+\nocite{*}
 \IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same} % disable monospaced font for URLs
@@ -186,7 +163,9 @@
 \date{}
 
 \begin{document}
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[sharp corners, frame hidden, borderline west={3pt}{0pt}{shadecolor}, interior hidden, boxrule=0pt, enhanced, breakable]}{\end{tcolorbox}}\fi
+\plauthorname[E]{Mizrachi}
+
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[breakable, sharp corners, interior hidden, frame hidden, enhanced, borderline west={3pt}{0pt}{shadecolor}, boxrule=0pt]}{\end{tcolorbox}}\fi
 
 \begin{center}
 
@@ -310,189 +289,20 @@ Skills}{ Skills}}\label{fa-tools-skills}}
 \section{\texorpdfstring{\faIcon{pen-nib} Selected
 Publications}{ Selected Publications}}\label{fa-pen-nib-selected-publications}}
 
-newrefcontext{[}sorting=ddt{]} printbibliography{[}heading=none,
-keyword=\{mypublication\}, keyword=\{selectedworks\}{]} endrefcontext
+\newrefcontext[sorting=ddt]
+\printbibliography[heading=none, keyword={mypublication}, keyword={selectedworks}]
+\endrefcontext
 
 \hypertarget{fa-chart-bar-presentations}{%
 \section{\texorpdfstring{\faIcon{chart-bar}
 Presentations}{ Presentations}}\label{fa-chart-bar-presentations}}
 
-newrefcontext{[}sorting=ddt{]} printbibliography{[}heading=none,
-keyword=\{mypresentation\}, keyword=\{selectedworks\}{]} endrefcontext
+\newrefcontext[sorting=ddt]
+\printbibliography[heading=none, keyword={mypresentation}, keyword={selectedworks}]
+\endrefcontext
 
-\hypertarget{refs}{}
-\begin{CSLReferences}{1}{0}
-\leavevmode\vadjust pre{\hypertarget{ref-aalbersNextGenerationLiquidXenon2022}{}}%
-Aalbers, J., K. Abe, V. Aerne, F. Agostini, S. Ahmed Maouloud, D. S.
-Akerib, D. Yu Akimov, et al. 2022. {``A {Next-Generation Liquid Xenon
-Observatory} for {Dark Matter} and {Neutrino Physics}.''} \emph{Journal
-of Physics G: Nuclear and Particle Physics} 50 (1): 013001.
-\url{https://doi.org/10.48550/arXiv.2203.02309}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-aalbersFirstDarkMatter2022}{}}%
-Aalbers, J., D. S. Akerib, C. W. Akerlof, A. K. Al Musalhi, F. Alder, A.
-Alqahtani, S. K. Alsum, et al. 2022. {``First {Dark Matter Search
-Results} from the {LUX-ZEPLIN} ({LZ}) {Experiment}.''} {arXiv}.
-\url{https://doi.org/10.48550/arXiv.2207.03764}.
-
-\leavevmode\vadjust pre{\hypertarget{ref-aalbersCosmogenicProduction372022}{}}%
-Aalbers, J., D. S. Akerib, A. K. Al Musalhi, F. Alder, S. K. Alsum, C.
-S. Amarasinghe, A. Ames, T. J. Anderson, N. Angelides, H. M. Araújo, J.
-E. Armstrong, M. Arthurs, X. Bai, et al. 2022. {``Cosmogenic Production
-of \$\{̂37\}\${Ar} in the Context of the {LUX-ZEPLIN} Experiment.''}
-\emph{Physical Review D} 105 (8): 082004.
-\url{https://doi.org/10.1103/PhysRevD.105.082004}.
-
-\leavevmode\vadjust pre{\hypertarget{ref-aalbersBackgroundDeterminationLUXZEPLIN2022}{}}%
-Aalbers, J., D. S. Akerib, A. K. Al Musalhi, F. Alder, S. K. Alsum, C.
-S. Amarasinghe, A. Ames, T. J. Anderson, N. Angelides, H. M. Araújo, J.
-E. Armstrong, M. Arthurs, A. Baker, et al. 2022. {``Background
-{Determination} for the {LUX-ZEPLIN} ({LZ}) {Dark Matter Experiment}.''}
-{arXiv}. \url{https://doi.org/10.48550/arXiv.2211.17120}.
-
-\leavevmode\vadjust pre{\hypertarget{ref-akeribLUXZEPLINLZRadioactivity2020}{}}%
-Akerib, D. S., C. W. Akerlof, D. Yu Akimov, A. Alquahtani, S. K. Alsum,
-T. J. Anderson, N. Angelides, et al. 2020. {``The {LUX-ZEPLIN} ({LZ})
-Radioactivity and Cleanliness Control Programs.''} \emph{The European
-Physical Journal C} 80 (11): 1044.
-\url{https://doi.org/10.1140/epjc/s10052-020-8420-x}.
-
-\leavevmode\vadjust pre{\hypertarget{ref-akeribIdentificationRadiopureTitanium2017}{}}%
-Akerib, D. S., C. W. Akerlof, D. Yu Akimov, S. K. Alsum, H. M. Araújo,
-I. J. Arnquist, M. Arthurs, et al. 2017. {``Identification of {Radiopure
-Titanium} for the {LZ Dark Matter Experiment} and {Future Rare Event
-Searches}.''} \emph{Astroparticle Physics} 96 (November): 1--10.
-\url{https://doi.org/10.1016/j.astropartphys.2017.09.002}.
-
-\leavevmode\vadjust pre{\hypertarget{ref-akeribProjectedSensitivityLUXZEPLIN2020}{}}%
-Akerib, D. S., C. W. Akerlof, A. Alqahtani, S. K. Alsum, T. J. Anderson,
-N. Angelides, H. M. Araújo, et al. 2020. {``Projected Sensitivity of the
-{LUX-ZEPLIN} Experiment to the
-\$0\textbackslash nu\textbackslash beta\textbackslash beta\$ Decay of
-\$\{̂136\}\${Xe}.''} \emph{Physical Review C} 102 (1): 014602.
-\url{https://doi.org/10.1103/PhysRevC.102.014602}.
-
-\leavevmode\vadjust pre{\hypertarget{ref-akeribEnhancingSensitivityLUXZEPLIN2021}{}}%
-Akerib, D. S., A. K. Al Musalhi, S. K. Alsum, C. S. Amarasinghe, A.
-Ames, T. J. Anderson, N. Angelides, et al. 2021. {``Enhancing the
-Sensitivity of the {LUX-ZEPLIN} ({LZ}) Dark Matter Experiment to Low
-Energy Signals.''} {arXiv}.
-\url{https://doi.org/10.48550/arXiv.2101.08753}.
-
-\leavevmode\vadjust pre{\hypertarget{ref-bernardThermodynamicStabilityXenonDoped2022}{}}%
-Bernard, Ethan P., Eli Mizrachi, James Kingston, Jingke Xu, Sergey V.
-Pereverzev, Teal Pershing, Ryan Smith, et al. 2022. {``Thermodynamic
-{Stability} of {Xenon-Doped Liquid Argon Detectors}.''} {arXiv}.
-\url{https://doi.org/10.48550/arXiv.2209.05435}.
-
-\leavevmode\vadjust pre{\hypertarget{ref-collaborationSimulationsEventsLUXZEPLIN2021}{}}%
-Collaboration, The LUX-ZEPLIN, D. S. Akerib, C. W. Akerlof, A.
-Alqahtani, S. K. Alsum, T. J. Anderson, N. Angelides, et al. 2021.
-{``Simulations of {Events} for the {LUX-ZEPLIN} ({LZ}) {Dark Matter
-Experiment}.''} \emph{Astroparticle Physics} 125 (February): 102480.
-\url{https://doi.org/10.1016/j.astropartphys.2020.102480}.
-
-\leavevmode\vadjust pre{\hypertarget{ref-thelzcollaborationLUXZEPLINLZExperiment2020}{}}%
-Collaboration, The LZ, D. S. Akerib, C. W. Akerlof, D. Yu Akimov, A.
-Alquahtani, S. K. Alsum, T. J. Anderson, et al. 2020. {``The
-{LUX-ZEPLIN} ({LZ}) {Experiment}.''} \emph{Nuclear Instruments and
-Methods in Physics Research Section A: Accelerators, Spectrometers,
-Detectors and Associated Equipment} 953 (February): 163047.
-\url{https://doi.org/10.1016/j.nima.2019.163047}.
-
-\leavevmode\vadjust pre{\hypertarget{ref-thelzcollaborationProjectedSensitivitiesLUXZEPLIN2021}{}}%
-Collaboration, The LZ, D. S. Akerib, A. K. Al Musalhi, S. K. Alsum, C.
-S. Amarasinghe, A. Ames, T. J. Anderson, et al. 2021. {``Projected
-Sensitivities of the {LUX-ZEPLIN} ({LZ}) Experiment to New Physics via
-Low-Energy Electron Recoils.''} \emph{Physical Review D} 104 (9):
-092009. \url{https://doi.org/10.1103/PhysRevD.104.092009}.
-
-\leavevmode\vadjust pre{\hypertarget{ref-goryachevAcousticTestsLorentz2016}{}}%
-Goryachev, M., A. Lo, Ph Haslinger, E. Mizrachi, L. Anderegg, H. Müller,
-M. Hohensee, and M. E. Tobar. 2016. {``Acoustic Tests of {Lorentz}
-Symmetry Using {Bulk Acoustic Wave} Quartz Oscillators.''} In.
-{Bloomington, Indiana}: {arXiv}.
-\url{https://doi.org/10.48550/arXiv.1607.07179}.
-
-\leavevmode\vadjust pre{\hypertarget{ref-kamdinAbsoluteElectronExtraction2016}{}}%
-Kamdin, K., E. Mizrachi, J. A. Morad, and P. Sorensen. 2016. {``Absolute
-{Electron Extraction Efficiency} of {Liquid Xenon}.''} In \emph{Bulletin
-of the {American Physical Society}}. Vol. Volume 61, Number 6. {Salt
-Lake City, Utah}: {American Physical Society}.
-\url{http://meetings.aps.org/link/BAPS.2016.APR.B16.7}.
-
-\leavevmode\vadjust pre{\hypertarget{ref-loAcousticTestsLorentz2016}{}}%
-Lo, Anthony, Philipp Haslinger, Eli Mizrachi, Loic Anderegg, Holger
-Müller, Michael Hohensee, Maxim Goryachev, and Michael E. Tobar. 2016.
-{``Acoustic Tests of {Lorentz} Symmetry Using Quartz Oscillators.''}
-\emph{Physical Review X} 6 (1): 011018.
-\url{https://doi.org/10.1103/PhysRevX.6.011018}.
-
-\leavevmode\vadjust pre{\hypertarget{ref-lux-zeplinProjectedSensitivityLUXZEPLIN2021}{}}%
-LUX-ZEPLIN, The, Collaboration, D. S. Akerib, A. K. Al Musalhi, S. K.
-Alsum, C. S. Amarasinghe, A. Ames, et al. 2021. {``Projected Sensitivity
-of the {LUX-ZEPLIN} ({LZ}) Experiment to the Two-Neutrino and
-Neutrinoless Double Beta Decays of \$\{̂134\}\${Xe}.''} \emph{Physical
-Review C} 104 (6): 065501.
-\url{https://doi.org/10.1103/PhysRevC.104.065501}.
-
-\leavevmode\vadjust pre{\hypertarget{ref-mizrachiAbsoluteMeasurementElectron2016}{}}%
-Mizrachi, E., K. Kamdin, J. A. Morad, and P. Sorensen. 2016. {``Absolute
-{Measurement} of the {Electron Extraction Efficiency} of {Liquid
-Xenon}.''} Poster presented at the {UC LEADS Student Research}
-symposium, {Davis, California}, March 12.
-
-\leavevmode\vadjust pre{\hypertarget{ref-mizrachiDevelopmentXenonDopedDualPhase2021}{}}%
-Mizrachi, Eli, Nathaniel Bowden, Igor Jovanovic, Ethan Bernard, and
-Sergey Pereverzev. 2021. {``Development of a {Xenon-Doped Dual-Phase
-Argon Time Projection Chamber}.''} Oral presented at the {APS April
-Meeting}, April 18.
-\url{https://meetings.aps.org/Meeting/APR21/Session/H20.6}.
-
-\leavevmode\vadjust pre{\hypertarget{ref-mizrachiAddressingElectronBackgrounds2019}{}}%
-Mizrachi, Eli, Jingke Xu, Sergey Pereverzev, and Adam Bernstein. 2019.
-{``Addressing {Electron Backgrounds} in a {Dual-Phase Liquid Xenon Time
-Projection Chamber}.''} Poster presented at the {LLNL Student Summer
-Research Symposium}, {Livermore, California}, July 30.
-
-\leavevmode\vadjust pre{\hypertarget{ref-mizrachiTestingLorentzSymmetry2015a}{}}%
-Mizrachi, E., Anthony Lo, Philipp Haslinger, Loic Anderegg, and Holger
-Mueller. 2015a. {``Testing {Lorentz Symmetry Using Rotating Crystal
-Oscillators}.''} Poster presented at the {NSF CAMP Statewide Student
-Research Symposium}, {Irvine, California}, February 7.
-
-\leavevmode\vadjust pre{\hypertarget{ref-mizrachiTestingLorentzSymmetry2015}{}}%
----------. 2015b. {``Testing {Lorentz Symmetry Using Rotating Crystal
-Oscillators}.''} Poster presented at the {UC LEADS Student Research
-Symposium}, {Merced, California}, March 21.
-
-\leavevmode\vadjust pre{\hypertarget{ref-mizrachiElectricFieldSumilation2015}{}}%
-Mizrachi, E., A. Manalaysay, and M. Tripathi. 2015. {``Electric {Field
-Sumilation} of a {Liquid Xenon Purity Monitor}.''} Oral presented at the
-{UC Davis LEADS Scholar Summer Student Symposium}, {Davis, California},
-August 20.
-
-\leavevmode\vadjust pre{\hypertarget{ref-mountLUXZEPLINLZTechnical2017}{}}%
-Mount, B. J., S. Hans, R. Rosero, M. Yeh, C. Chan, R. J. Gaitskell, D.
-Q. Huang, et al. 2017. {``{LUX-ZEPLIN} ({LZ}) {Technical Design
-Report}.''} {arXiv}. \url{https://doi.org/10.48550/arXiv.1703.09144}.
-
-\leavevmode\vadjust pre{\hypertarget{ref-pershingCalibratingScintillationIonization2022}{}}%
-Pershing, Teal, Daniel Naim, Brian Lenardo, Jingke Xu, James Kingston,
-Eli Mizrachi, Vladimir Mozin, et al. 2022. {``Calibrating the
-Scintillation and Ionization Responses of Xenon Recoils for High-Energy
-Dark Matter Searches.''} \emph{Physical Review D} 106 (5): 052013.
-\url{https://doi.org/10.1103/PhysRevD.106.052013}.
-
-\leavevmode\vadjust pre{\hypertarget{ref-pershingPerformanceHamamatsuVUV42022}{}}%
-Pershing, Teal, Jingke Xu, Ethan Bernard, James Kingston, Eli Mizrachi,
-Jason Brodsky, Alessandro Razeto, et al. 2022. {``Performance of
-{Hamamatsu VUV4 SiPMs} for Detecting Liquid Argon Scintillation.''}
-\emph{Journal of Instrumentation} 17 (04): P04017.
-\url{https://doi.org/10.1088/1748-0221/17/04/P04017}.
-
-\end{CSLReferences}
-
+%\printbibliography
 
 
 \end{document}
