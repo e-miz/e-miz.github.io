@@ -22,9 +22,9 @@ format:
     colorlinks: false
     include-in-header:
       text: |
-        \RedeclareSectionCommand[beforeskip=0.5\baselineskip]{section} % Less space after section heading
-        \RedeclareSectionCommand[afterskip=0.2\baselineskip]{section} % Less space after section heading
-        \setlength{\parskip}{0.5\baselineskip}
+        \RedeclareSectionCommand[beforeskip=0.3\baselineskip]{section} % Less space before section heading
+        \RedeclareSectionCommand[afterskip=0.3\baselineskip]{section} % Less space after section heading
+        \setlength{\parskip}{0.2\baselineskip}
         \definecolor{mygray}{gray}{0.4}
         % Section Lines
         \makeatletter
@@ -38,13 +38,13 @@ format:
             \@hangfrom{\hskip #2#3}{#4}}% 
         }
         \makeatother
-    template-partials:
-      - biblio.tex
-    cite-method: biblatex
-    biblatexoptions: [bibstyle=publist, plauthorfirstinit=true, plauthorhandling=highlight, plnumbering=none, hlyear=true, marginyear=false, linktitles=all, doi=false, url=false, isbn=false, eprint=false]
-    include-before-body:
-      text: |
-        \plauthorname[E]{Mizrachi}
+#    template-partials:
+#      - biblio.tex
+#    cite-method: biblatex
+#    biblatexoptions: [bibstyle=publist, plauthorfirstinit=true, plauthorhandling=highlight, plnumbering=none, hlyear=true, marginyear=false, linktitles=all, doi=false, url=false, isbn=false, eprint=false]
+#    include-before-body:
+#      text: |
+#        \plauthorname[E]{Mizrachi}
 
 ---
 
@@ -68,27 +68,33 @@ def print_items(df: pd.DataFrame):
         desc_str = ""
       else:
           desc_str = f", **{df.iloc[i]['Description']}**"
+      
+      info_str = ""
+      if pd.isnull(df.iloc[i]["Information"]):
+        info_str = ""
+      else:
+          info_str = f"\\newline {df.iloc[i]['Information']}"
 
-      print(f"\\textcolor{{mygray}}{{\\textit{{{date_str}}}}}" + f": {df.iloc[i]['Item']}" + desc_str + "\n")
+      print(f"\hangindent=0.4in \\textcolor{{mygray}}{{\\textit{{{date_str}}}}}" + f": {df.iloc[i]['Item']}" + desc_str + f"{info_str} \n")
 
 cv_df = pd.read_csv("cv_data.csv", parse_dates=[3,4])
 
-edu_df = cv_df.loc[cv_df["Type"] == "Degree"].loc[:, ["Item", "Description", "Start Date", "End Date"]]
+edu_df = cv_df.loc[cv_df["Type"] == "Degree"].loc[:, ["Item", "Description", "Start Date", "End Date", "Information"]]
 
-teach_df = cv_df.loc[cv_df["Type"] == "Teaching"].loc[:, ["Item", "Description", "Start Date", "End Date"]]
+teach_df = cv_df.loc[cv_df["Type"] == "Teaching"].loc[:, ["Item", "Description", "Start Date", "End Date", "Information"]]
 
-research_df = cv_df.loc[cv_df["Type"] == "Research"].loc[:, ["Item", "Description", "Start Date", "End Date"]]
+research_df = cv_df.loc[cv_df["Type"] == "Research"].loc[:, ["Item", "Description", "Start Date", "End Date", "Information"]]
 
-service_df = cv_df.loc[(cv_df["Type"] == "Service") & (cv_df["Start Date"] > "2017-01-01")].loc[:, ["Item", "Description", "Start Date", "End Date"]]
+service_df = cv_df.loc[(cv_df["Type"] == "Service") & (cv_df["Start Date"] > "2017-01-01")].loc[:, ["Item", "Description", "Start Date", "End Date", "Information"]]
 
-award_df = cv_df.loc[(cv_df["Type"] == "Award") & (cv_df["Start Date"] > "2017-01-01")].loc[:, ["Item", "Description", "Start Date", "End Date"]]
+award_df = cv_df.loc[(cv_df["Type"] == "Award") & (cv_df["Start Date"] > "2017-01-01")].loc[:, ["Item", "Description", "Start Date", "End Date", "Information"]]
 ```
 
 ::: {.center} 
 
 \begin{LARGE}Eli Mizrachi\end{LARGE}
 
-\begin{small}(they/them/theirs) | PhD Candidate | Physics\end{small}
+\begin{small}they/them/theirs | PhD Candidate | Physics\end{small}
 
 [{{< fa envelope title="e-mail">}}](mailto:emiz@umd.edu) 
 [{{< fa house-user title="homepage">}}](https://e-miz.github.io)
@@ -129,12 +135,12 @@ print_items(service_df)
 
 # {{< fa pen-nib >}} Selected Publications
 
-\newrefcontext[sorting=ddt]
-\printbibliography[heading=none, keyword={mypublication}, keyword={selectedworks}]
-\endrefcontext
+newrefcontext[sorting=ddt]
+printbibliography[heading=none, keyword={mypublication}, keyword={selectedworks}]
+endrefcontext
 
 # {{< fa chart-bar >}} Presentations
 
-\newrefcontext[sorting=ddt]
-\printbibliography[heading=none, keyword={mypresentation}, keyword={selectedworks}]
-\endrefcontext
+newrefcontext[sorting=ddt]
+printbibliography[heading=none, keyword={mypresentation}, keyword={selectedworks}]
+endrefcontext
