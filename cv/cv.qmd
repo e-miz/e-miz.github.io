@@ -26,6 +26,8 @@ format:
         \RedeclareSectionCommand[afterskip=0.3\baselineskip]{section} % Less space after section heading
         \setlength{\parskip}{0.2\baselineskip}
         \definecolor{mygray}{gray}{0.4}
+        \usepackage{tabularx}
+        \usepackage{ragged2e}
         % Section Lines
         \makeatletter
         \renewcommand{\sectionlinesformat}[4]{%
@@ -67,15 +69,18 @@ def print_items(df: pd.DataFrame):
       if pd.isnull(df.iloc[i]["Description"]):
         desc_str = ""
       else:
-          desc_str = f", **{df.iloc[i]['Description']}**"
+          desc_str = f", \\textbf{{{df.iloc[i]['Description']}}}"
       
       info_str = ""
       if pd.isnull(df.iloc[i]["Information"]):
         info_str = ""
       else:
-          info_str = f"\\newline {df.iloc[i]['Information']}"
+          info_str = f"\\\\ \\hspace{{0.25in}} {df.iloc[i]['Information']} "
 
-      print(f"\hangindent=0.4in \\textcolor{{mygray}}{{\\textit{{{date_str}}}}}" + f": {df.iloc[i]['Item']}" + desc_str + f"{info_str} \n")
+      desc_frag = f"{df.iloc[i]['Item']}" + desc_str
+      date_frag = f"\\textcolor{{mygray}}{{\\textit{{{date_str}}}}}"
+
+      print(f"\\begin{{tabularx}}{{\\textwidth}}{{>{{\\RaggedRight}}p{{0.75\\textwidth}}  >{{\\RaggedLeft}}X}} {desc_frag} & {date_frag} {info_str} \end{{tabularx}} \n")
 
 cv_df = pd.read_csv("cv_data.csv", parse_dates=[3,4])
 

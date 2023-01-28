@@ -105,6 +105,8 @@
 \RedeclareSectionCommand[afterskip=0.3\baselineskip]{section} % Less space after section heading
 \setlength{\parskip}{0.2\baselineskip}
 \definecolor{mygray}{gray}{0.4}
+\usepackage{tabularx}
+\usepackage{ragged2e}
 % Section Lines
 \makeatletter
 \renewcommand{\sectionlinesformat}[4]{%
@@ -186,7 +188,7 @@
 \date{}
 
 \begin{document}
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[boxrule=0pt, sharp corners, frame hidden, interior hidden, borderline west={3pt}{0pt}{shadecolor}, breakable, enhanced]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[borderline west={3pt}{0pt}{shadecolor}, interior hidden, sharp corners, frame hidden, boxrule=0pt, enhanced, breakable]}{\end{tcolorbox}}\fi
 
 \begin{center}
 
@@ -203,106 +205,73 @@
 \section{\texorpdfstring{\faIcon{user-graduate}
 Education}{ Education}}\label{fa-user-graduate-education}}
 
-\hangindent=0.4in \textcolor{mygray}{\textit{Aug 2017}}: University of
-Maryland at College Park, \textbf{PhD Physics (exp. Dec 2023)}
+\begin{tabularx}{\textwidth}{>{\RaggedRight}p{0.75\textwidth}  >{\RaggedLeft}X} University of Maryland at College Park, \textbf{PhD Physics (exp. Dec 2023)} & \textcolor{mygray}{\textit{Aug 2017}}  \end{tabularx}
 
-\hangindent=0.4in \textcolor{mygray}{\textit{Aug 2013 - Dec 2015}}: UC
-Berkeley, \textbf{B.A. Physics}
+\begin{tabularx}{\textwidth}{>{\RaggedRight}p{0.75\textwidth}  >{\RaggedLeft}X} UC Berkeley, \textbf{B.A. Physics} & \textcolor{mygray}{\textit{Aug 2013 - Dec 2015}}  \end{tabularx}
 
-\hangindent=0.4in \textcolor{mygray}{\textit{Aug 2011 - May 2013}}: San
-Diego Mesa Community College, \textbf{A.S. Physics with High Honors}
+\begin{tabularx}{\textwidth}{>{\RaggedRight}p{0.75\textwidth}  >{\RaggedLeft}X} San Diego Mesa Community College, \textbf{A.S. Physics with High Honors} & \textcolor{mygray}{\textit{Aug 2011 - May 2013}}  \end{tabularx}
 
-\hangindent=0.4in \textcolor{mygray}{\textit{Sep 2008 - Jun 2011}}:
-Bonita Vista High School, \textbf{International Baccalaureate Diploma}
+\begin{tabularx}{\textwidth}{>{\RaggedRight}p{0.75\textwidth}  >{\RaggedLeft}X} Bonita Vista High School, \textbf{International Baccalaureate Diploma} & \textcolor{mygray}{\textit{Sep 2008 - Jun 2011}}  \end{tabularx}
 
 \hypertarget{fa-school-teaching}{%
 \section{\texorpdfstring{\faIcon{school}
 Teaching}{ Teaching}}\label{fa-school-teaching}}
 
-\hangindent=0.4in \textcolor{mygray}{\textit{Aug 2017 - Dec 2019}}: UMD
-Undergraduate Physics for Biologists I \& II, \textbf{Graduate Teaching
-Assistant}
+\begin{tabularx}{\textwidth}{>{\RaggedRight}p{0.75\textwidth}  >{\RaggedLeft}X} UMD Undergraduate Physics for Biologists I \& II, \textbf{Graduate Teaching Assistant} & \textcolor{mygray}{\textit{Aug 2017 - Dec 2019}}  \end{tabularx}
 
-\hangindent=0.4in \textcolor{mygray}{\textit{Jan 2016 - May 2016}}: UC
-Berkeley Frontiers of Physics, \textbf{Co-teacher}
+\begin{tabularx}{\textwidth}{>{\RaggedRight}p{0.75\textwidth}  >{\RaggedLeft}X} UC Berkeley Frontiers of Physics, \textbf{Co-teacher} & \textcolor{mygray}{\textit{Jan 2016 - May 2016}}  \end{tabularx}
 
-\hangindent=0.4in \textcolor{mygray}{\textit{Aug 2015 - Dec 2015}}: UC
-Berkeley Undergraduate Particle Physics, \textbf{Grader}
+\begin{tabularx}{\textwidth}{>{\RaggedRight}p{0.75\textwidth}  >{\RaggedLeft}X} UC Berkeley Undergraduate Particle Physics, \textbf{Grader} & \textcolor{mygray}{\textit{Aug 2015 - Dec 2015}}  \end{tabularx}
 
 \hypertarget{fa-atom-research}{%
 \section{\texorpdfstring{\faIcon{atom}
 Research}{ Research}}\label{fa-atom-research}}
 
-\hangindent=0.4in \textcolor{mygray}{\textit{Jun 2019}}: LLNL RED Group,
-\textbf{Graduate Research Assistant}
+\begin{tabularx}{\textwidth}{>{\RaggedRight}p{0.75\textwidth}  >{\RaggedLeft}X} LLNL RED Group, \textbf{Graduate Research Assistant} & \textcolor{mygray}{\textit{Jun 2019}}  \end{tabularx}
 
-\hangindent=0.4in \textcolor{mygray}{\textit{Sep 2018 - Jun 2019}}: UMD
-Hall Group, \textbf{Graduate Research Assistant}\newline I have
-Information!
+\begin{tabularx}{\textwidth}{>{\RaggedRight}p{0.75\textwidth}  >{\RaggedLeft}X} UMD Hall Group, \textbf{Graduate Research Assistant} & \textcolor{mygray}{\textit{Sep 2018 - Jun 2019}} \\ \hspace{0.25in} I have Information!  \end{tabularx}
 
-\hangindent=0.4in \textcolor{mygray}{\textit{Jun 2018 - Aug 2018}}: UMD
-Lobb Group, \textbf{Graduate Research Assistant}
+\begin{tabularx}{\textwidth}{>{\RaggedRight}p{0.75\textwidth}  >{\RaggedLeft}X} UMD Lobb Group, \textbf{Graduate Research Assistant} & \textcolor{mygray}{\textit{Jun 2018 - Aug 2018}}  \end{tabularx}
 
-\hangindent=0.4in \textcolor{mygray}{\textit{Jul 2016 - Jun 2017}}: SLAC
-PAC Noble Liquids Group, \textbf{Technician}
+\begin{tabularx}{\textwidth}{>{\RaggedRight}p{0.75\textwidth}  >{\RaggedLeft}X} SLAC PAC Noble Liquids Group, \textbf{Technician} & \textcolor{mygray}{\textit{Jul 2016 - Jun 2017}}  \end{tabularx}
 
-\hangindent=0.4in \textcolor{mygray}{\textit{Aug 2015 - Jun 2016}}: LBNL
-Sorensen Group, \textbf{Research Affiliate}
+\begin{tabularx}{\textwidth}{>{\RaggedRight}p{0.75\textwidth}  >{\RaggedLeft}X} LBNL Sorensen Group, \textbf{Research Affiliate} & \textcolor{mygray}{\textit{Aug 2015 - Jun 2016}}  \end{tabularx}
 
-\hangindent=0.4in \textcolor{mygray}{\textit{Jun 2015 - Aug 2015}}: UC
-Davis Tripathi Group, \textbf{Research Assistant}
+\begin{tabularx}{\textwidth}{>{\RaggedRight}p{0.75\textwidth}  >{\RaggedLeft}X} UC Davis Tripathi Group, \textbf{Research Assistant} & \textcolor{mygray}{\textit{Jun 2015 - Aug 2015}}  \end{tabularx}
 
-\hangindent=0.4in \textcolor{mygray}{\textit{Jan 2015 - May 2015}}: LBNL
-Sorensen Group, \textbf{Research Affiliate}
+\begin{tabularx}{\textwidth}{>{\RaggedRight}p{0.75\textwidth}  >{\RaggedLeft}X} LBNL Sorensen Group, \textbf{Research Affiliate} & \textcolor{mygray}{\textit{Jan 2015 - May 2015}}  \end{tabularx}
 
-\hangindent=0.4in \textcolor{mygray}{\textit{Jun 2014 - Dec 2014}}: UC
-Berkeley Mueller Group, \textbf{Research Assistant}
+\begin{tabularx}{\textwidth}{>{\RaggedRight}p{0.75\textwidth}  >{\RaggedLeft}X} UC Berkeley Mueller Group, \textbf{Research Assistant} & \textcolor{mygray}{\textit{Jun 2014 - Dec 2014}}  \end{tabularx}
 
 \hypertarget{fa-trophy-recent-awards}{%
 \section{\texorpdfstring{\faIcon{trophy} Recent
 Awards}{ Recent Awards}}\label{fa-trophy-recent-awards}}
 
-\hangindent=0.4in \textcolor{mygray}{\textit{Aug 2020 - Aug 2021}}: US
-Department of Energy Office of Science, \textbf{Graduate Student
-Research Award}
+\begin{tabularx}{\textwidth}{>{\RaggedRight}p{0.75\textwidth}  >{\RaggedLeft}X} US Department of Energy Office of Science, \textbf{Graduate Student Research Award} & \textcolor{mygray}{\textit{Aug 2020 - Aug 2021}}  \end{tabularx}
 
-\hangindent=0.4in \textcolor{mygray}{\textit{May 2019}}: Ralph Meyers \&
-Friends of Physics Outstanding Teaching Abilities, \textbf{2nd Place}
+\begin{tabularx}{\textwidth}{>{\RaggedRight}p{0.75\textwidth}  >{\RaggedLeft}X} Ralph Meyers \& Friends of Physics Outstanding Teaching Abilities, \textbf{2nd Place} & \textcolor{mygray}{\textit{May 2019}}  \end{tabularx}
 
-\hangindent=0.4in \textcolor{mygray}{\textit{Apr 2019}}: University of
-Maryland Graduate School, \textbf{Summer Research Fellowship}
+\begin{tabularx}{\textwidth}{>{\RaggedRight}p{0.75\textwidth}  >{\RaggedLeft}X} University of Maryland Graduate School, \textbf{Summer Research Fellowship} & \textcolor{mygray}{\textit{Apr 2019}}  \end{tabularx}
 
-\hangindent=0.4in \textcolor{mygray}{\textit{May 2018}}: Ralph Meyers \&
-Friends of Physics Outstanding Teaching Abilities, \textbf{Honorable
-Mention}
+\begin{tabularx}{\textwidth}{>{\RaggedRight}p{0.75\textwidth}  >{\RaggedLeft}X} Ralph Meyers \& Friends of Physics Outstanding Teaching Abilities, \textbf{Honorable Mention} & \textcolor{mygray}{\textit{May 2018}}  \end{tabularx}
 
-\hangindent=0.4in \textcolor{mygray}{\textit{Aug 2017}}: University of
-Maryland Graduate School, \textbf{Dean's Fellowship}
+\begin{tabularx}{\textwidth}{>{\RaggedRight}p{0.75\textwidth}  >{\RaggedLeft}X} University of Maryland Graduate School, \textbf{Dean's Fellowship} & \textcolor{mygray}{\textit{Aug 2017}}  \end{tabularx}
 
 \hypertarget{fa-people-carry-recent-service}{%
 \section{\texorpdfstring{\faIcon{people-carry} Recent
 Service}{ Recent Service}}\label{fa-people-carry-recent-service}}
 
-\hangindent=0.4in \textcolor{mygray}{\textit{Dec 2022}}: LZ Equity and
-Inclusion Committee, \textbf{Member}
+\begin{tabularx}{\textwidth}{>{\RaggedRight}p{0.75\textwidth}  >{\RaggedLeft}X} LZ Equity and Inclusion Committee, \textbf{Member} & \textcolor{mygray}{\textit{Dec 2022}}  \end{tabularx}
 
-\hangindent=0.4in \textcolor{mygray}{\textit{Nov 2021 - Dec 2022}}: LZ
-Graduates Engineers Technicians Undergraduates and Postdocs (GETUP),
-\textbf{Institutional Board Representative}
+\begin{tabularx}{\textwidth}{>{\RaggedRight}p{0.75\textwidth}  >{\RaggedLeft}X} LZ Graduates Engineers Technicians Undergraduates and Postdocs (GETUP), \textbf{Institutional Board Representative} & \textcolor{mygray}{\textit{Nov 2021 - Dec 2022}}  \end{tabularx}
 
-\hangindent=0.4in \textcolor{mygray}{\textit{Aug 2018 - Aug 2019}}: UMD
-Women in Physics Mentoring Program, \textbf{Mentor}
+\begin{tabularx}{\textwidth}{>{\RaggedRight}p{0.75\textwidth}  >{\RaggedLeft}X} UMD Women in Physics Mentoring Program, \textbf{Mentor} & \textcolor{mygray}{\textit{Aug 2018 - Aug 2019}}  \end{tabularx}
 
-\hangindent=0.4in \textcolor{mygray}{\textit{Aug 2018 - Aug 2019}}: UMD
-Physics Graduate Student Committee, \textbf{Elected Member}
+\begin{tabularx}{\textwidth}{>{\RaggedRight}p{0.75\textwidth}  >{\RaggedLeft}X} UMD Physics Graduate Student Committee, \textbf{Elected Member} & \textcolor{mygray}{\textit{Aug 2018 - Aug 2019}}  \end{tabularx}
 
-\hangindent=0.4in \textcolor{mygray}{\textit{Mar 2018}}: American
-Association for the Advancement of Science; Catalyzing Advocacy in
-Science and Engineering Workshop, \textbf{Representative on Behalf of
-UMD}
+\begin{tabularx}{\textwidth}{>{\RaggedRight}p{0.75\textwidth}  >{\RaggedLeft}X} American Association for the Advancement of Science; Catalyzing Advocacy in Science and Engineering Workshop, \textbf{Representative on Behalf of UMD} & \textcolor{mygray}{\textit{Mar 2018}}  \end{tabularx}
 
-\hangindent=0.4in \textcolor{mygray}{\textit{Feb 2017 - Sep 2019}}: UMD
-Physics Equity Constellation, \textbf{Member}
+\begin{tabularx}{\textwidth}{>{\RaggedRight}p{0.75\textwidth}  >{\RaggedLeft}X} UMD Physics Equity Constellation, \textbf{Member} & \textcolor{mygray}{\textit{Feb 2017 - Sep 2019}}  \end{tabularx}
 
 \hypertarget{fa-tools-skills}{%
 \section{\texorpdfstring{\faIcon{tools}
