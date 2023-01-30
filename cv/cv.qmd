@@ -28,6 +28,8 @@ format:
         \definecolor{mygray}{gray}{0.4}
         \usepackage{tabularx}
         \usepackage{ragged2e}
+        \usepackage{quoting}
+        \quotingsetup{vskip=0pt, rightmargin=0in}
         % Section Lines
         \makeatletter
         \renewcommand{\sectionlinesformat}[4]{%
@@ -75,7 +77,7 @@ def print_items(df: pd.DataFrame):
       if pd.isnull(df.iloc[i]["Information"]):
         info_str = ""
       else:
-          info_str = f"\\\\ \\hspace{{0.25in}} {df.iloc[i]['Information']} "
+          info_str = f"\\\\ \\begin{{quoting}} \\vspace{{-0.7\\baselineskip}} {df.iloc[i]['Information']} \\vspace{{-\\baselineskip}} \\end{{quoting}}"
 
       desc_frag = f"{df.iloc[i]['Item']}" + desc_str
       date_frag = f"\\textcolor{{mygray}}{{\\textit{{{date_str}}}}}"
@@ -137,6 +139,9 @@ print_items(service_df)
 ```
 
 # {{< fa tools >}} Skills
+
+* Some
+  * Skill
 
 # {{< fa pen-nib >}} Selected Publications
 
