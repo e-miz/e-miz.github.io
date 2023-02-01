@@ -108,7 +108,7 @@
 \usepackage{tabularx}
 \usepackage{ragged2e}
 \usepackage{quoting}
-\quotingsetup{vskip=0pt, rightmargin=0in}
+\quotingsetup{vskip=0pt, rightmargin=0in, leftmargin=0.25in}
 % Section Lines
 \makeatletter
 \renewcommand{\sectionlinesformat}[4]{%
@@ -190,7 +190,7 @@
 \date{}
 
 \begin{document}
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[interior hidden, boxrule=0pt, breakable, borderline west={3pt}{0pt}{shadecolor}, enhanced, sharp corners, frame hidden]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[breakable, frame hidden, borderline west={3pt}{0pt}{shadecolor}, interior hidden, boxrule=0pt, sharp corners, enhanced]}{\end{tcolorbox}}\fi
 
 \begin{center}
 
@@ -230,8 +230,6 @@ Teaching}{ Teaching}}\label{fa-school-teaching}}
 Research}{ Research}}\label{fa-atom-research}}
 
 \begin{tabularx}{\textwidth}{>{\RaggedRight}p{0.75\textwidth}  >{\RaggedLeft}X} LLNL RED Group, \textbf{Graduate Research Assistant} & \textcolor{mygray}{\textit{Jun 2019}}  \end{tabularx}
-
-\begin{tabularx}{\textwidth}{>{\RaggedRight}p{0.75\textwidth}  >{\RaggedLeft}X} UMD Hall Group, \textbf{Graduate Research Assistant} & \textcolor{mygray}{\textit{Sep 2018 - Jun 2019}} \\ \begin{quoting} \vspace{-0.7\baselineskip} Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc accumsan pellentesque purus eu consectetur. In hac habitasse platea dictumst. Nam facilisis sapien pellentesque diam gravida, molestie fermentum lectus molestie. \vspace{-\baselineskip} \end{quoting} \end{tabularx}
 
 \begin{tabularx}{\textwidth}{>{\RaggedRight}p{0.75\textwidth}  >{\RaggedLeft}X} UMD Lobb Group, \textbf{Graduate Research Assistant} & \textcolor{mygray}{\textit{Jun 2018 - Aug 2018}}  \end{tabularx}
 

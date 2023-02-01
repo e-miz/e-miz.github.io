@@ -29,7 +29,7 @@ format:
         \usepackage{tabularx}
         \usepackage{ragged2e}
         \usepackage{quoting}
-        \quotingsetup{vskip=0pt, rightmargin=0in}
+        \quotingsetup{vskip=0pt, rightmargin=0in, leftmargin=0.25in}
         % Section Lines
         \makeatletter
         \renewcommand{\sectionlinesformat}[4]{%
