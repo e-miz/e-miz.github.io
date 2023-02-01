@@ -5,7 +5,7 @@ nocite: |
 execute:
   echo: false
   output: asis
-keep-tex: true
+keep-tex: false
 format: 
   pdf:
     documentclass: scrartcl
