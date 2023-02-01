@@ -42,14 +42,13 @@ format:
             \@hangfrom{\hskip #2#3}{#4}}% 
         }
         \makeatother
-#    template-partials:
-#      - biblio.tex
-#    cite-method: biblatex
-#    biblatexoptions: [bibstyle=publist, plauthorfirstinit=true, plauthorhandling=highlight, plnumbering=none, hlyear=true, marginyear=false, linktitles=all, doi=false, url=false, isbn=false, eprint=false]
-#    include-before-body:
-#      text: |
-#        \plauthorname[E]{Mizrachi}
-
+    template-partials:
+      - biblio.tex
+    cite-method: biblatex
+    biblatexoptions: [bibstyle=publist, plauthorfirstinit=true, plauthorhandling=highlight, plnumbering=none, hlyear=true, marginyear=false, linktitles=all, doi=false, url=false, isbn=false, eprint=false]
+    include-before-body:
+      text: |
+        \plauthorname[E]{Mizrachi}
 ---
 
 ```{python}
@@ -82,7 +81,7 @@ def print_items(df: pd.DataFrame):
       desc_frag = f"{df.iloc[i]['Item']}" + desc_str
       date_frag = f"\\textcolor{{mygray}}{{\\textit{{{date_str}}}}}"
 
-      print(f"\\begin{{tabularx}}{{\\textwidth}}{{>{{\\RaggedRight}}p{{0.75\\textwidth}}  >{{\\RaggedLeft}}X}} {desc_frag} & {date_frag} {info_str} \end{{tabularx}} \n")
+      print(f"\\begin{{tabularx}}{{\\textwidth}}{{>{{\\RaggedRight}}p{{0.75\\textwidth}}  >{{\\RaggedLeft}}p{{0.21\\textwidth}}}} {desc_frag} & {date_frag} {info_str} \end{{tabularx}} \n")
 
 cv_df = pd.read_csv("cv_data.csv", parse_dates=[3,4])
 
@@ -92,21 +91,18 @@ teach_df = cv_df.loc[cv_df["Type"] == "Teaching"].loc[:, ["Item", "Description",
 
 research_df = cv_df.loc[cv_df["Type"] == "Research"].loc[:, ["Item", "Description", "Start Date", "End Date", "Information"]]
 
-service_df = cv_df.loc[(cv_df["Type"] == "Service") & (cv_df["Start Date"] > "2017-01-01")].loc[:, ["Item", "Description", "Start Date", "End Date", "Information"]]
+service_df = cv_df.loc[(cv_df["Type"] == "Service")].loc[:, ["Item", "Description", "Start Date", "End Date", "Information"]]
 
 award_df = cv_df.loc[(cv_df["Type"] == "Award") & (cv_df["Start Date"] > "2017-01-01")].loc[:, ["Item", "Description", "Start Date", "End Date", "Information"]]
 ```
 
-::: {.center} 
-
+```{=tex}
+\begin{center}
 \begin{LARGE}Eli Mizrachi\end{LARGE}
 
-\begin{small}they/them/theirs | PhD Candidate | Physics\end{small}
-
-[{{< fa envelope title="e-mail">}}](mailto:emiz@umd.edu) 
-[{{< fa house-user title="homepage">}}](https://e-miz.github.io)
-
-:::
+\begin{small}they/them/theirs | PhD Candidate | Physics | \href{mailto:emiz@umd.edu}{emiz@umd.edu}\end{small}
+\end{center}
+```
 
 # {{< fa user-graduate >}} Education
 
@@ -132,25 +128,36 @@ print_items(teach_df)
 print_items(award_df)
 ```
 
-# {{< fa people-carry >}} Recent Service
+# {{< fa people-carry >}} Service
 
 ```{python}
 print_items(service_df)
 ```
 
-# {{< fa tools >}} Skills
+# {{< fa tools >}} Skills and Tools
 
-* Some
-  * Skill
+```{=tex}
+\begin{tabularx}{\textwidth}{>{\Centering}p{0.10\textwidth} >{\Centering}X >{\Centering}X >{\Centering}p{0.45\textwidth}} 
+ & \textbf{Languages} & \textbf{Software} & \textbf{Hardware} 
+\end{tabularx}
+\begin{tabularx}{\textwidth}{>{\RaggedRight}p{0.10\textwidth} >{\RaggedRight}X >{\RaggedRight}X >{\RaggedRight}p{0.45\textwidth}} 
+\faStar\faStar\faStar\faStar                   & Markdown, Python   &  OnShape, Notion, VS Code   & Cryogenic, High purity, High Vacuum Systems \\
+\faStar\faStar\faStar\faStar[regular]          & Spanish            &  SolidWorks, Git            & Orbital Welder, Drill Press \\
+\faStar\faStar\faStar[regular]\faStar[regular] & C++, LaTeX         &  COMSOL                     & Milling Machine, Lathe, Belt Sander, Bench Grinder \\
+\end{tabularx}
+```
 
 # {{< fa pen-nib >}} Selected Publications
 
-newrefcontext[sorting=ddt]
-printbibliography[heading=none, keyword={mypublication}, keyword={selectedworks}]
-endrefcontext
-
+```{=tex}
+\newrefcontext[sorting=ddt]
+\printbibliography[heading=none, keyword={mypublication}, keyword={selectedworks}]
+\endrefcontext
+```
 # {{< fa chart-bar >}} Presentations
 
-newrefcontext[sorting=ddt]
-printbibliography[heading=none, keyword={mypresentation}, keyword={selectedworks}]
-endrefcontext
+```{=tex}
+\newrefcontext[sorting=ddt]
+\printbibliography[heading=none, keyword={mypresentation}, keyword={selectedworks}]
+\endrefcontext
+```
