@@ -114,16 +114,16 @@ award_df = cv_df.loc[(cv_df["Type"] == "Award") & (cv_df["Start Date"] > "2017-0
 print_items(edu_df)
 ```
 
-# {{< fa school >}} Teaching
-
-```{python}
-print_items(teach_df)
-```
-
 # {{< fa atom >}} Research
 
 ```{python}
 print_items(research_df)
+```
+
+# {{< fa school >}} Teaching
+
+```{python}
+print_items(teach_df)
 ```
 
 # {{< fa trophy >}} Recent Awards
