@@ -6,3 +6,4 @@
 *.fdb_latexmk
 *.pdf
 /.quarto/
+site_libs
