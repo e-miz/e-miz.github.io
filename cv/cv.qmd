@@ -43,6 +43,7 @@ format:
         }
         \makeatother
     template-partials:
+      - before-body.tex # Disables default title
       - biblio.tex
     cite-method: biblatex
     biblatexoptions: [bibstyle=publist, plauthorfirstinit=true, plauthorhandling=highlight, plnumbering=none, hlyear=true, marginyear=false, linktitles=all, doi=false, url=false, isbn=false, eprint=false]
@@ -54,46 +55,59 @@ format:
 ```{python}
 import pandas as pd
 
+
 def print_items(df: pd.DataFrame):
     for i in range(len(df)):
+        start_date_str = df.iloc[i]["Start Date"].strftime("%b %Y")
+        end_date_str = df.iloc[i]["End Date"].strftime("%b %Y")
 
-      start_date_str = df.iloc[i]['Start Date'].strftime('%b %Y')
-      end_date_str = df.iloc[i]['End Date'].strftime('%b %Y')
-      
-      date_str = ""
-      if start_date_str == end_date_str:
-        date_str = start_date_str
-      else:
-        date_str = start_date_str + " - " + end_date_str
-      
-      desc_str = ""
-      if pd.isnull(df.iloc[i]["Description"]):
+        date_str = ""
+        if start_date_str == end_date_str:
+            date_str = start_date_str
+        else:
+            date_str = start_date_str + " - " + end_date_str
+
         desc_str = ""
-      else:
-          desc_str = f", \\textbf{{{df.iloc[i]['Description']}}}"
-      
-      info_str = ""
-      if pd.isnull(df.iloc[i]["Information"]):
+        if pd.isnull(df.iloc[i]["Description"]):
+            desc_str = ""
+        else:
+            desc_str = f", \\textbf{{{df.iloc[i]['Description']}}}"
+
         info_str = ""
-      else:
-          info_str = f"\\\\ \\begin{{quoting}} \\vspace{{-0.7\\baselineskip}} {df.iloc[i]['Information']} \\vspace{{-\\baselineskip}} \\end{{quoting}}"
+        if pd.isnull(df.iloc[i]["Information"]):
+            info_str = ""
+        else:
+            info_str = f"\\\\ \\begin{{quoting}} \\vspace{{-0.7\\baselineskip}} {df.iloc[i]['Information']} \\vspace{{-\\baselineskip}} \\end{{quoting}}"
 
-      desc_frag = f"{df.iloc[i]['Item']}" + desc_str
-      date_frag = f"\\textcolor{{mygray}}{{\\textit{{{date_str}}}}}"
+        desc_frag = f"{df.iloc[i]['Item']}" + desc_str
+        date_frag = f"\\textcolor{{mygray}}{{\\textit{{{date_str}}}}}"
 
-      print(f"\\begin{{tabularx}}{{\\textwidth}}{{>{{\\RaggedRight}}p{{0.75\\textwidth}}  >{{\\RaggedLeft}}p{{0.21\\textwidth}}}} {desc_frag} & {date_frag} {info_str} \end{{tabularx}} \n")
+        print(
+            f"\\begin{{tabularx}}{{\\textwidth}}{{>{{\\RaggedRight}}p{{0.75\\textwidth}}  >{{\\RaggedLeft}}p{{0.21\\textwidth}}}} {desc_frag} & {date_frag} {info_str} \end{{tabularx}} \n"
+        )
 
-cv_df = pd.read_csv("cv_data.csv", parse_dates=[3,4])
 
-edu_df = cv_df.loc[cv_df["Type"] == "Degree"].loc[:, ["Item", "Description", "Start Date", "End Date", "Information"]]
+cv_df = pd.read_csv("cv_data.csv", parse_dates=[3, 4])
 
-teach_df = cv_df.loc[cv_df["Type"] == "Teaching"].loc[:, ["Item", "Description", "Start Date", "End Date", "Information"]]
+edu_df = cv_df.loc[cv_df["Type"] == "Degree"].loc[
+    :, ["Item", "Description", "Start Date", "End Date", "Information"]
+]
 
-research_df = cv_df.loc[cv_df["Type"] == "Research"].loc[:, ["Item", "Description", "Start Date", "End Date", "Information"]]
+teach_df = cv_df.loc[cv_df["Type"] == "Teaching"].loc[
+    :, ["Item", "Description", "Start Date", "End Date", "Information"]
+]
 
-service_df = cv_df.loc[(cv_df["Type"] == "Service")].loc[:, ["Item", "Description", "Start Date", "End Date", "Information"]]
+research_df = cv_df.loc[cv_df["Type"] == "Research"].loc[
+    :, ["Item", "Description", "Start Date", "End Date", "Information"]
+]
 
-award_df = cv_df.loc[(cv_df["Type"] == "Award") & (cv_df["Start Date"] > "2017-01-01")].loc[:, ["Item", "Description", "Start Date", "End Date", "Information"]]
+service_df = cv_df.loc[(cv_df["Type"] == "Service")].loc[
+    :, ["Item", "Description", "Start Date", "End Date", "Information"]
+]
+
+award_df = cv_df.loc[
+    (cv_df["Type"] == "Award") & (cv_df["Start Date"] > "2017-01-01")
+].loc[:, ["Item", "Description", "Start Date", "End Date", "Information"]]
 ```
 
 ```{=tex}
@@ -103,7 +117,6 @@ award_df = cv_df.loc[(cv_df["Type"] == "Award") & (cv_df["Start Date"] > "2017-0
 \begin{small}they/them/theirs | PhD Candidate | Physics | \href{mailto:emiz@umd.edu}{\faEnvelope} \href{https://github.com/e-miz}{\faGithub}\end{small}
 \end{center}
 ```
-
 # {{< fa user-graduate >}} Education
 
 ```{python}
@@ -146,18 +159,17 @@ print_items(service_df)
 \faStar\faStar\faStar[regular]\faStar[regular] & C++, LaTeX         &  COMSOL                     & Milling Machine, Lathe, Belt Sander, Bench Grinder \\
 \end{tabularx}
 ```
-
 # {{< fa pen-nib >}} Selected Publications
 
 ```{=tex}
-\newrefcontext[sorting=ddt]
-\printbibliography[heading=none, keyword={mypublication}, keyword={selectedworks}]
-\endrefcontext
+%\newrefcontext[sorting=ddt]
+%\printbibliography[heading=none, keyword={mypublication}, keyword={selectedworks}]
+%\endrefcontext
 ```
 # {{< fa chart-bar >}} Presentations
 
 ```{=tex}
-\newrefcontext[sorting=ddt]
-\printbibliography[heading=none, keyword={mypresentation}, keyword={selectedworks}]
-\endrefcontext
+%\newrefcontext[sorting=ddt]
+%\printbibliography[heading=none, keyword={mypresentation}, keyword={selectedworks}]
+%\endrefcontext
 ```
