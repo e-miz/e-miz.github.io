@@ -1,13 +1,16 @@
 project:
   type: website
+  render: 
+    - "!cv.qmd"
+    - "*.qmd"
 
 website:
-  title: "website"
+  title: "Eli Mizrachi"
   navbar:
     right:
       - about.qmd
       - icon: github
-        href: https://github.com/
+        href: https://github.com/e-miz
 format:
   html:
     theme: [litera, litera-custom.scss]
