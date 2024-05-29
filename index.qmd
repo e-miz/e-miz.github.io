@@ -12,7 +12,9 @@ about:
     - icon: gitlab
       text: GitLab
       href: https://gitlab.com/users/emiz
-
+    - icon: pencil
+      text: CV
+      href: cv/cv.qmd
 ---
 
 # Hello!

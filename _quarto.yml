@@ -7,8 +7,6 @@ website:
     right:
       - text: My Work
         href: https://github.com/e-miz
-      - text: CV
-        href: cv/cv.qmd
 format:
   html:
     theme: [litera, litera-custom.scss]
