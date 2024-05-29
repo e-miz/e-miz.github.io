@@ -7,3 +7,4 @@
 *.pdf
 /.quarto/
 site_libs
+/.luarc.json
