@@ -68,12 +68,14 @@ award_df = cv_df.loc[
 ].loc[:, ["Item", "Description", "Start Date", "End Date", "Information"]]
 ```
 
-```{=tex}
-\begin{center}
-\begin{LARGE}\textbf{Eli Mizrachi}\end{LARGE}
+```{=typst}
+#set align(center)
 
-\begin{small}they/them/theirs | PhD Candidate | Physics | \href{mailto:emiz@umd.edu}{\faEnvelope} \href{https://github.com/e-miz}{\faGithub}\end{small}
-\end{center}
+#text(20pt)[Eli Mizrachi]
+
+they/them/theirs | PhD | Physics | #link("mailto:emiz@umd.edu") | #link("https://github.com/e-miz")[GitHub]
+
+#set align(left)
 ```
 # {{< fa user-graduate >}} Education
 
@@ -107,15 +109,18 @@ print_items(service_df)
 
 # {{< fa tools >}} Skills and Tools
 
-```{=tex}
-\begin{tabularx}{\textwidth}{>{\Centering}p{0.10\textwidth} >{\Centering}X >{\Centering}X >{\Centering}p{0.45\textwidth}} 
- & \textbf{Languages} & \textbf{Software} & \textbf{Hardware} 
-\end{tabularx}
-\begin{tabularx}{\textwidth}{>{\RaggedRight}p{0.10\textwidth} >{\RaggedRight}X >{\RaggedRight}X >{\RaggedRight}p{0.45\textwidth}} 
-\faStar\faStar\faStar\faStar                   & Markdown, Python   &  OnShape, Notion, VS Code   & Cryogenic, High Purity, High Vacuum Systems \\
-\faStar\faStar\faStar\faStar[regular]          & Spanish            &  SolidWorks, Git            & Orbital Welder, Drill Press \\
-\faStar\faStar\faStar[regular]\faStar[regular] & C++, LaTeX         &  COMSOL                     & Milling Machine, Lathe, Belt Sander, Bench Grinder \\
-\end{tabularx}
+```{=typst}
+// center align first row of table
+#show table.cell.where(y: 0): set align(center)
+
+#table(
+  columns: 4,
+  stroke: none,
+  table.header[*Confidence*][*Languages*][*Software*][*Hardware*],
+  [⭐⭐⭐⭐], [Markdown, Python], [Quarto, OnShape, Notion, VSCode], [Cryogenic, High Purity, High Vacuum Systems],
+  [⭐⭐⭐], [Spanish], [Solidworks, Git], [Orbital Welder, Drill Press],
+  [⭐⭐], [C++, LaTeX, Typst], [COMSOL], [Milling Machine, Lathe, Belt Sander, Bench Grinder]
+)
 ```
 # {{< fa pen-nib >}} Selected Publications
 
