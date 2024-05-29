@@ -37,7 +37,7 @@ def print_items(df: pd.DataFrame):
         if pd.isnull(df.iloc[i]["Information"]):
             info_str = ""
         else:
-            info_str = f"{df.iloc[i]['Information']}"
+            info_str = f"#grid(columns: (5%, 95%), align(left)[], align(left)[{df.iloc[i]['Information']}])"
 
         desc_frag = f"{df.iloc[i]['Item']}" + desc_str
         date_frag = f"_{date_str}_"
