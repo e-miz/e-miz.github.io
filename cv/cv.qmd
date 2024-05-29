@@ -7,6 +7,8 @@ execute:
 format:
   typst:
     keep-typ: true
+    margin:
+      x: 0.5in
 
 ---
 
@@ -29,20 +31,18 @@ def print_items(df: pd.DataFrame):
         if pd.isnull(df.iloc[i]["Description"]):
             desc_str = ""
         else:
-            desc_str = f", \\textbf{{{df.iloc[i]['Description']}}}"
+            desc_str = f", *{df.iloc[i]['Description']}*"
 
         info_str = ""
         if pd.isnull(df.iloc[i]["Information"]):
             info_str = ""
         else:
-            info_str = f"\\\\ \\begin{{quoting}} \\vspace{{-0.7\\baselineskip}} {df.iloc[i]['Information']} \\vspace{{-\\baselineskip}} \\end{{quoting}}"
+            info_str = f"#linebreak() {df.iloc[i]['Information']}"
 
         desc_frag = f"{df.iloc[i]['Item']}" + desc_str
-        date_frag = f"\\textcolor{{mygray}}{{\\textit{{{date_str}}}}}"
+        date_frag = f"_{date_str}_"
 
-        print(
-            f"\\begin{{tabularx}}{{\\textwidth}}{{>{{\\RaggedRight}}p{{0.75\\textwidth}}  >{{\\RaggedLeft}}p{{0.21\\textwidth}}}} {desc_frag} & {date_frag} {info_str} \end{{tabularx}} \n"
-        )
+        print(f"{desc_frag} & {date_frag} {info_str} #linebreak()")
 
 
 cv_df = pd.read_csv("cv_data.csv", parse_dates=[3, 4])
@@ -79,32 +79,42 @@ they/them/theirs | PhD | Physics | #link("mailto:emiz@umd.edu") | #link("https:/
 ```
 # {{< fa user-graduate >}} Education
 
+```{=typst}
 ```{python}
 print_items(edu_df)
+```
 ```
 
 # {{< fa atom >}} Research
 
+```{=typst}
 ```{python}
 print_items(research_df)
+```
 ```
 
 # {{< fa school >}} Teaching
 
+```{=typst}
 ```{python}
 print_items(teach_df)
+```
 ```
 
 # {{< fa trophy >}} Recent Awards
 
+```{=typst}
 ```{python}
 print_items(award_df)
+```
 ```
 
 # {{< fa people-carry >}} Service
 
+```{=typst}
 ```{python}
 print_items(service_df)
+```
 ```
 
 # {{< fa tools >}} Skills and Tools
@@ -125,15 +135,15 @@ print_items(service_df)
 ```
 # {{< fa pen-nib >}} Selected Publications
 
-```{=tex}
+<!-- ```{=tex}
 \newrefcontext[sorting=ddt]
 \printbibliography[heading=none, keyword={mypublication}, keyword={selectedworks}]
 \endrefcontext
-```
+``` -->
 # {{< fa chart-bar >}} Presentations
 
-```{=tex}
+<!-- ```{=tex}
 \newrefcontext[sorting=ddt]
 \printbibliography[heading=none, keyword={mypresentation}, keyword={selectedworks}]
 \endrefcontext
-```
+``` -->
