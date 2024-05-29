@@ -1,56 +1,13 @@
 ---
 title: "CV"
 bibliography: pubs.bib
-nocite: |
-  @*
 execute:
   echo: false
   output: asis
-keep-tex: false
-format: 
-  pdf:
-    documentclass: scrartcl
-    geometry:
-      - margin=0.75in
-      - includefoot
-    filters:
-      - latex-environment
-    environments: [center]
-    pdf-engine: lualatex
-    mainfont: inter
-    fontsize: 10pt
-    pagestyle: empty
-    colorlinks: false
-    include-in-header:
-      text: |
-        \RedeclareSectionCommand[beforeskip=0.3\baselineskip]{section} % Less space before section heading
-        \RedeclareSectionCommand[afterskip=0.3\baselineskip]{section} % Less space after section heading
-        \setlength{\parskip}{0.2\baselineskip}
-        \definecolor{mygray}{gray}{0.4}
-        \usepackage{tabularx}
-        \usepackage{ragged2e}
-        \usepackage{quoting}
-        \quotingsetup{vskip=0pt, rightmargin=0in, leftmargin=0.25in}
-        % Section Lines
-        \makeatletter
-        \renewcommand{\sectionlinesformat}[4]{%
-        \ifstr{#1}{section}{%
-            \parbox[t]{\linewidth}{%
-              \raggedsection\@hangfrom{\hskip #2#3}{#4}\par%
-              \kern-.75\ht\strutbox\rule{\linewidth}{.6pt}%
-            }%
-          }{%
-            \@hangfrom{\hskip #2#3}{#4}}% 
-        }
-        \makeatother
-    template-partials:
-      - before-body.tex # Disables default title
-      - biblio.tex
-    cite-method: biblatex
-    biblatexoptions: [bibstyle=publist, plauthorfirstinit=true, plauthorhandling=highlight, plnumbering=none, hlyear=true, marginyear=false, linktitles=all, doi=false, url=false, isbn=false, eprint=false]
-    include-before-body:
-      text: |
-        \plauthorname[E]{Mizrachi}
+format:
+  typst:
+    keep-typ: true
+
 ---
 
 ```{python}
