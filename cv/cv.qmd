@@ -1,5 +1,5 @@
 ---
-title: "CV"
+title: "" # Define title manually
 bibliography: pubs.bib
 execute:
   echo: false
@@ -37,12 +37,14 @@ def print_items(df: pd.DataFrame):
         if pd.isnull(df.iloc[i]["Information"]):
             info_str = ""
         else:
-            info_str = f"#linebreak() {df.iloc[i]['Information']}"
+            info_str = f"{df.iloc[i]['Information']}"
 
         desc_frag = f"{df.iloc[i]['Item']}" + desc_str
         date_frag = f"_{date_str}_"
 
-        print(f"{desc_frag} & {date_frag} {info_str} #linebreak()")
+        print(
+            f"#grid(columns: (75%, 25%), align(left)[{desc_frag}], align(right)[{date_frag}]) {info_str}"
+        )
 
 
 cv_df = pd.read_csv("cv_data.csv", parse_dates=[3, 4])
@@ -69,6 +71,7 @@ award_df = cv_df.loc[
 ```
 
 ```{=typst}
+#v(-0.5in)
 #set align(center)
 
 #text(20pt)[Eli Mizrachi]
