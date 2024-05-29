@@ -6,15 +6,15 @@ image: profile.jpg
 about:
   template: jolla
   links:
+    - icon: pencil
+      text: CV
+      href: cv/cv.qmd
     - icon: github
       text: GitHub
       href: https://github.com/e-miz
     - icon: gitlab
       text: GitLab
       href: https://gitlab.com/users/emiz
-    - icon: pencil
-      text: CV
-      href: cv/cv.qmd
 ---
 
 # Hello!

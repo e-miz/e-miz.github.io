@@ -3,10 +3,6 @@ project:
 
 website:
   title: "Eli Mizrachi"
-  navbar:
-    right:
-      - text: My Work
-        href: https://github.com/e-miz
 format:
   html:
     theme: [litera, litera-custom.scss]
