@@ -110,17 +110,18 @@ print_items(service_df)
 # {{< fa tools >}} Skills and Tools
 
 ```{=typst}
-// center align first row of table
-#show table.cell.where(y: 0): set align(center)
-
-#table(
+#{
+  // center top labels
+  set table(align: (_, y) => if y == 0 { center } else { left })
+  table(
   columns: 4,
   stroke: none,
   table.header[*Confidence*][*Languages*][*Software*][*Hardware*],
+  table.hline(),
   [⭐⭐⭐⭐], [Markdown, Python], [Quarto, OnShape, Notion, VSCode], [Cryogenic, High Purity, High Vacuum Systems],
   [⭐⭐⭐], [Spanish], [Solidworks, Git], [Orbital Welder, Drill Press],
   [⭐⭐], [C++, LaTeX, Typst], [COMSOL], [Milling Machine, Lathe, Belt Sander, Bench Grinder]
-)
+)}
 ```
 # {{< fa pen-nib >}} Selected Publications
 
