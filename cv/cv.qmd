@@ -1,6 +1,5 @@
 ---
 title: "" # Define title manually
-bibliography: pubs.bib
 execute:
   echo: false
   output: asis
@@ -22,29 +21,25 @@ def print_items(df: pd.DataFrame):
         start_date_str = df.iloc[i]["Start Date"].strftime("%b %Y")
         end_date_str = df.iloc[i]["End Date"].strftime("%b %Y")
 
-        date_str = ""
-        if start_date_str == end_date_str:
-            date_str = start_date_str
+        if not pd.isnull(df.iloc[i]["Description"]):
+            desc_str = f"{df.iloc[i]['Description']}"
         else:
-            date_str = start_date_str + " - " + end_date_str
-
-        desc_str = ""
-        if pd.isnull(df.iloc[i]["Description"]):
             desc_str = ""
-        else:
-            desc_str = f", *{df.iloc[i]['Description']}*"
 
-        info_str = ""
-        if pd.isnull(df.iloc[i]["Information"]):
+        desc_str = f"{df.iloc[i]['Item']}, *{desc_str}*"
+
+        if start_date_str == end_date_str:
+            date_str = f"_{start_date_str}_"
+        else:
+            date_str = f"_{start_date_str} - {end_date_str}_"
+
+        if not pd.isnull(df.iloc[i]["Information"]):
+            info_str = f"#grid(columns: (3%, 97%), align(left)[], align(left)[{df.iloc[i]['Information']}])"
+        else:
             info_str = ""
-        else:
-            info_str = f"#grid(columns: (5%, 95%), align(left)[], align(left)[{df.iloc[i]['Information']}])"
-
-        desc_frag = f"{df.iloc[i]['Item']}" + desc_str
-        date_frag = f"_{date_str}_"
 
         print(
-            f"#grid(columns: (75%, 25%), align(left)[{desc_frag}], align(right)[{date_frag}]) {info_str}"
+            f"#grid(columns: (75%, 25%), align(left)[{desc_str}], align(right)[{date_str}]) {info_str}"
         )
 
 
