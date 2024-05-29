@@ -7,8 +7,6 @@ format:
   typst:
     margin:
       x: 0.5in
-    shortcodes: 
-      - ../_extensions/quarto-ext/fontawesome/fontawesome.lua
 
 ---
 

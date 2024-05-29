@@ -1,17 +1,14 @@
 project:
   type: website
-  render: 
-    - "!cv.qmd"
-    - "*.qmd"
 
 website:
   title: "Eli Mizrachi"
   navbar:
     right:
-      - about.qmd
-      - icon: github
+      - text: My Work
         href: https://github.com/e-miz
+      - text: CV
+        href: cv/cv.qmd
 format:
   html:
     theme: [litera, litera-custom.scss]
-    mainfont: Inter, sans-serif;
