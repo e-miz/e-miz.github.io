@@ -6,9 +6,10 @@ execute:
   output: asis
 format:
   typst:
-    keep-typ: true
     margin:
       x: 0.5in
+    shortcodes: 
+      - ../_extensions/quarto-ext/fontawesome/fontawesome.lua
 
 ---
 
@@ -76,7 +77,7 @@ award_df = cv_df.loc[
 
 #text(20pt)[Eli Mizrachi]
 
-they/them/theirs | PhD | Physics | #link("mailto:emiz@umd.edu") | #link("https://github.com/e-miz")[GitHub]
+they/them/theirs | #link("mailto:emiz@umd.edu") | #link("https://github.com/e-miz")[GitHub]
 
 #set align(left)
 ```
