@@ -123,4 +123,9 @@ print_items(service_df)
   [⭐⭐⭐], [Spanish], [Solidworks, Git], [Orbital Welder, Drill Press],
   [⭐⭐], [C++, LaTeX, Typst], [COMSOL], [Milling Machine, Lathe, Belt Sander, Bench Grinder]
 )}
+
+= #fa-pen-nib() Publications
+
+#bibliography("pubs.bib", full: true, title: none)
+
 ```
