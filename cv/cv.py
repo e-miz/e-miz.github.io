@@ -34,4 +34,6 @@ def print_cv_items(df: pd.DataFrame):
 pubs_df = pd.read_csv("/home/emiz/projects/e-miz.github.io/cv/pubs.csv")
 
 # need to fill NaN so indexing works
-mypubs = pubs_df[pubs_df["Manual Tags"].str.match("mypublication").fillna(False)]
+mypubs = pubs_df[pubs_df["Manual Tags"].str.contains("selectedworks").fillna(False)]
+
+# %%
