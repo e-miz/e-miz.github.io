@@ -6,5 +6,3 @@ website:
 format:
   html:
     theme: [litera, litera-custom.scss]
-  typst: 
-    font-paths: ../_extensions/quarto-ext/fontawesome/assets

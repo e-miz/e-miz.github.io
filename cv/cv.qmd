@@ -8,6 +8,8 @@ format:
   typst:
     margin:
       x: 0.5in
+    font-paths: ../_extensions/quarto-ext/fontawesome/assets
+    mainfont: inter
 
 ---
 
@@ -66,6 +68,8 @@ award_df = cv_df.loc[
 ```
 
 ```{=typst}
+#import "@preview/fontawesome:0.2.0": *
+
 #v(-0.5in)
 #set align(center)
 
@@ -74,50 +78,39 @@ award_df = cv_df.loc[
 they/them/theirs | #link("mailto:emiz@umd.edu") | #link("https://github.com/e-miz")[GitHub]
 
 #set align(left)
-```
-# {{< fa user-graduate >}} Education
 
-```{=typst}
+= #fa-user-graduate() Education
+
 ```{python}
 print_items(edu_df)
 ```
-```
 
-# {{< fa atom >}} Research
+= #fa-atom() Research
 
-```{=typst}
 ```{python}
 print_items(research_df)
 ```
-```
 
-# {{< fa school >}} Teaching
+= #fa-school() Teaching
 
-```{=typst}
 ```{python}
 print_items(teach_df)
 ```
-```
 
-# {{< fa trophy >}} Recent Awards
+= #fa-trophy() Recent Awards
 
-```{=typst}
 ```{python}
 print_items(award_df)
 ```
-```
 
-# {{< fa people-carry >}} Service
+= #fa-people-carry() Service
 
-```{=typst}
 ```{python}
 print_items(service_df)
 ```
-```
 
-# {{< fa tools >}} Skills and Tools
+= #fa-tools() Skills and Tools
 
-```{=typst}
 #{
   // center top labels
   set table(align: (_, y) => if y == 0 { center } else { left })
@@ -131,17 +124,3 @@ print_items(service_df)
   [⭐⭐], [C++, LaTeX, Typst], [COMSOL], [Milling Machine, Lathe, Belt Sander, Bench Grinder]
 )}
 ```
-# {{< fa pen-nib >}} Selected Publications
-
-<!-- ```{=tex}
-\newrefcontext[sorting=ddt]
-\printbibliography[heading=none, keyword={mypublication}, keyword={selectedworks}]
-\endrefcontext
-``` -->
-# {{< fa chart-bar >}} Presentations
-
-<!-- ```{=tex}
-\newrefcontext[sorting=ddt]
-\printbibliography[heading=none, keyword={mypresentation}, keyword={selectedworks}]
-\endrefcontext
-``` -->
