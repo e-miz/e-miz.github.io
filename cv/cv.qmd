@@ -126,6 +126,6 @@ print_items(service_df)
 
 = #fa-pen-nib() Publications
 
-#bibliography("pubs.bib", full: true, title: none)
+#bibliography("pubs.bib", full: true, title: none, style: "american-physics-society")
 
 ```

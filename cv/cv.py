@@ -1,9 +1,9 @@
+# %%
 import pandas as pd
-import awkward as ak
 from pathlib import Path
 
 
-def print_items(df: pd.DataFrame):
+def print_cv_items(df: pd.DataFrame):
     for i in range(len(df)):
         start_date_str = df.iloc[i]["Start Date"].strftime("%b %Y")
         end_date_str = df.iloc[i]["End Date"].strftime("%b %Y")
@@ -30,9 +30,8 @@ def print_items(df: pd.DataFrame):
         )
 
 
-cv_data = ak.from_json(Path("/home/emiz/projects/e-miz.github.io/cv/pubs.json"))
-
+# %%
 pubs_df = pd.read_csv("/home/emiz/projects/e-miz.github.io/cv/pubs.csv")
 
-# need to drop NaN before matchins
-mypubs_df = pubs_df[pubs_df["Manual Tags"].str.match("mypublication")]
+# need to fill NaN so indexing works
+mypubs = pubs_df[pubs_df["Manual Tags"].str.match("mypublication").fillna(False)]
