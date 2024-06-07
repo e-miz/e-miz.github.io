@@ -19,13 +19,6 @@ about:
 
 # Hello!
 
-I'm Eli Mizrachi ("miz-rah-chee"). I use `they` or `she` pronouns. I'm currently a postdoc working with Dr. Maria Elena Monzani at SLAC on the LZ dark matter search experiment.
+I'm Eli Mizrachi ("miz-rah-chee"). I use `they` or `she` pronouns. I'm currently a postdoc working with Dr. Maria Elena Monzani at SLAC on the LZ dark matter search experiment. My interests currently involve software and documentation sustainability within our experiment, in an effort to improve the onboarding and analysis process for incoming graduate students and postdocs.
 
-::: {style="text-align: left"}
-# Selected Works
-
-Below you'll find a few interesting papers or projects I've been involved with. See my CV for the full list.
-
- - [Studies of Ionization Backgrounds in Noble Liquid Detectors For Dark Matter Searches](https://emiz.gitlab.io/thesis_public/)
- - Thermodynamic stability of xenon-doped liquid argon detectors
-:::
+You can find my dissertation [here](https://emiz.gitlab.io/thesis_public/) and see my CV for more information.

@@ -75,7 +75,7 @@ award_df = cv_df.loc[
 
 #text(20pt)[Eli Mizrachi]
 
-they/them/theirs | #link("mailto:emiz@umd.edu") | #link("https://github.com/e-miz")[GitHub]
+they/them/theirs | #link("mailto:emiz@umd.edu")[#fa-envelope()] | #link("https://github.com/e-miz")[#fa-github()] | #link("https://gitlab.com/users/emiz")[#fa-gitlab()]
 
 #set align(left)
 
