@@ -10,6 +10,7 @@ format:
       x: 0.5in
     font-paths: ../_extensions/quarto-ext/fontawesome/assets
     mainfont: inter
+    keep-typ: false
 
 ---
 
@@ -117,8 +118,8 @@ print_items(service_df)
   table(
   columns: 4,
   stroke: none,
-  table.header[*Confidence*][*Languages*][*Software*][*Hardware*],
-  table.hline(),
+  [*Confidence*],[*Languages*],[*Software*],[*Hardware*],
+  line(length: 100%), line(length: 100%), line(length: 100%), line(length: 100%),
   [⭐⭐⭐⭐], [Markdown, Python], [Quarto, OnShape, Notion, VSCode], [Cryogenic, High Purity, High Vacuum Systems],
   [⭐⭐⭐], [Spanish], [Solidworks, Git], [Orbital Welder, Drill Press],
   [⭐⭐], [C++, LaTeX, Typst], [COMSOL], [Milling Machine, Lathe, Belt Sander, Bench Grinder]
