@@ -19,6 +19,14 @@ about:
 
 # Hello!
 
-I'm Eli Mizrachi ("miz-rah-chee"). I use `they` or `she` pronouns. I'm currently a postdoc working with Dr. Maria Elena Monzani at SLAC on the LZ dark matter search experiment. My interests currently involve software and documentation sustainability within our experiment, in an effort to improve the onboarding and analysis process for incoming graduate students and postdocs.
+I'm Eli Mizrachi ("miz-rah-chee"). I use `they` or `she` pronouns. I'm currently a postdoc working with Dr. Maria Elena Monzani at SLAC on the LZ dark matter search experiment. 
 
 You can find my dissertation [here](https://emiz.gitlab.io/thesis_public/) and see my CV for more information.
+
+## Interests
+
+* Cool science hardware, i.e. high-purity, high-vacuum, cryogenic gas systems.
+* Particle physics
+* Sustainable software development and documentation
+* Data engineering
+* [*Tikkun olam*](https://en.wikipedia.org/wiki/Tikkun_olam)
