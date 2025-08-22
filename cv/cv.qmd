@@ -3,7 +3,7 @@ title: "" # Define title manually
 execute:
   echo: false
   output: asis
-  freeze: auto
+  freeze: false
 format:
   typst:
     margin:
@@ -86,7 +86,7 @@ they/them/theirs | #link("mailto:emiz@umd.edu")[#fa-envelope()] | #link("https:/
 print_items(edu_df)
 ```
 
-= #fa-atom() Research
+= #fa-atom() Work
 
 ```{python}
 print_items(research_df)
