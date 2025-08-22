@@ -8,7 +8,7 @@ format:
   typst:
     margin:
       x: 0.5in
-    font-paths: ../_extensions/quarto-ext/fontawesome/assets
+    font-paths: fonts
     mainfont: inter
     keep-typ: false
 
@@ -69,7 +69,7 @@ award_df = cv_df.loc[
 ```
 
 ```{=typst}
-#import "@preview/fontawesome:0.2.0": *
+#import "@preview/fontawesome:0.6.0": *
 
 #v(-0.5in)
 #set align(center)
