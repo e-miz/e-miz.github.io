@@ -9,3 +9,7 @@
 site_libs
 /.luarc.json
 /_site/
+**/*.quarto_ipynb
+# pixi environments
+.pixi/*
+!.pixi/config.toml
