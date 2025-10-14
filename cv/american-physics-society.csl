@@ -176,25 +176,36 @@
         <else-if type="dataset interview manuscript pamphlet personal_communication post post-weblog speech webpage" match="any">
           <!-- unpublished materials; guidelines call for 'enough information to be retrievable' -->
           <!-- Based on arXiv format -->
-          <group delimiter=", ">
-            <text variable="title" text-case="title" font-style="italic"/>
-            <choose>
+          <group delimiter=" ">
+              <choose>
               <if variable="DOI">
-                <text variable="DOI" prefix="https://doi.org/"/>
+                <text variable="DOI" prefix="<_<https://doi.org/" suffix="|||"/>
               </if>
               <else-if variable="URL">
-                <text variable="URL"/>
+                <text variable="URL" prefix="<_<" suffix="|||"/>
               </else-if>
               <else>
-                <text value="(unpublished)"/>
+                <text value=""/>
               </else>
             </choose>
+            <text variable="title" text-case="title" suffix=">_>"/>
           </group>
         </else-if>
         <else>
           <!--article-journal article-magazine article-newspaper review review-book-->
-          <group delimiter=", ">
-            <text variable="title" text-case="title" font-style="italic"/>
+          <group delimiter=" ">
+              <choose>
+              <if variable="DOI">
+                <text variable="DOI" prefix="<_<https://doi.org/" suffix="|||"/>
+              </if>
+              <else-if variable="URL">
+                <text variable="URL" prefix="<_<" suffix="|||"/>
+              </else-if>
+              <else>
+                <text value=""/>
+              </else>
+            </choose>
+            <text variable="title" text-case="title" suffix=">_>"/>
             <group delimiter=" ">
               <text variable="container-title" form="short" text-case="title"/>
               <group delimiter=", ">
