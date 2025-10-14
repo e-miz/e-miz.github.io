@@ -165,7 +165,6 @@
               </group>
             </group>
             <text variable="publisher" />
-            <text macro="year-date" />
           </group>
         </else-if>
         <else-if type="article" match="any">
@@ -233,7 +232,6 @@
                       <text variable="page-first" form="short" />
                     </else>
                   </choose>
-                  <text macro="year-date" prefix="(" suffix=")" />
                 </group>
               </group>
             </group>
