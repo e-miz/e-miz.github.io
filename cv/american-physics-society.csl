@@ -106,8 +106,12 @@
   <bibliography entry-spacing="0" second-field-align="flush">
     <!-- Reference for book, chapter, report layouts: https://doi.org/10.1103/PhysRevX.10.011010 -->
     <!-- Reference for arXiv: https://doi.org/10.1103/PhysRevX.10.011004 -->
+    <sort>
+      <key macro="year-date" sort="descending" />
+    </sort>
     <layout suffix=".">
-      <text variable="citation-number" prefix="[" suffix="]" />
+      <!-- Behind the scenes it seems like there's two columns. One filled by year-date and one filled by everything else -->
+      <text macro="year-date" />
       <text macro="author" suffix=", " />
       <choose>
         <if type="bill book figure graphic legal_case legislation map motion_picture song treaty"
