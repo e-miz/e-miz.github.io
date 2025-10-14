@@ -180,15 +180,16 @@
               <choose>
               <if variable="DOI">
                 <text variable="DOI" prefix="<_<https://doi.org/" suffix="|||"/>
+                <text variable="title" text-case="title" suffix=">_>"/>
               </if>
               <else-if variable="URL">
                 <text variable="URL" prefix="<_<" suffix="|||"/>
+                <text variable="title" text-case="title" suffix=">_>"/>
               </else-if>
               <else>
-                <text value=""/>
+                <text variable="title" text-case="title"/>
               </else>
             </choose>
-            <text variable="title" text-case="title" suffix=">_>"/>
           </group>
         </else-if>
         <else>
@@ -197,15 +198,16 @@
               <choose>
               <if variable="DOI">
                 <text variable="DOI" prefix="<_<https://doi.org/" suffix="|||"/>
+                <text variable="title" text-case="title" suffix=">_>"/>
               </if>
               <else-if variable="URL">
                 <text variable="URL" prefix="<_<" suffix="|||"/>
+                <text variable="title" text-case="title" suffix=">_>"/>
               </else-if>
               <else>
-                <text value=""/>
+                <text variable="title" text-case="title"/>
               </else>
             </choose>
-            <text variable="title" text-case="title" suffix=">_>"/>
             <group delimiter=" ">
               <text variable="container-title" form="short" text-case="title"/>
               <group delimiter=", ">
