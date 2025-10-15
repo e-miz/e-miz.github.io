@@ -201,7 +201,7 @@
           <!-- unpublished materials; guidelines call for 'enough information to be retrievable' -->
           <!-- Based on arXiv format -->
           <group delimiter=" ">
-            <text macro="doi-url-title"/>
+            <text macro="doi-url-title" />
           </group>
         </else-if>
         <else>
@@ -209,7 +209,7 @@
           article-magazine article-newspaper review review-book-->
           <!-- Add comma to suffix since it's folowed by something, unlike the above cases -->
           <group delimiter=", ">
-            <text macro="doi-url-title"/>
+            <text macro="doi-url-title" />
             <group delimiter=" ">
               <text variable="container-title" form="short" text-case="title" />
               <group delimiter=", ">
