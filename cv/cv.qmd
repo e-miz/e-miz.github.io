@@ -129,7 +129,7 @@ print_items(service_df)
   [⭐⭐], [C++, LaTeX, Typst], [COMSOL], [Milling Machine, Lathe, Belt Sander, Bench Grinder]
 )}
 
-#load-bibliography("pubs.bib", full: true, style: "american-physics-society.csl")
+#load-bibliography("pubs.bib", full: true, style: "emiz-cv.csl")
 
 #context {
   // ..others is kind of like python **kwargs
