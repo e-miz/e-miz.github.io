@@ -96,19 +96,6 @@
     </group>
   </macro>
   <macro name="doi-url-title">
-    <!-- <choose>
-      <if variable="DOI">
-        <text variable="DOI" prefix="<_<https://doi.org/" suffix="|||" />
-        <text variable="title" text-case="title" suffix=">_>" />
-      </if>
-      <else-if variable="URL">
-        <text variable="URL" prefix="<_<" suffix="|||" />
-        <text variable="title" text-case="title" suffix=">_>" />
-      </else-if>
-      <else>
-        <text variable="title" text-case="title" font-style="italic" />
-      </else>
-    </choose> -->
     <text variable="title" text-case="title" font-style="italic" />
   </macro>
   <citation collapse="citation-number">
