@@ -149,7 +149,7 @@
                 <!-- for conference papers this is probably the proceedings title) -->
                 <text variable="container-title" text-case="title" font-style="italic" />
                 <!-- for conference papers this is probably the name of the conference  -->
-                <text variable="event" text-case="title" font-style="italic" />
+                <text variable="event-title" text-case="title" font-style="italic" />
                 <text macro="editor" />
                 <text macro="edition-volume" />
               </group>
