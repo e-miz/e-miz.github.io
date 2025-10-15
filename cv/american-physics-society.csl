@@ -134,7 +134,7 @@
           match="any">
           <group delimiter=" ">
             <group delimiter=", ">
-              <text variable="title" text-case="title" font-style="italic" />
+              <text macro="doi-url-title" />
               <text macro="edition-volume" />
             </group>
             <text macro="publisher" />
@@ -147,9 +147,9 @@
             <group delimiter=" ">
               <group delimiter=", ">
                 <!-- for conference papers this is probably the proceedings title) -->
-                    <text variable="container-title" text-case="title" font-style="italic" />
+                <text variable="container-title" text-case="title" font-style="italic" />
                 <!-- for conference papers this is probably the name of the conference  -->
-                    <text variable="event" text-case="title" font-style="italic" />
+                <text variable="event" text-case="title" font-style="italic" />
                 <text macro="editor" />
                 <text macro="edition-volume" />
               </group>
@@ -165,7 +165,7 @@
         </else-if>
         <else-if type="patent">
           <group delimiter=", ">
-            <text variable="title" text-case="title" font-style="italic" />
+            <text macro="doi-url-title" />
             <group delimiter=" ">
               <text variable="number" />
               <text macro="day-date" prefix="(" suffix=")" />
@@ -187,7 +187,7 @@
         </else-if>
         <else-if type="article" match="any">
           <group delimiter=", ">
-            <text variable="title" text-case="title" font-style="italic" />
+            <text macro="doi-url-title" />
             <choose>
               <if variable="container-title">
                 <text variable="container-title" />
