@@ -11,6 +11,12 @@ format:
     font-paths: fonts
     mainfont: inter
     keep-typ: true
+    citeproc: true
+    nocite: |
+      @*
+    bibliography: pubs.bib
+    csl: emiz-cv.csl
+
 
 ---
 
@@ -131,16 +137,21 @@ print_items(service_df)
 
 #load-bibliography("pubs.bib", full: true, style: "emiz-cv.csl")
 
-#context {
-  // ..others is kind of like python **kwargs
-  let (references, ..others) = get-bibliography("x-")
-  link-bib-urls(link-fill: rgb("000099"),render-bibliography(
-    title: [#fa-pen-nib() Publications],
-    (
-      references: references,
-      ..others,
-    ),
-  ))
-}
+//#context {
+//  // ..others is kind of like python **kwargs
+//  let (references, ..others) = get-bibliography("x-")
+//  link-bib-urls(link-fill: rgb("000099"),render-bibliography(
+//    title: [#fa-pen-nib() Publications],
+//    (
+//      references: references,
+//      ..others,
+//    ),
+//  ))
+//}
 
+#set par(hanging-indent: 2.8em)
+= #fa-pen-nib() Publications
 ```
+
+::: {#refs}
+:::
