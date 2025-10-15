@@ -95,6 +95,21 @@
       </group>
     </group>
   </macro>
+  <macro name="doi-url-title">
+    <choose>
+      <if variable="DOI">
+        <text variable="DOI" prefix="<_<https://doi.org/" suffix="|||" />
+        <text variable="title" text-case="title" suffix=">_>" />
+      </if>
+      <else-if variable="URL">
+        <text variable="URL" prefix="<_<" suffix="|||" />
+        <text variable="title" text-case="title" suffix=">_>" />
+      </else-if>
+      <else>
+        <text variable="title" text-case="title" font-style="italic" />
+      </else>
+    </choose>
+  </macro>
   <citation collapse="citation-number">
     <sort>
       <key variable="citation-number" />
@@ -110,7 +125,8 @@
       <key macro="year-date" sort="descending" />
     </sort>
     <layout suffix=".">
-      <!-- Behind the scenes it seems like there's two columns. One filled by year-date and one filled by everything else -->
+      <!-- Behind the scenes it seems like there's two columns. One filled by year-date and one
+      filled by everything else -->
       <text macro="year-date" />
       <text macro="author" suffix=", " />
       <choose>
@@ -186,39 +202,15 @@
           <!-- unpublished materials; guidelines call for 'enough information to be retrievable' -->
           <!-- Based on arXiv format -->
           <group delimiter=" ">
-            <choose>
-              <if variable="DOI">
-                <text variable="DOI" prefix="<_<https://doi.org/" suffix="|||" />
-                <text variable="title" text-case="title" suffix=">_>" />
-              </if>
-              <else-if variable="URL">
-                <text variable="URL" prefix="<_<" suffix="|||" />
-                <text variable="title" text-case="title" suffix=">_>" />
-              </else-if>
-              <else>
-                <text variable="title" text-case="title" font-style="italic"/>
-              </else>
-            </choose>
+            <text macro="doi-url-title"/>
           </group>
         </else-if>
         <else>
           <!--article-journal
           article-magazine article-newspaper review review-book-->
           <!-- Add comma to suffix since it's folowed by something, unlike the above cases -->
-          <group delimiter=" ">
-            <choose>
-              <if variable="DOI">
-                <text variable="DOI" prefix="<_<https://doi.org/" suffix="|||" />
-                <text variable="title" text-case="title" suffix=">_>," />
-              </if>
-              <else-if variable="URL">
-                <text variable="URL" prefix="<_<" suffix="|||" />
-                <text variable="title" text-case="title" suffix=">_>," />
-              </else-if>
-              <else>
-                <text variable="title" text-case="title" font-style="italic" />
-              </else>
-            </choose>
+          <group delimiter=", ">
+            <text macro="doi-url-title"/>
             <group delimiter=" ">
               <text variable="container-title" form="short" text-case="title" />
               <group delimiter=", ">
