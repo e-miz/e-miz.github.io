@@ -73,7 +73,6 @@
     <group prefix="(" suffix=")" delimiter=", ">
       <text variable="publisher" />
       <text variable="publisher-place" text-case="title" />
-      <text macro="year-date" />
     </group>
   </macro>
   <macro name="edition-volume">
