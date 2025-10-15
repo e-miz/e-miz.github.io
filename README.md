@@ -40,12 +40,12 @@ Hayagriva is especially "lossy" since it has a restrictive schema with a [limite
 
 The CSL file has been customized for the following types:
 
-| Zotero                      | Biblatex        | CSL                | Hayagriva     |
-|-----------------------------|-----------------|--------------------|---------------|
-| Conference Paper            | `inproceedings` | `paper-conference` | `article`     |
-| Preprint                    | `online`        | `webpage?`         | `web`         |
-| Journal Article             | `article`       | `article?`         | `article`     |
-| Software (force to dataset) | `dataset`       | `dataset?`         | `repository?` |
+| Zotero           | Biblatex        | CSL                | Hayagriva |
+|------------------|-----------------|--------------------|-----------|
+| Conference Paper | `inproceedings` | `paper-conference` | `article` |
+| Preprint         | `online`        | `webpage?`         | `web`     |
+| Journal Article  | `article`       | `article?`         | `article` |
+| Software         | `software`      | `software?`        | `misc`    |
 
 #### Presentations, talks, etc
 
@@ -57,4 +57,4 @@ The CSL file has been customized for the following types:
 
 #### Software
 
-- Force the type to **dataset** with `Type: dataset`; Hayagriva will convert software to `misc`
+- This is a pretty barebones type. You can try to make use of the Extra field here and display the `annote` in the CSL file.
