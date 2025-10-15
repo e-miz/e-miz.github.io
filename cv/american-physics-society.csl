@@ -72,6 +72,7 @@
   <macro name="publisher">
     <group prefix="(" suffix=")" delimiter=", ">
       <text variable="publisher" />
+      <!-- conference proceedings locations are the publisher place-->
       <text variable="publisher-place" text-case="title" />
     </group>
   </macro>
@@ -142,11 +143,13 @@
         <else-if type="broadcast chapter entry entry-dictionary entry-encyclopedia paper-conference"
           match="any">
           <group delimiter=", ">
-            <text variable="title" text-case="title" font-style="italic" />
+            <text macro="doi-url-title" />
             <group delimiter=" ">
-              <text term="in" />
               <group delimiter=", ">
-                <text variable="container-title" text-case="title" font-style="italic" />
+                <!-- for conference papers this is probably the proceedings title) -->
+                    <text variable="container-title" text-case="title" font-style="italic" />
+                <!-- for conference papers this is probably the name of the conference  -->
+                    <text variable="event" text-case="title" font-style="italic" />
                 <text macro="editor" />
                 <text macro="edition-volume" />
               </group>
