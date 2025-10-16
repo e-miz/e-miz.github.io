@@ -15,7 +15,7 @@ format:
     nocite: |
       @*
     bibliography: 
-      main: pubs.bib
+      main: pubs.json
       main2: pubs2.bib
     csl: emiz-cv.csl
 filters:
