@@ -3,11 +3,12 @@
 ## Citations
 
 - Citations are managed in a Zotero library and exported using the CSL JSON format[^1]
-- Citations formatting is largely controlled using a custom CSL file. You can control things like:
+- Citations formatting is largely controlled using a custom CSL file [`cv/emiz-cv.csl`](cv/emiz-cv.csl). You can control things like:
     - The sort order
     - Displaying the year next to citations instead of the citation number
+    - The information presented in a citation for a given type of reference, and how it is styled
 
-[^1]: Pandoc can [directly accept CSL files](https://pandoc.org/demo/example33/9.1-specifying-bibliographic-data.html), which [save a conversion step](https://retorque.re/zotero-better-bibtex/exporting/pandoc/index.html#use-csl-not-bibtex-with-pandoc) make using a CSL file much clearer.
+[^1]: Pandoc can [directly accept CSL files](https://pandoc.org/demo/example33/9.1-specifying-bibliographic-data.html), which [save a lossy conversion step](https://retorque.re/zotero-better-bibtex/exporting/pandoc/index.html#use-csl-not-bibtex-with-pandoc) from `biblatex` and make using a CSL file much clearer. Note that this problem is exacerbated even more when converting to hayagriva, which typst's bibliography generator uses.
 
 ### Adding Citations
 
@@ -31,3 +32,7 @@ The CSL file has been customized for the following types:
 #### Software
 
 - This is a pretty barebones type. You can try to make use of the Extra field here and display the `note` in the CSL file.
+
+## Further Reading
+
+- [CSL Schema](https://github.com/citation-style-language/schema/blob/master/schemas/styles/csl-variables.rnc) listing possible types and variables
