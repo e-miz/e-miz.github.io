@@ -15,8 +15,8 @@ format:
     nocite: |
       @*
     bibliography: 
-      main: pubs.json
-      main2: pubs2.bib
+      main: sel_works.json
+#      main2: pubs2.bib
     csl: emiz-cv.csl
 filters:
   - multibib
@@ -142,11 +142,4 @@ print_items(service_df)
 ```
 
 ::: {#refs-main}
-:::
-
-```{=typst}
-= #fa-pen-nib() Publications 2
-```
-
-::: {#refs-main2}
 :::
