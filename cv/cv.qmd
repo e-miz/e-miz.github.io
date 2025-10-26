@@ -27,7 +27,7 @@ validate-yaml: false
 ```{python}
 import pandas as pd
 
-
+# TODO: output this as pandoc markdown instead of typst?
 def print_items(df: pd.DataFrame):
     for i in range(len(df)):
         start_date_str = df.iloc[i]["Start Date"].strftime("%b %Y")
@@ -82,12 +82,17 @@ award_df = cv_df.loc[
 #import "@preview/fontawesome:0.6.0": *
 
 #v(-0.5in)
-#set align(center)
 
-#text(20pt)[Eli Mizrachi]
+#grid(
+  columns: (50%, 50%),
+  text(20pt)[Eli Mizrachi],
+  align(
+    right + bottom,
+  )[ they/them/theirs | #link("mailto:emiz@umd.edu")[#fa-envelope()] | #link("https://github.com/e-miz")[#fa-github()] | #link("https://gitlab.com/users/emiz")[#fa-gitlab()]],
+)
 
-they/them/theirs | #link("mailto:emiz@umd.edu")[#fa-envelope()] | #link("https://github.com/e-miz")[#fa-github()] | #link("https://gitlab.com/users/emiz")[#fa-gitlab()]
-
+#line(length: 100%)
+#v(-0.125in)
 #set align(left)
 
 = #fa-user-graduate() Education
