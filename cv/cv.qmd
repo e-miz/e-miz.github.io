@@ -11,6 +11,16 @@ format:
     font-paths: fonts
     mainfont: inter
     keep-typ: true
+    citeproc: true
+    nocite: |
+      @*
+    bibliography: 
+      main: sel_works.json
+#      main2: pubs2.bib
+    csl: emiz-cv.csl
+filters:
+  - multibib
+validate-yaml: false
 
 ---
 
@@ -70,10 +80,6 @@ award_df = cv_df.loc[
 
 ```{=typst}
 #import "@preview/fontawesome:0.6.0": *
-#import "@preview/alexandria:0.2.1": *
-#import "@preview/blinky:0.2.0": link-bib-urls
-
-#show: alexandria(prefix: "x-", read: path => read(path))
 
 #v(-0.5in)
 #set align(center)
@@ -128,19 +134,12 @@ print_items(service_df)
   [⭐⭐⭐], [Spanish], [Solidworks, Git], [Orbital Welder, Drill Press],
   [⭐⭐], [C++, LaTeX, Typst], [COMSOL], [Milling Machine, Lathe, Belt Sander, Bench Grinder]
 )}
-
-#load-bibliography("pubs.bib", full: true, style: "emiz-cv.csl")
-
-#context {
-  // ..others is kind of like python **kwargs
-  let (references, ..others) = get-bibliography("x-")
-  link-bib-urls(link-fill: rgb("000099"),render-bibliography(
-    title: [#fa-pen-nib() Publications],
-    (
-      references: references,
-      ..others,
-    ),
-  ))
-}
-
 ```
+
+```{=typst}
+#set par(hanging-indent: 2.8em)
+= #fa-pen-nib() Publications
+```
+
+::: {#refs-main}
+:::
