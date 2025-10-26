@@ -2,6 +2,7 @@
 import ibis
 from ibis import _
 import json
+from typing import Any
 
 con = ibis.duckdb.connect()
 # %%
@@ -30,9 +31,10 @@ def get_keys_and_tags(zotero_data):
     )
     return key_tags
 
+
 # This only exists because citeproc/CSL can't parse a dict if a value is null
 # So we have to remove it ourselves.
-def remove_null_fields(data):# -> None | dict[Any, Any] | list[Any] | Any:# -> None | dict[Any, Any] | list[Any] | Any:
+def remove_null_fields(data: dict[Any, Any]) -> None | dict[Any, Any] | list[Any] | Any:
     """
     Recursively remove any keys in a dict which have a value of none.
 
@@ -41,17 +43,19 @@ def remove_null_fields(data):# -> None | dict[Any, Any] | list[Any] | Any:# -> N
 
     Returns:
         _type_: _description_
-    """    
+    """
     if isinstance(data, dict):
         cleaned_dict = {}
+        # Loop over dict and build a new one without None
         for key, value in data.items():
             cleaned_value = remove_null_fields(value)
-            if cleaned_value is not None:  # Only add if not None after cleaning
+            if cleaned_value is not None:
                 cleaned_dict[key] = cleaned_value
         return (
             cleaned_dict if cleaned_dict else None
-        )  # Return None if dictionary becomes empty
+        )
     elif isinstance(data, list):
+        # Loop over a list and build a new one without None
         cleaned_list = []
         for item in data:
             cleaned_item = remove_null_fields(item)
@@ -59,9 +63,12 @@ def remove_null_fields(data):# -> None | dict[Any, Any] | list[Any] | Any:# -> N
                 cleaned_list.append(cleaned_item)
         return (
             cleaned_list if cleaned_list else None
-        )  # Return None if list becomes empty
+        )
     else:
+        # This is basically the kernel of the filter,
+        # I.e. it's run at the lowest levels of the dict.
         return data if data is not None else None
+
 
 # %%
 key_tags = get_keys_and_tags(zotero_data)
