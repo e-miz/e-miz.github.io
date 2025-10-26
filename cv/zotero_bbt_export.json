@@ -2,17 +2,107 @@
   "config": {
     "id": "36a3b0b5-bad0-4a04-b79b-441c7cef77db",
     "label": "BetterBibTeX JSON",
-    "preferences": {},
+    "preferences": {
+      "ascii": "",
+      "asciiBibLaTeX": false,
+      "asciiBibTeX": true,
+      "autoAbbrev": false,
+      "autoExport": "immediate",
+      "autoExportDelay": 5,
+      "autoExportIdleWait": 10,
+      "autoExportPathReplaceDiacritics": false,
+      "autoExportPathReplaceDirSep": "-",
+      "autoExportPathReplaceSpace": " ",
+      "automaticTags": true,
+      "autoPinDelay": 0,
+      "auxImport": false,
+      "baseAttachmentPath": "",
+      "biblatexExtendedDateFormat": true,
+      "biblatexExtendedNameFormat": true,
+      "biblatexExtractEprint": true,
+      "biblatexUsePrefix": true,
+      "bibtexEditionOrdinal": false,
+      "bibtexParticleNoOp": false,
+      "bibtexURL": "off",
+      "cache": true,
+      "cacheDelete": false,
+      "cacheRetain": false,
+      "charmap": "",
+      "chinese": false,
+      "chineseSplitName": true,
+      "citeCommand": "cite",
+      "citekeyCaseInsensitive": true,
+      "citekeyFold": true,
+      "citekeyFormat": "auth.lower + shorttitle(3, 3) + year",
+      "citekeySearch": true,
+      "citekeyUnsafeChars": "\\\"#%'(),={}~",
+      "csquotes": "",
+      "DOIandURL": "both",
+      "exportBibTeXStrings": "off",
+      "exportBraceProtection": true,
+      "exportSort": "citekey",
+      "exportTitleCase": true,
+      "extraMergeCitekeys": false,
+      "extraMergeCSL": false,
+      "extraMergeTeX": false,
+      "git": "config",
+      "import": true,
+      "importBibTeXStrings": true,
+      "importCaseProtection": "as-needed",
+      "importCitationKey": true,
+      "importDetectURLs": true,
+      "importExtra": true,
+      "importJabRefAbbreviations": true,
+      "importJabRefStrings": true,
+      "importNoteToExtra": "",
+      "importPlaceEvent": "inproceedings,conference,presentation,talk",
+      "importSentenceCase": "on+guess",
+      "importSentenceCaseQuoted": true,
+      "importUnknownTexCommand": "ignore",
+      "itemObserverDelay": 5,
+      "jabrefFormat": 0,
+      "japanese": false,
+      "keyConflictPolicy": "keep",
+      "keyScope": "library",
+      "language": "langid",
+      "mapMath": "",
+      "mapText": "",
+      "packages": "",
+      "parseParticles": true,
+      "patchDates": "dateadded=dateAdded, date-added=dateAdded, datemodified=dateModified, date-modified=dateModified",
+      "postscript": "",
+      "postscriptOverride": "",
+      "preferencesOverride": "",
+      "qualityReport": false,
+      "quickCopyEta": "",
+      "quickCopyMode": "latex",
+      "quickCopyOrgMode": "zotero",
+      "quickCopyPandocBrackets": false,
+      "quickCopySelectLink": "zotero",
+      "rawImports": false,
+      "rawLaTag": "#LaTeX",
+      "relativeFilePaths": false,
+      "separatorList": "and",
+      "separatorNames": "and",
+      "skipFields": "abstract",
+      "skipWords": "a,ab,aboard,about,above,across,after,against,al,along,amid,among,an,and,anti,around,as,at,before,behind,below,beneath,beside,besides,between,beyond,but,by,d,da,das,de,del,dell,dello,dei,degli,della,dell,delle,dem,den,der,des,despite,die,do,down,du,during,ein,eine,einem,einen,einer,eines,el,en,et,except,for,from,gli,i,il,in,inside,into,is,l,la,las,le,les,like,lo,los,near,nor,of,off,on,onto,or,over,past,per,plus,round,save,since,so,some,sur,than,the,through,to,toward,towards,un,una,unas,under,underneath,une,unlike,uno,unos,until,up,upon,versus,via,von,while,with,within,without,yet,zu,zum",
+      "startupProgress": "popup",
+      "strings": "",
+      "stringsOverride": "",
+      "verbatimFields": "url,doi,file,pdf,ids,eprint,/^verb[a-z]$/,groups,/^citeulike-linkout-[0-9]+$/, /^bdsk-url-[0-9]+$/, keywords",
+      "warnBulkModify": 10,
+      "warnTitleCased": false
+    },
     "options": {
       "Items": true,
-      "Normalize": true,
-      "Preferences": false,
+      "Normalize": false,
+      "Preferences": true,
       "exportFileData": false,
       "exportNotes": false,
       "keepUpdated": false,
       "worker": true,
-      "exportDir": "C:\\Users\\emiz\\Desktop",
-      "exportPath": "C:\\Users\\emiz\\Desktop\\pubs_bbt.json"
+      "exportDir": "\\\\wsl.localhost\\Ubuntu\\home\\emiz\\projects\\e-miz.github.io\\cv",
+      "exportPath": "\\\\wsl.localhost\\Ubuntu\\home\\emiz\\projects\\e-miz.github.io\\cv\\zotero_bbt_export.json"
     }
   },
   "version": {
@@ -2226,6 +2316,8 @@
       "accessDate": "2025-10-14T06:13:21Z",
       "extra": "arXiv:2405.14732 [physics]",
       "DOI": "10.48550/arXiv.2405.14732",
+      "repository": "arXiv",
+      "archiveID": "arXiv:2405.14732",
       "creators": [
         {
           "firstName": "J.",
@@ -3380,9 +3472,7 @@
       "citationKey": "aalbersDataAcquisitionSystem2024",
       "itemKey": "GIQMPWRE",
       "libraryID": 1,
-      "select": "zotero://select/library/items/GIQMPWRE",
-      "number": "arXiv:2405.14732",
-      "publisher": "arXiv"
+      "select": "zotero://select/library/items/GIQMPWRE"
     },
     {
       "key": "NJLHUJCP",
@@ -6297,6 +6387,8 @@
       "accessDate": "2025-10-14T06:15:08Z",
       "extra": "arXiv:2508.19117 [physics]",
       "DOI": "10.48550/arXiv.2508.19117",
+      "repository": "arXiv",
+      "archiveID": "arXiv:2508.19117",
       "creators": [
         {
           "firstName": "J.",
@@ -7414,9 +7506,7 @@
       "citationKey": "aalbersFlowdependentTagging$^214$Pb2025",
       "itemKey": "J6K8MC43",
       "libraryID": 1,
-      "select": "zotero://select/library/items/J6K8MC43",
-      "number": "arXiv:2508.19117",
-      "publisher": "arXiv"
+      "select": "zotero://select/library/items/J6K8MC43"
     },
     {
       "key": "MJEWBSEC",
@@ -7430,6 +7520,8 @@
       "accessDate": "2025-10-14T06:15:20Z",
       "extra": "arXiv:2509.16281 [physics]",
       "DOI": "10.48550/arXiv.2509.16281",
+      "repository": "arXiv",
+      "archiveID": "arXiv:2509.16281",
       "creators": [
         {
           "firstName": "J.",
@@ -8544,9 +8636,7 @@
       "citationKey": "aalbersLowenergyNuclearRecoil2025",
       "itemKey": "MJEWBSEC",
       "libraryID": 1,
-      "select": "zotero://select/library/items/MJEWBSEC",
-      "number": "arXiv:2509.16281",
-      "publisher": "arXiv"
+      "select": "zotero://select/library/items/MJEWBSEC"
     },
     {
       "key": "264J2F7T",
@@ -14968,6 +15058,8 @@
       "accessDate": "2025-10-14T06:14:38Z",
       "extra": "arXiv:2410.17137 [hep-ex]",
       "DOI": "10.48550/arXiv.2410.17137",
+      "repository": "arXiv",
+      "archiveID": "arXiv:2410.17137",
       "creators": [
         {
           "firstName": "J.",
@@ -17264,9 +17356,7 @@
       "citationKey": "aalbersXLZDDesignBook2025",
       "itemKey": "4PKNQDH5",
       "libraryID": 1,
-      "select": "zotero://select/library/items/4PKNQDH5",
-      "number": "arXiv:2410.17137",
-      "publisher": "arXiv"
+      "select": "zotero://select/library/items/4PKNQDH5"
     },
     {
       "key": "YRP3DZ6D",
@@ -17280,6 +17370,8 @@
       "accessDate": "2023-01-02T21:51:52Z",
       "extra": "arXiv:2101.08753 [astro-ph, physics:physics]",
       "DOI": "10.48550/arXiv.2101.08753",
+      "repository": "arXiv",
+      "archiveID": "arXiv:2101.08753",
       "creators": [
         {
           "firstName": "D. S.",
@@ -18258,9 +18350,7 @@
       "citationKey": "akeribEnhancingSensitivityLUXZEPLIN2021",
       "itemKey": "YRP3DZ6D",
       "libraryID": 1,
-      "select": "zotero://select/library/items/YRP3DZ6D",
-      "number": "arXiv:2101.08753",
-      "publisher": "arXiv"
+      "select": "zotero://select/library/items/YRP3DZ6D"
     },
     {
       "key": "4EKZJUMH",
@@ -27482,6 +27572,8 @@
       "accessDate": "2025-10-14T06:15:34Z",
       "extra": "arXiv:2510.06500 [physics]",
       "DOI": "10.48550/arXiv.2510.06500",
+      "repository": "arXiv",
+      "archiveID": "arXiv:2510.06500",
       "creators": [
         {
           "firstName": "D. S.",
@@ -28582,9 +28674,7 @@
       "citationKey": "akeribStudyFewelectronBackgrounds2025",
       "itemKey": "Q5LSLMRY",
       "libraryID": 1,
-      "select": "zotero://select/library/items/Q5LSLMRY",
-      "number": "arXiv:2510.06500",
-      "publisher": "arXiv"
+      "select": "zotero://select/library/items/Q5LSLMRY"
     },
     {
       "key": "3P2JLFF5",
@@ -29918,6 +30008,8 @@
       "accessDate": "2023-01-02T21:46:42Z",
       "extra": "arXiv:1703.09144 [astro-ph, physics:hep-ex, physics:physics]",
       "DOI": "10.48550/arXiv.1703.09144",
+      "repository": "arXiv",
+      "archiveID": "arXiv:1703.09144",
       "creators": [
         {
           "firstName": "B. J.",
@@ -31280,9 +31372,7 @@
       "citationKey": "mountLUXZEPLINLZTechnical2017",
       "itemKey": "ERKP9DLU",
       "libraryID": 1,
-      "select": "zotero://select/library/items/ERKP9DLU",
-      "number": "arXiv:1703.09144",
-      "publisher": "arXiv"
+      "select": "zotero://select/library/items/ERKP9DLU"
     },
     {
       "key": "V6AB6Q8D",
@@ -31527,6 +31617,113 @@
       "select": "zotero://select/library/items/7DYLDZAZ"
     },
     {
+      "key": "4WVUDRVM",
+      "version": 12277,
+      "itemType": "conferencePaper",
+      "title": "Dissertation as Code: Was it worth writing mine with Quarto?",
+      "abstractNote": "Slide set of the accepted rapid access micro talks at USRSE 25.",
+      "date": "2025-10-08",
+      "url": "https://zenodo.org/records/17297728",
+      "accessDate": "2025-10-26T18:51:38Z",
+      "extra": "Presentation",
+      "place": "Philadelphia, Pennsylvania",
+      "conferenceName": "US Research Software Engineering Conference 2025 (USRSE'25)",
+      "DOI": "10.5281/zenodo.17297728",
+      "creators": [
+        {
+          "firstName": "Carol",
+          "lastName": "Ruchti",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Michael",
+          "lastName": "Ogundipe",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Brian",
+          "lastName": "Ward",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Curt",
+          "lastName": "Hillegas",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Eli",
+          "lastName": "Mizrachi",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Dave",
+          "lastName": "Brownell",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Tinashe Michael",
+          "lastName": "Tapera",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Jeff",
+          "lastName": "Soules",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "Paula",
+          "lastName": "Lackie",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "mypublication"
+        },
+        {
+          "tag": "notion"
+        },
+        {
+          "tag": "selectedworks"
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2025-10-26T18:51:38Z",
+      "dateModified": "2025-10-26T18:57:38Z",
+      "uri": "http://zotero.org/users/9614022/items/4WVUDRVM",
+      "itemID": 2663,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Notion",
+          "url": "notion://www.notion.so/Ruchti-et-al-2025-2985dac18dde8196bcb2ff459081ec8d",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-10-26T18:51:43Z",
+          "dateModified": "2025-10-26T18:57:40Z",
+          "uri": "http://zotero.org/users/9614022/items/8ZCGTSJQ",
+          "select": "zotero://select/library/items/8ZCGTSJQ"
+        },
+        {
+          "itemType": "attachment",
+          "title": "Ruchti et al. - 2025 - USRSE 25 rapid access micro talks.pdf",
+          "url": "https://zenodo.org/records/17297728/files/USRSE25-RAM-slides.pdf",
+          "path": "G:\\Shared drives\\Research\\Sources\\My Publications\\Ruchti et al. - 2025 - USRSE 25 rapid access micro talks.pdf",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-10-26T18:51:41Z",
+          "dateModified": "2025-10-26T18:51:42Z",
+          "uri": "http://zotero.org/users/9614022/items/TWDP7T8P",
+          "select": "zotero://select/library/items/TWDP7T8P"
+        }
+      ],
+      "notes": [],
+      "citationKey": "ruchtiDissertationCodeWas2025",
+      "itemKey": "4WVUDRVM",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/4WVUDRVM"
+    },
+    {
       "key": "XN9QUPJV",
       "version": 12192,
       "itemType": "preprint",
@@ -31537,6 +31734,8 @@
       "url": "http://arxiv.org/abs/2307.12952",
       "accessDate": "2023-10-29T06:45:26Z",
       "DOI": "10.48550/arXiv.2307.12952",
+      "repository": "arXiv",
+      "archiveID": "arXiv:2307.12952",
       "creators": [
         {
           "firstName": "Jingke",
@@ -31678,9 +31877,7 @@
       "citationKey": "xuSearchMigdalEffect2023",
       "itemKey": "XN9QUPJV",
       "libraryID": 1,
-      "select": "zotero://select/library/items/XN9QUPJV",
-      "number": "arXiv:2307.12952",
-      "publisher": "arXiv"
+      "select": "zotero://select/library/items/XN9QUPJV"
     }
   ]
 }
