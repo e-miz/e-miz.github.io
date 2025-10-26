@@ -35,7 +35,7 @@ The CSL file has been customized for the following types:
 ## Adding Publications
 
 - Add publications to a single zotero collection which can be exported with better bibtex
-- Export the colleciton twice:
+- Export the collection twice:
     - As better bibtex CSL json
     - As better bibtext JSON: This one contains tags used for filtering
 - `pixi run multibib`
