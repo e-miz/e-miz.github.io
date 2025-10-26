@@ -6,6 +6,7 @@ platforms = ["linux-64"]
 version = "0.1.0"
 
 [tasks]
+multibib = {cmd = "python make_multibib.py", cwd = "cv"}
 
 [dependencies]
 quarto = ">=1.8.25,<2"
