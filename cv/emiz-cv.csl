@@ -117,7 +117,7 @@
     <layout suffix=".">
       <!-- Behind the scenes it seems like there's two columns. One filled by year-date and one
       filled by everything else -->
-      <text macro="year-date" />
+      <text macro="year-date" font-weight="bold" />
       <text macro="author" suffix=", " />
       <choose>
         <if type="bill book figure graphic legal_case legislation map motion_picture song treaty"
@@ -139,7 +139,7 @@
                 <!-- for conference papers this is probably the proceedings title) -->
                 <text variable="container-title" text-case="title" font-style="italic" />
                 <!-- for conference papers this is probably the name of the conference  -->
-                <text variable="event" text-case="title" />
+                <text variable="event-title" text-case="title" />
                 <text macro="editor" />
                 <text macro="edition-volume" />
               </group>
