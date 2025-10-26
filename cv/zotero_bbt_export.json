@@ -2305,7 +2305,7 @@
     },
     {
       "key": "GIQMPWRE",
-      "version": 12084,
+      "version": 12288,
       "itemType": "preprint",
       "title": "The Data Acquisition System of the LZ Dark Matter Detector: FADR",
       "abstractNote": "The Data Acquisition System (DAQ) for the LUX-ZEPLIN (LZ) dark matter detector is described. The signals from 745 PMTs, distributed across three subsystems, are sampled with 100-MHz 32-channel digitizers (DDC-32s). A basic waveform analysis is carried out on the on-board Field Programmable Gate Arrays (FPGAs) to extract information about the observed scintillation and electroluminescence signals. This information is used to determine if the digitized waveforms should be preserved for offline analysis. The system is designed around the Kintex-7 FPGA. In addition to digitizing the PMT signals and providing basic event selection in real time, the flexibility provided by the use of FPGAs allows us to monitor the performance of the detector and the DAQ in parallel to normal data acquisition. The hardware and software/firmware of this FPGA-based Architecture for Data acquisition and Realtime monitoring (FADR) are discussed and performance measurements are described.",
@@ -3402,11 +3402,14 @@
       ],
       "tags": [
         {
-          "tag": "notion"
-        },
-        {
           "tag": "High Energy Physics - Experiment",
           "type": 1
+        },
+        {
+          "tag": "mypublication"
+        },
+        {
+          "tag": "notion"
         },
         {
           "tag": "Physics - Instrumentation and Detectors",
@@ -3415,7 +3418,7 @@
       ],
       "relations": {},
       "dateAdded": "2025-10-14T06:13:21Z",
-      "dateModified": "2025-10-14T06:13:25Z",
+      "dateModified": "2025-10-26T19:20:21Z",
       "uri": "http://zotero.org/users/9614022/items/GIQMPWRE",
       "itemID": 2620,
       "attachments": [
@@ -3438,7 +3441,7 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2025-10-14T06:13:25Z",
-          "dateModified": "2025-10-15T23:49:17Z",
+          "dateModified": "2025-10-26T19:20:24Z",
           "uri": "http://zotero.org/users/9614022/items/NWWTN3DJ",
           "select": "zotero://select/library/items/NWWTN3DJ"
         },
@@ -3476,7 +3479,7 @@
     },
     {
       "key": "NJLHUJCP",
-      "version": 12086,
+      "version": 12286,
       "itemType": "journalArticle",
       "title": "The design, implementation, and performance of the LZ calibration systems",
       "abstractNote": "LUX-ZEPLIN (LZ) is a tonne-scale experiment searching for direct dark matter interactions and other rare events. It is located at the Sanford Underground Research Facility (SURF) in Lead, South Dakota, USA. The core of the LZ detector is a dual-phase xenon time projection chamber (TPC), designed with the primary goal of detecting Weakly Interacting Massive Particles (WIMPs) via their induced low energy nuclear recoils. Surrounding the TPC, two veto detectors immersed in an ultra-pure water tank enable reducing background events to enhance the discovery potential. Intricate calibration systems are purposely designed to precisely understand the responses of these three detector volumes to various types of particle interactions and to demonstrate LZ's ability to discriminate between signals and backgrounds. In this paper, we present a comprehensive discussion of the key features, requirements, and performance of the LZ calibration systems, which play a crucial role in enabling LZ's WIMP-search and its broad science program. The thorough description of these calibration systems, with an emphasis on their novel aspects, is valuable for future calibration efforts in direct dark matter and other rare-event search experiments.",
@@ -4522,12 +4525,15 @@
       ],
       "tags": [
         {
+          "tag": "mypublication"
+        },
+        {
           "tag": "notion"
         }
       ],
       "relations": {},
       "dateAdded": "2025-10-14T06:13:58Z",
-      "dateModified": "2025-10-14T06:14:00Z",
+      "dateModified": "2025-10-26T19:20:00Z",
       "uri": "http://zotero.org/users/9614022/items/NJLHUJCP",
       "itemID": 2626,
       "attachments": [
@@ -4550,7 +4556,7 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2025-10-14T06:14:00Z",
-          "dateModified": "2025-10-15T23:49:01Z",
+          "dateModified": "2025-10-26T19:20:05Z",
           "uri": "http://zotero.org/users/9614022/items/GWUNZ6PH",
           "select": "zotero://select/library/items/GWUNZ6PH"
         }
@@ -13955,7 +13961,7 @@
     },
     {
       "key": "TFG2BJD2",
-      "version": 12089,
+      "version": 12286,
       "itemType": "journalArticle",
       "title": "Two-neutrino double electron capture of 124Xe in the first LUX-ZEPLIN exposure",
       "abstractNote": "The broad physics reach of the LUX-ZEPLIN (LZ) experiment covers rare phenomena beyond the direct detection of dark matter. We report precise measurements of the extremely rare decay of 124Xe through the process of two-neutrino double electron capture, utilizing a 1.39 kg × yr isotopic exposure from the first LZ science run. A half-life of is observed with a statistical significance of 8.3σ, in agreement with literature. First empirical measurements of the KK capture fraction relative to other K-shell modes were conducted, and demonstrate consistency with respect to recent signal models at the 1.4σ level.",
@@ -15006,12 +15012,15 @@
       ],
       "tags": [
         {
+          "tag": "mypublication"
+        },
+        {
           "tag": "notion"
         }
       ],
       "relations": {},
       "dateAdded": "2025-10-14T06:14:22Z",
-      "dateModified": "2025-10-14T06:14:27Z",
+      "dateModified": "2025-10-26T19:20:00Z",
       "uri": "http://zotero.org/users/9614022/items/TFG2BJD2",
       "itemID": 2630,
       "attachments": [
@@ -15034,7 +15043,7 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2025-10-14T06:14:27Z",
-          "dateModified": "2025-10-15T23:48:52Z",
+          "dateModified": "2025-10-26T19:20:05Z",
           "uri": "http://zotero.org/users/9614022/items/G46QWNS6",
           "select": "zotero://select/library/items/G46QWNS6"
         }
@@ -28954,7 +28963,7 @@
     },
     {
       "key": "YJGX4T9M",
-      "version": 12113,
+      "version": 12284,
       "itemType": "conferencePaper",
       "title": "Absolute Electron Extraction Efficiency of Liquid Xenon",
       "abstractNote": "Dual phase liquid/gas xenon time projection chambers (TPCs) currently set the world’s most sensitive limits on weakly interacting massive particles (WIMPs), a favored dark matter candidate. These detectors rely on extracting electrons from liquid xenon into gaseous xenon, where they produce proportional scintillation. The proportional scintillation from the extracted electrons serves to internally amplify the WIMP signal; even a single extracted electron is detectable. Credible dark matter searches can proceed with electron extraction efficiency (EEE) lower than 100\\%. However, electrons systematically left at the liquid/gas boundary are a concern. Possible effects include spontaneous single or multi-electron proportional scintillation signals in the gas, or charging of the liquid/gas interface or detector materials. Understanding EEE is consequently a serious concern for this class of rare event search detectors. Previous EEE measurements have mostly been relative, not absolute, assuming efficiency plateaus at 100\\%. I will present an absolute EEE measurement with a small liquid/gas xenon TPC test bed located at Lawrence Berkeley National Laboratory.",
@@ -28989,14 +28998,11 @@
       "tags": [
         {
           "tag": "notion"
-        },
-        {
-          "tag": "mypublication"
         }
       ],
       "relations": {},
       "dateAdded": "2023-01-02T23:01:11Z",
-      "dateModified": "2025-10-15T00:23:42Z",
+      "dateModified": "2025-10-26T19:18:48Z",
       "uri": "http://zotero.org/users/9614022/items/YJGX4T9M",
       "itemID": 366,
       "attachments": [
@@ -29007,7 +29013,7 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2024-07-24T20:56:24Z",
-          "dateModified": "2025-10-15T23:48:43Z",
+          "dateModified": "2025-10-26T19:18:52Z",
           "uri": "http://zotero.org/users/9614022/items/IF5ARG7L",
           "select": "zotero://select/library/items/IF5ARG7L"
         }
@@ -29261,7 +29267,7 @@
     },
     {
       "key": "QIG29HTE",
-      "version": 12138,
+      "version": 12282,
       "itemType": "conferencePaper",
       "title": "Characterization of Delayed Ionization Backgrounds in the LZ Experiment",
       "date": "2023-11-07",
@@ -29279,15 +29285,18 @@
       ],
       "tags": [
         {
+          "tag": "mypresentation"
+        },
+        {
           "tag": "notion"
         },
         {
-          "tag": "mypresentation"
+          "tag": "selectedworks"
         }
       ],
       "relations": {},
       "dateAdded": "2023-10-29T06:56:26Z",
-      "dateModified": "2025-10-15T00:29:43Z",
+      "dateModified": "2025-10-26T19:17:42Z",
       "uri": "http://zotero.org/users/9614022/items/QIG29HTE",
       "itemID": 1398,
       "attachments": [
@@ -29298,7 +29307,7 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2024-07-24T20:52:28Z",
-          "dateModified": "2025-10-15T23:48:42Z",
+          "dateModified": "2025-10-26T19:17:48Z",
           "uri": "http://zotero.org/users/9614022/items/PB37ET8R",
           "select": "zotero://select/library/items/PB37ET8R"
         },
@@ -29801,14 +29810,14 @@
     },
     {
       "key": "4V45QWU6",
-      "version": 12150,
+      "version": 12291,
       "itemType": "conferencePaper",
       "title": "Studies of Ionization Backgrounds in Noble Liquid Detectors For Dark Matter Searches",
       "date": "2024-04-11",
       "url": "https://emiz.gitlab.io/2024-04-11-slac-fpd/2024-04-11-slac-fpd.html#/title-slide",
       "extra": "Presentation",
       "place": "Menlo Park, California",
-      "conferenceName": "SLAC FPD Seminar",
+      "conferenceName": "SLAC Fundamental Physics Directorate Seminar",
       "creators": [
         {
           "firstName": "E.",
@@ -29818,10 +29827,10 @@
       ],
       "tags": [
         {
-          "tag": "notion"
+          "tag": "mypresentation"
         },
         {
-          "tag": "mypresentation"
+          "tag": "notion"
         },
         {
           "tag": "selectedworks"
@@ -29829,7 +29838,7 @@
       ],
       "relations": {},
       "dateAdded": "2024-05-30T00:56:16Z",
-      "dateModified": "2025-10-15T00:31:44Z",
+      "dateModified": "2025-10-26T19:23:42Z",
       "uri": "http://zotero.org/users/9614022/items/4V45QWU6",
       "itemID": 2260,
       "attachments": [
@@ -29840,7 +29849,7 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2024-07-24T20:52:32Z",
-          "dateModified": "2025-10-15T23:48:35Z",
+          "dateModified": "2025-10-26T19:23:48Z",
           "uri": "http://zotero.org/users/9614022/items/IWI6AQE3",
           "select": "zotero://select/library/items/IWI6AQE3"
         }
@@ -29850,6 +29859,74 @@
       "itemKey": "4V45QWU6",
       "libraryID": 1,
       "select": "zotero://select/library/items/4V45QWU6"
+    },
+    {
+      "key": "TMXCA3GA",
+      "version": 12320,
+      "itemType": "thesis",
+      "title": "Studies of Ionization Backgrounds in Noble Liquid Detectors For Dark Matter Searches",
+      "abstractNote": "Dark matter is believed to make up almost 85% of the total mass of the universe, yet its identity remains unclear. Weakly Interacting Massive Particles (WIMPs) have historically been a favored dark matter candidate, and dual-phase noble liquid time projection chambers (TPCs) have set the strongest interaction limits to date on WIMPs with a mass greater than several GeV. However, because no definitive interactions have been observed, the parameter space for conventional WIMPs is highly constrained. This has sparked greater interest in new sub-GeV dark matter models. At this mass scale, dark matter interactions with xenon or argon target media may still produce detectable signals at or near the single electron limit. However, these signals are currently obscured by delayed ionization backgrounds (“electron trains”) which persist for seconds after an ionization event occurs. Electron trains have been observed in many different experiments and exhibit similar characteristics, but their cause is only partially understood. This work examines the nature of electron trains in various contexts, as well as possible strategies to mitigate them. First, a characterization of electron trains in the LZ experiment is presented, including new evidence of a dependence on detector conditions. The characterization also informed the development of an electron-train veto for LZ's first WIMP search, which set world-leading limits on the spin-independent and spin-dependent WIMP-nucleon cross-sections for medium and high-mass WIMPs. Next, to complement the analysis of LZ data, hardware upgrades were performed in XeNeu, a small xenon TPC at Lawrence Livermore National Lab. These included replacing plastics with low-outgassing metal and machinable ceramic components, as well as a replacement of XeNeu's photomultiplier tube array with silicon photomultipliers. The resulting reduction in the intensity of electron-trains and better position resolution from the respective upgrades will improve future studies of low energy interactions and phenomena. Concurrent with this work, XeNeu was used to perform a nuclear recoil calibration and a search for the Migdal effect, the latter of which can substantially enhance an experiment's low-mass dark matter sensitivity. Finally, the development of CoHerent Ionization Limits in Liquid Argon and Xenon (CHILLAX), is reported. CHILLAX is a new xenon-doped, dual-phase argon test stand that has the potential to have a higher sensitivity to low-mass dark matter interactions and lower backgrounds than current liquid xenon TPCs. The system is designed to handle high (percent level) xenon concentrations in liquid argon that can enable a range of ionization signal production and collection benefits. CHILLAX demonstrated the feasibility of such concepts by achieving a world record xenon doping concentration with stable operation.",
+      "date": "2024",
+      "language": "en",
+      "libraryCatalog": "drum.lib.umd.edu",
+      "url": "https://emiz.gitlab.io/thesis_public/",
+      "accessDate": "2025-10-26T20:04:44Z",
+      "place": "College Park, Maryland",
+      "numPages": "468",
+      "university": "University of Maryland at College Park",
+      "creators": [
+        {
+          "firstName": "Eli",
+          "lastName": "Mizrachi",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "mypublication"
+        },
+        {
+          "tag": "notion"
+        },
+        {
+          "tag": "selectedworks"
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2025-10-26T20:04:44Z",
+      "dateModified": "2025-10-26T20:17:07Z",
+      "uri": "http://zotero.org/users/9614022/items/TMXCA3GA",
+      "itemID": 2667,
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Mizrachi - 2024 - Studies of Ionization Backgrounds in Noble Liquid Detectors For Dark Matter Searches.pdf",
+          "url": "https://drum.lib.umd.edu/bitstreams/ba6989cd-b37d-4edf-8f4d-4968d855b053/download",
+          "path": "G:\\Shared drives\\Research\\Sources\\My Publications\\Mizrachi - 2024 - Studies of Ionization Backgrounds in Noble Liquid Detectors For Dark Matter Searches.pdf",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-10-26T20:05:08Z",
+          "dateModified": "2025-10-26T20:05:08Z",
+          "uri": "http://zotero.org/users/9614022/items/EPPPY7JR",
+          "select": "zotero://select/library/items/EPPPY7JR"
+        },
+        {
+          "itemType": "attachment",
+          "title": "Notion",
+          "url": "notion://www.notion.so/Mizrachi-2024-2985dac18dde816d90e5c7e5fb96016d",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-10-26T20:04:47Z",
+          "dateModified": "2025-10-26T20:17:10Z",
+          "uri": "http://zotero.org/users/9614022/items/DVPZGX5V",
+          "select": "zotero://select/library/items/DVPZGX5V"
+        }
+      ],
+      "notes": [],
+      "citationKey": "mizrachiStudiesIonizationBackgrounds2024a",
+      "itemKey": "TMXCA3GA",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/TMXCA3GA"
     },
     {
       "key": "VCY7P3DA",
@@ -31618,7 +31695,7 @@
     },
     {
       "key": "4WVUDRVM",
-      "version": 12277,
+      "version": 12290,
       "itemType": "conferencePaper",
       "title": "Dissertation as Code: Was it worth writing mine with Quarto?",
       "abstractNote": "Slide set of the accepted rapid access micro talks at USRSE 25.",
@@ -31627,7 +31704,7 @@
       "accessDate": "2025-10-26T18:51:38Z",
       "extra": "Presentation",
       "place": "Philadelphia, Pennsylvania",
-      "conferenceName": "US Research Software Engineering Conference 2025 (USRSE'25)",
+      "conferenceName": "US Research Software Engineering Conference",
       "DOI": "10.5281/zenodo.17297728",
       "creators": [
         {
@@ -31678,7 +31755,7 @@
       ],
       "tags": [
         {
-          "tag": "mypublication"
+          "tag": "mypresentation"
         },
         {
           "tag": "notion"
@@ -31689,7 +31766,7 @@
       ],
       "relations": {},
       "dateAdded": "2025-10-26T18:51:38Z",
-      "dateModified": "2025-10-26T18:57:38Z",
+      "dateModified": "2025-10-26T19:22:48Z",
       "uri": "http://zotero.org/users/9614022/items/4WVUDRVM",
       "itemID": 2663,
       "attachments": [
@@ -31700,7 +31777,7 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2025-10-26T18:51:43Z",
-          "dateModified": "2025-10-26T18:57:40Z",
+          "dateModified": "2025-10-26T19:22:51Z",
           "uri": "http://zotero.org/users/9614022/items/8ZCGTSJQ",
           "select": "zotero://select/library/items/8ZCGTSJQ"
         },
