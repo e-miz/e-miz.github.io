@@ -11,7 +11,7 @@ format:
       y: 0.5in
     font-paths: fonts
     mainfont: inter
-    keep-typ: true
+    keep-typ: false
     citeproc: true
     nocite: |
       @*
