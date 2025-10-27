@@ -1,6 +1,6 @@
 # %%
 import ibis
-from ibis import _
+from ibis import _, selectors as s
 import json
 from typing import Any
 
@@ -51,9 +51,7 @@ def remove_null_fields(data: dict[Any, Any]) -> None | dict[Any, Any] | list[Any
             cleaned_value = remove_null_fields(value)
             if cleaned_value is not None:
                 cleaned_dict[key] = cleaned_value
-        return (
-            cleaned_dict if cleaned_dict else None
-        )
+        return cleaned_dict if cleaned_dict else None
     elif isinstance(data, list):
         # Loop over a list and build a new one without None
         cleaned_list = []
@@ -61,9 +59,7 @@ def remove_null_fields(data: dict[Any, Any]) -> None | dict[Any, Any] | list[Any
             cleaned_item = remove_null_fields(item)
             if cleaned_item is not None:
                 cleaned_list.append(cleaned_item)
-        return (
-            cleaned_list if cleaned_list else None
-        )
+        return cleaned_list if cleaned_list else None
     else:
         # This is basically the kernel of the filter,
         # I.e. it's run at the lowest levels of the dict.
@@ -71,15 +67,40 @@ def remove_null_fields(data: dict[Any, Any]) -> None | dict[Any, Any] | list[Any
 
 
 # %%
+# Again, we can't print to json from df since it will fill fields with null values which break citeproc
 key_tags = get_keys_and_tags(zotero_data)
-sel_works = (
-    key_tags.filter(_.tags["tag"] == "selectedworks")
+sel_pres = (
+    # Get items which only these tags with a self-inner join on the sets containing each tag
+    key_tags.filter((_.tags["tag"] == "mypresentation"))
+    .join(key_tags.filter((_.tags["tag"] == "selectedworks")), ["id"])
+    .drop(s.contains("tags"))
+    .join(csl_pubs, ["id"])
+    .execute()
+    .to_dict(orient="records")
+)
+
+with open("sel_pres.json", "w") as f:
+    json.dump(remove_null_fields(sel_pres), f)
+
+sel_pubs = (
+    key_tags.filter((_.tags["tag"] == "mypresentation"))
+    .join(key_tags.filter((_.tags["tag"] == "selectedworks")), ["id"])
     .drop("tags")
     .join(csl_pubs, ["id"])
     .execute()
     .to_dict(orient="records")
 )
 
-# %%
+with open("sel_pubs.json", "w") as f:
+    json.dump(remove_null_fields(sel_pubs), f)
+
+sel_works = (
+    key_tags.filter((_.tags["tag"] == "selectedworks"))
+    .drop("tags")
+    .join(csl_pubs, ["id"])
+    .execute()
+    .to_dict(orient="records")
+)
+
 with open("sel_works.json", "w") as f:
     json.dump(remove_null_fields(sel_works), f)
