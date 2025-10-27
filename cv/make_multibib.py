@@ -83,7 +83,7 @@ with open("sel_pres.json", "w") as f:
     json.dump(remove_null_fields(sel_pres), f)
 
 sel_pubs = (
-    key_tags.filter((_.tags["tag"] == "mypresentation"))
+    key_tags.filter((_.tags["tag"] == "mypublication"))
     .join(key_tags.filter((_.tags["tag"] == "selectedworks")), ["id"])
     .drop("tags")
     .join(csl_pubs, ["id"])
