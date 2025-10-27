@@ -20,7 +20,7 @@ def get_keys_and_tags(zotero_data):
     """
     key_tags = (
         zotero_data.select(_.items.unnest())
-        .items.lift()
+        .items.lift().filter(_.date > "2023-08-01")
         .select(
             # THEN, keeping the citation key we can unnest the array of tags (array of structs)
             # To get the citationkeys with a specific tag
