@@ -15,8 +15,8 @@ format:
     nocite: |
       @*
     bibliography: 
-      main: sel_works.json
-#      main2: pubs2.bib
+      pubs: sel_pubs.json
+      pres: sel_pres.json
     csl: emiz-cv.csl
 filters:
   - multibib
@@ -131,12 +131,12 @@ print_items(service_df)
   // center top labels
   set table(align: (_, y) => if y == 0 { center } else { left })
   table(
-  columns: 4,
+  columns: (15%,20%,auto,auto),
   stroke: none,
   [*Confidence*],[*Languages*],[*Software*],[*Hardware*],
   line(length: 100%), line(length: 100%), line(length: 100%), line(length: 100%),
-  [⭐⭐⭐⭐], [Markdown, Python], [Quarto, OnShape, Notion, VSCode], [Cryogenic, High Purity, High Vacuum Systems],
-  [⭐⭐⭐], [Spanish], [Solidworks, Git], [Orbital Welder, Drill Press],
+  [⭐⭐⭐⭐], [Markdown, Python, SQL], [Quarto, OnShape, Notion, VSCode, GitLab, Kubernetes, Slack, Zotero], [Cryogenic, High Purity, High Vacuum Systems],
+  [⭐⭐⭐], [Spanish], [Solidworks, MongoDB], [Orbital Welder, Drill Press],
   [⭐⭐], [C++, LaTeX, Typst], [COMSOL], [Milling Machine, Lathe, Belt Sander, Bench Grinder]
 )}
 ```
@@ -146,5 +146,12 @@ print_items(service_df)
 = #fa-pen-nib() Publications
 ```
 
-::: {#refs-main}
+::: {#refs-pubs}
+:::
+
+```{=typst}
+= #fa-person-chalkboard() Presentations
+```
+
+::: {#refs-pres}
 :::
