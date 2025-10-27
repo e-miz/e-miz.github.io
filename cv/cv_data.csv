@@ -1,9 +1,9 @@
 ﻿Item,Description,Type,Start Date,End Date,Information
-University of Maryland at College Park (UMD),PhD Physics,Degree,"August 31, 2017","March 29, 2024", _Studies of Ionization Backgrounds in Noble Liquid Detectors For Dark Matter Searches_
+University of Maryland at College Park (UMD),PhD Physics,Degree,"August 31, 2017","March 29, 2024",_Studies of Ionization Backgrounds in Noble Liquid Detectors For Dark Matter Searches_
 UC Berkeley,B.A. Physics,Degree,"August 31, 2013","December 15, 2015",
 San Diego Mesa Community College,A.S. Physics with High Honors,Degree,"August 31, 2011","May 15, 2013",
 Bonita Vista High School,International Baccalaureate Diploma,Degree,"September 8, 2008","June 15, 2011",
-LZ Citizenship Award,Outstanding efforts to improve collaborative work,Award,"July 14, 2025","July 14, 2025",
+LZ Citizenship Award,Outstanding Efforts to Improve Collaborative Work,Award,"July 14, 2025","July 14, 2025",
 US Dep't of Energy Office of Science,Graduate Student Research Award,Award,"August 31, 2020","August 22, 2021",
 Ralph Meyers \& Friends of Physics Outstanding Teaching Abilities,2nd Place,Award,"May 15, 2019","May 15, 2019",
 University of Maryland Graduate School,Summer Research Fellowship,Award,"April 10, 2019","April 10, 2019",
@@ -38,6 +38,9 @@ SLAC Nat'l Accelerator Lab Noble Liquids Group,Technician,Research,"July 1, 2016
 UC Davis Tripathi Group,Research Assistant,Research,"June 1, 2015","August 14, 2015","Simulated electric fields for a prototype liquid xenon purity monitor."
 Lawrence Berkeley Nat'l Lab Sorensen Group,Research Assistant,Research,"January 5, 2015","June 3, 2016","Simulated electric fields in a novel TPC with charge readout capabilities. Tested and installed charge-shaping amplifiers. Assisted in testing a novel high voltage feedthrough design."
 UC Berkeley Mueller Group,Research Assistant,Research,"June 2, 2014","December 19, 2014","Assisted in design and assembly of world-leading test for neutron-sector violations of Lorentz symmetry using quartz crystal oscillators."
+"LZ Analysis Workshop; Python, VSCode Tutorials","Presenter",Teaching,"November 14, 2025","November 14, 2025",
+LZ Git and Documentation Workshop,"Organizer, Presenter",Teaching,"September 1, 2024","September 1, 2024",
+LZ Analysis Workshop; Python Tutorial,"Presenter",Teaching,"June 29, 2023","June 29, 2023",
 UMD Undergraduate Physics for Biologists I \& II,Graduate Teaching Assistant,Teaching,"August 28, 2017","December 1, 2019","Led laboratory sections and developed course materials for instructing students on data acquisition, handling and processing techniques."
 UC Berkeley Frontiers of Physics,Co-teacher,Teaching,"January 25, 2016","May 13, 2016","Co-led seminar for undergraduates on cutting-edge physics research at UC Berkeley and arranged for weekly speakers."
 UC Berkeley Undergraduate Particle Physics,Grader,Teaching,"August 31, 2015","December 18, 2015",
