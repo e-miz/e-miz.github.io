@@ -16,4 +16,4 @@ site_libs
 
 # json bib files to ignore
 sel_*.json
-all_*.json
+#all_*.json
