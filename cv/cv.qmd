@@ -3,14 +3,25 @@ title: "" # Define title manually
 execute:
   echo: false
   output: asis
-  freeze: auto
+  freeze: false
 format:
   typst:
     margin:
       x: 0.5in
-    font-paths: ../_extensions/quarto-ext/fontawesome/assets
+      y: 0.5in
+    font-paths: fonts
     mainfont: inter
     keep-typ: false
+    citeproc: true
+    nocite: |
+      @*
+    bibliography: 
+      pubs: all_pubs.json
+      pres: all_pres.json
+    csl: emiz-cv.csl
+filters:
+  - multibib
+validate-yaml: false
 
 ---
 
@@ -18,6 +29,7 @@ format:
 import pandas as pd
 
 
+# TODO: output this as pandoc markdown instead of typst?
 def print_items(df: pd.DataFrame):
     for i in range(len(df)):
         start_date_str = df.iloc[i]["Start Date"].strftime("%b %Y")
@@ -51,11 +63,11 @@ edu_df = cv_df.loc[cv_df["Type"] == "Degree"].loc[
     :, ["Item", "Description", "Start Date", "End Date", "Information"]
 ]
 
-teach_df = cv_df.loc[cv_df["Type"] == "Teaching"].loc[
+teach_df = cv_df.loc[(cv_df["Type"] == "Teaching")].loc[
     :, ["Item", "Description", "Start Date", "End Date", "Information"]
 ]
 
-research_df = cv_df.loc[cv_df["Type"] == "Research"].loc[
+research_df = cv_df.loc[(cv_df["Type"] == "Research")].loc[
     :, ["Item", "Description", "Start Date", "End Date", "Information"]
 ]
 
@@ -64,20 +76,25 @@ service_df = cv_df.loc[(cv_df["Type"] == "Service")].loc[
 ]
 
 award_df = cv_df.loc[
-    (cv_df["Type"] == "Award") & (cv_df["Start Date"] > "2017-01-01")
+    (cv_df["Type"] == "Award") & (cv_df["Start Date"] > "2015-01-01")
 ].loc[:, ["Item", "Description", "Start Date", "End Date", "Information"]]
 ```
 
 ```{=typst}
-#import "@preview/fontawesome:0.2.0": *
+#import "@preview/fontawesome:0.6.0": *
 
-#v(-0.5in)
-#set align(center)
+// Reduce heading spacing
+#show heading: set block(above: 0.2in)
 
-#text(20pt)[Eli Mizrachi]
+#grid(
+  columns: (50%, 50%),
+  text(20pt)[Eli Mizrachi],
+  align(
+    right + bottom,
+  )[ they/them/theirs | #link("mailto:emiz@stanford.edu")[#fa-envelope()] | #link("https://github.com/e-miz")[#fa-github()] | #link("https://gitlab.com/users/emiz")[#fa-gitlab()]],
+)
 
-they/them/theirs | #link("mailto:emiz@umd.edu")[#fa-envelope()] | #link("https://github.com/e-miz")[#fa-github()] | #link("https://gitlab.com/users/emiz")[#fa-gitlab()]
-
+#line(length: 100%)
 #set align(left)
 
 = #fa-user-graduate() Education
@@ -86,7 +103,7 @@ they/them/theirs | #link("mailto:emiz@umd.edu")[#fa-envelope()] | #link("https:/
 print_items(edu_df)
 ```
 
-= #fa-atom() Research
+= #fa-atom() Work
 
 ```{python}
 print_items(research_df)
@@ -98,7 +115,7 @@ print_items(research_df)
 print_items(teach_df)
 ```
 
-= #fa-trophy() Recent Awards
+= #fa-trophy() Awards
 
 ```{python}
 print_items(award_df)
@@ -116,17 +133,27 @@ print_items(service_df)
   // center top labels
   set table(align: (_, y) => if y == 0 { center } else { left })
   table(
-  columns: 4,
+  columns: (15%,20%,auto,auto),
   stroke: none,
   [*Confidence*],[*Languages*],[*Software*],[*Hardware*],
   line(length: 100%), line(length: 100%), line(length: 100%), line(length: 100%),
-  [⭐⭐⭐⭐], [Markdown, Python], [Quarto, OnShape, Notion, VSCode], [Cryogenic, High Purity, High Vacuum Systems],
-  [⭐⭐⭐], [Spanish], [Solidworks, Git], [Orbital Welder, Drill Press],
+  [⭐⭐⭐⭐], [Markdown, Python, SQL], [Quarto, OnShape, Notion, VSCode, GitLab, Kubernetes, Slack, Zotero, Odoo], [Cryogenic, High Purity, High Vacuum Systems],
+  [⭐⭐⭐], [Spanish], [Solidworks, MongoDB], [Orbital Welder, Drill Press],
   [⭐⭐], [C++, LaTeX, Typst], [COMSOL], [Milling Machine, Lathe, Belt Sander, Bench Grinder]
 )}
-
-= #fa-pen-nib() Publications
-
-#bibliography("pubs.bib", full: true, title: none, style: "american-physics-society")
-
 ```
+
+```{=typst}
+#set par(hanging-indent: 2.8em)
+= #fa-pen-nib() Publications
+```
+
+::: {#refs-pubs}
+:::
+
+```{=typst}
+= #fa-person-chalkboard() Presentations
+```
+
+::: {#refs-pres}
+:::

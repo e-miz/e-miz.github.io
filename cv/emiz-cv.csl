@@ -1,0 +1,227 @@
+<!--Modified by E. Mizrachi (emiz at berkeley.edu) 2025-10 -->
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0"
+  demote-non-dropping-particle="sort-only" default-locale="en-US">
+  <info>
+    <title>American Physical Society</title>
+    <title-short>APS</title-short>
+    <id>http://www.zotero.org/styles/american-physics-society</id>
+    <link href="http://www.zotero.org/styles/american-physics-society" rel="self" />
+    <link href="http://www.zotero.org/styles/american-institute-of-physics" rel="template" />
+    <link href="https://journals.aps.org/prl/authors#techformat" rel="documentation" />
+    <author>
+      <name>Richard Karnesky</name>
+      <email>karnesky+zotero@gmail.com</email>
+      <uri>http://arc.nucapt.northwestern.edu/Richard_Karnesky</uri>
+    </author>
+    <author>
+      <name>Brenton M. Wiernik</name>
+    </author>
+    <contributor>
+      <name>Anna C. Véron</name>
+    </contributor>
+    <category citation-format="numeric" />
+    <category field="physics" />
+    <summary>Common style use by APS publications.</summary>
+    <updated>2025-02-10T03:11:08+00:00</updated>
+    <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a
+      Creative Commons Attribution-ShareAlike 3.0 License</rights>
+  </info>
+  <macro name="author">
+    <names variable="author">
+      <name and="text" et-al-min="4" et-al-use-first="1" initialize-with=". " delimiter=", " />
+      <label form="long" prefix=", " suffix=" " />
+      <substitute>
+        <names variable="editor" />
+        <names variable="translator" />
+      </substitute>
+    </names>
+  </macro>
+  <macro name="editor">
+    <names variable="editor">
+      <label form="verb" suffix=" " />
+      <name delimiter=", " initialize-with=". " and="text" />
+    </names>
+  </macro>
+  <macro name="year-date">
+    <choose>
+      <if variable="issued">
+        <date variable="issued">
+          <date-part name="year" />
+        </date>
+      </if>
+      <else>
+        <text term="no date" form="short" />
+      </else>
+    </choose>
+  </macro>
+  <macro name="day-date">
+    <choose>
+      <if variable="issued">
+        <date variable="issued">
+          <date-part name="day" suffix=" " />
+          <date-part name="month" form="long" suffix=" " />
+          <date-part name="year" />
+        </date>
+      </if>
+      <else>
+        <text term="no date" form="short" />
+      </else>
+    </choose>
+  </macro>
+  <macro name="publisher">
+    <group prefix="(" suffix=")" delimiter=", ">
+      <text variable="publisher" />
+      <!-- conference proceedings locations are the publisher place-->
+      <text variable="publisher-place" text-case="title" />
+    </group>
+  </macro>
+  <macro name="edition-volume">
+    <group delimiter=", ">
+      <choose>
+        <if is-numeric="edition">
+          <group delimiter=" ">
+            <number variable="edition" form="ordinal" />
+            <text term="edition" form="short" />
+          </group>
+        </if>
+        <else>
+          <text variable="edition" />
+        </else>
+      </choose>
+      <group delimiter=" ">
+        <label variable="volume" form="short" text-case="capitalize-first" />
+        <text variable="volume" />
+      </group>
+    </group>
+  </macro>
+  <macro name="doi-url-title">
+    <text variable="title" text-case="title" font-style="italic" />
+  </macro>
+  <citation collapse="citation-number">
+    <sort>
+      <key variable="citation-number" />
+    </sort>
+    <layout delimiter="," prefix="&#160;[" suffix="]">
+      <text variable="citation-number" />
+    </layout>
+  </citation>
+  <!-- hanging-indent=true causes issues in typst
+  https://github.com/typst/typst/issues/2639 -->
+  <bibliography entry-spacing="0" second-field-align="margin" hanging-indent="false">
+    <!-- Reference for book, chapter, report layouts: https://doi.org/10.1103/PhysRevX.10.011010 -->
+    <!-- Reference for arXiv: https://doi.org/10.1103/PhysRevX.10.011004 -->
+    <sort>
+      <key macro="year-date" sort="descending" />
+    </sort>
+    <layout suffix=".">
+      <!-- Behind the scenes it seems like there's two columns. One filled by year-date and one
+      filled by everything else -->
+      <text macro="year-date" font-weight="bold" />
+      <text macro="author" suffix=", " />
+      <choose>
+        <if type="bill book figure graphic legal_case legislation map motion_picture song treaty"
+          match="any">
+          <group delimiter=" ">
+            <group delimiter=", ">
+              <text macro="doi-url-title" />
+              <text macro="edition-volume" />
+            </group>
+            <text macro="publisher" />
+          </group>
+        </if>
+        <else-if type="broadcast chapter entry entry-dictionary entry-encyclopedia paper-conference"
+          match="any">
+          <group delimiter=", ">
+            <text macro="doi-url-title" />
+            <group delimiter=" ">
+              <group delimiter=", ">
+                <!-- for conference papers this is probably the proceedings title) -->
+                <text variable="container-title" text-case="title" font-style="italic" />
+                <!-- for conference papers this is probably the name of the conference  -->
+                <text variable="event-title" text-case="title" />
+                <text macro="editor" />
+                <text macro="edition-volume" />
+              </group>
+              <group delimiter=", ">
+                <text macro="publisher" />
+                <group delimiter=" ">
+                  <label variable="page" form="short" />
+                  <text variable="page" />
+                </group>
+              </group>
+            </group>
+          </group>
+        </else-if>
+        <else-if type="patent">
+          <group delimiter=", ">
+            <text macro="doi-url-title" />
+            <group delimiter=" ">
+              <text variable="number" />
+              <text macro="day-date" prefix="(" suffix=")" />
+            </group>
+          </group>
+        </else-if>
+        <else-if type="thesis report" match="any">
+          <group delimiter=", ">
+            <text variable="title" text-case="title" />
+            <group delimiter=" ">
+              <text variable="genre" />
+              <group delimiter=" ">
+                <text term="issue" form="short" text-case="capitalize-first" />
+                <text variable="number" />
+              </group>
+            </group>
+            <text variable="publisher" />
+          </group>
+        </else-if>
+        <else-if type="article" match="any">
+          <group delimiter=", ">
+            <text macro="doi-url-title" />
+            <choose>
+              <if variable="container-title">
+                <text variable="container-title" />
+              </if>
+              <else>
+                <text variable="number" />
+              </else>
+            </choose>
+          </group>
+        </else-if>
+        <else-if
+          type="dataset interview manuscript pamphlet personal_communication post post-weblog speech webpage"
+          match="any">
+          <!-- unpublished materials; guidelines call for 'enough information to be retrievable' -->
+          <!-- Based on arXiv format -->
+          <group delimiter=" ">
+            <text macro="doi-url-title" />
+          </group>
+        </else-if>
+        <else>
+          <!--article-journal
+          article-magazine article-newspaper review review-book-->
+          <!-- Add comma to suffix since it's folowed by something, unlike the above cases -->
+          <group delimiter=", ">
+            <text macro="doi-url-title" />
+            <group delimiter=" ">
+              <text variable="container-title" form="short" text-case="title" />
+              <group delimiter=", ">
+                <text variable="volume" font-weight="bold" />
+                <group delimiter=" ">
+                  <choose>
+                    <if variable="number">
+                      <text variable="number" />
+                    </if>
+                    <else>
+                      <text variable="page-first" form="short" />
+                    </else>
+                  </choose>
+                </group>
+              </group>
+            </group>
+          </group>
+        </else>
+      </choose>
+    </layout>
+  </bibliography>
+</style>

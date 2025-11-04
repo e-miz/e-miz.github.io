@@ -6,10 +6,11 @@ platforms = ["linux-64"]
 version = "0.1.0"
 
 [tasks]
+multibib = {cmd = "python make_multibib.py", cwd = "cv"}
 
 [dependencies]
 quarto = ">=1.8.25,<2"
 ipykernel = ">=7.0.0,<8"
 nbclient = ">=0.10.2,<0.11"
-pandas = ">=2.3.3,<3"
 pyyaml = ">=6.0.3,<7"
+ibis-duckdb = ">=11.0.0,<12"

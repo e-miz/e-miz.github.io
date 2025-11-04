@@ -13,3 +13,7 @@ site_libs
 # pixi environments
 .pixi/*
 !.pixi/config.toml
+
+# json bib files to ignore
+sel_*.json
+all_*.json
