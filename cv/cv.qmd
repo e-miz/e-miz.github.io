@@ -3,7 +3,7 @@ title: "" # Define title manually
 execute:
   echo: false
   output: asis
-  freeze: false
+  freeze: true
 format:
   typst:
     margin:
