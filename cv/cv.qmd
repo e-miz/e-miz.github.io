@@ -16,8 +16,8 @@ format:
     nocite: |
       @*
     bibliography: 
-      pubs: sel_pubs.json
-      pres: sel_pres.json
+      pubs: all_pubs.json
+      pres: all_pres.json
     csl: emiz-cv.csl
 filters:
   - multibib
@@ -27,6 +27,7 @@ validate-yaml: false
 
 ```{python}
 import pandas as pd
+
 
 # TODO: output this as pandoc markdown instead of typst?
 def print_items(df: pd.DataFrame):
@@ -62,20 +63,20 @@ edu_df = cv_df.loc[cv_df["Type"] == "Degree"].loc[
     :, ["Item", "Description", "Start Date", "End Date", "Information"]
 ]
 
-teach_df = cv_df.loc[
-    (cv_df["Type"] == "Teaching") & (cv_df["Start Date"] > "2017-01-01")
-].loc[:, ["Item", "Description", "Start Date", "End Date", "Information"]]
-
-research_df = cv_df.loc[(cv_df["Type"] == "Research") & (cv_df["Start Date"] > "2016-01-01")].loc[
+teach_df = cv_df.loc[(cv_df["Type"] == "Teaching")].loc[
     :, ["Item", "Description", "Start Date", "End Date", "Information"]
 ]
 
-service_df = cv_df.loc[
-    (cv_df["Type"] == "Service") & (cv_df["Start Date"] > "2020-01-01")
-].loc[:, ["Item", "Description", "Start Date", "End Date", "Information"]]
+research_df = cv_df.loc[(cv_df["Type"] == "Research")].loc[
+    :, ["Item", "Description", "Start Date", "End Date", "Information"]
+]
+
+service_df = cv_df.loc[(cv_df["Type"] == "Service")].loc[
+    :, ["Item", "Description", "Start Date", "End Date", "Information"]
+]
 
 award_df = cv_df.loc[
-    (cv_df["Type"] == "Award") & (cv_df["Start Date"] > "2019-01-01")
+    (cv_df["Type"] == "Award") & (cv_df["Start Date"] > "2015-01-01")
 ].loc[:, ["Item", "Description", "Start Date", "End Date", "Information"]]
 ```
 
@@ -102,25 +103,25 @@ award_df = cv_df.loc[
 print_items(edu_df)
 ```
 
-= #fa-atom() Recent Work
+= #fa-atom() Work
 
 ```{python}
 print_items(research_df)
 ```
 
-= #fa-school() Recent Teaching
+= #fa-school() Teaching
 
 ```{python}
 print_items(teach_df)
 ```
 
-= #fa-trophy() Recent Awards
+= #fa-trophy() Awards
 
 ```{python}
 print_items(award_df)
 ```
 
-= #fa-people-carry() Recent Service
+= #fa-people-carry() Service
 
 ```{python}
 print_items(service_df)
@@ -144,14 +145,14 @@ print_items(service_df)
 
 ```{=typst}
 #set par(hanging-indent: 2.8em)
-= #fa-pen-nib() Recent Publications
+= #fa-pen-nib() Publications
 ```
 
 ::: {#refs-pubs}
 :::
 
 ```{=typst}
-= #fa-person-chalkboard() Recent Presentations
+= #fa-person-chalkboard() Presentations
 ```
 
 ::: {#refs-pres}

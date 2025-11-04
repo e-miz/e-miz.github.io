@@ -20,7 +20,8 @@ def get_keys_and_tags(zotero_data):
     """
     key_tags = (
         zotero_data.select(_.items.unnest())
-        .items.lift().filter(_.date > "2023-08-01")
+        .items.lift()
+        .filter(_.date > "2023-08-01")
         .select(
             # THEN, keeping the citation key we can unnest the array of tags (array of structs)
             # To get the citationkeys with a specific tag
@@ -104,3 +105,28 @@ sel_works = (
 
 with open("sel_works.json", "w") as f:
     json.dump(remove_null_fields(sel_works), f)
+
+all_pres = (
+    # Get items which only these tags with a self-inner join on the sets containing each tag
+    key_tags.filter((_.tags["tag"] == "mypresentation"))
+    .join(key_tags, ["id"])
+    .drop(s.contains("tags"))
+    .join(csl_pubs, ["id"])
+    .execute()
+    .to_dict(orient="records")
+)
+
+with open("all_pres.json", "w") as f:
+    json.dump(remove_null_fields(all_pres), f)
+
+all_pubs = (
+    key_tags.filter((_.tags["tag"] == "mypublication"))
+    .join(key_tags, ["id"])
+    .drop("tags")
+    .join(csl_pubs, ["id"])
+    .execute()
+    .to_dict(orient="records")
+)
+
+with open("all_pubs.json", "w") as f:
+    json.dump(remove_null_fields(all_pubs), f)
