@@ -1,8 +1,10 @@
 # %%
-import ibis
-from ibis import _, selectors as s
 import json
 from typing import Any
+
+import ibis
+from ibis import _
+from ibis import selectors as s
 
 con = ibis.duckdb.connect()
 # %%
@@ -18,7 +20,7 @@ def get_keys_and_tags(zotero_data):
     in the struct into it's own column with lift. The resulting tags field is also an array of structs.
     With one struct per tag on an item.
     """
-    key_tags = (
+    return (
         zotero_data.select(_.items.unnest())
         .items.lift()
         .filter(_.date > "2023-08-01")
@@ -30,7 +32,6 @@ def get_keys_and_tags(zotero_data):
         )
         .rename(id="citationKey")
     )
-    return key_tags
 
 
 # This only exists because citeproc/CSL can't parse a dict if a value is null
@@ -52,19 +53,18 @@ def remove_null_fields(data: dict[Any, Any]) -> None | dict[Any, Any] | list[Any
             cleaned_value = remove_null_fields(value)
             if cleaned_value is not None:
                 cleaned_dict[key] = cleaned_value
-        return cleaned_dict if cleaned_dict else None
-    elif isinstance(data, list):
+        return cleaned_dict or None
+    if isinstance(data, list):
         # Loop over a list and build a new one without None
         cleaned_list = []
         for item in data:
             cleaned_item = remove_null_fields(item)
             if cleaned_item is not None:
                 cleaned_list.append(cleaned_item)
-        return cleaned_list if cleaned_list else None
-    else:
-        # This is basically the kernel of the filter,
-        # I.e. it's run at the lowest levels of the dict.
-        return data if data is not None else None
+        return cleaned_list or None
+    # This is basically the kernel of the filter,
+    # I.e. it's run at the lowest levels of the dict.
+    return data if data is not None else None
 
 
 # %%
@@ -72,8 +72,8 @@ def remove_null_fields(data: dict[Any, Any]) -> None | dict[Any, Any] | list[Any
 key_tags = get_keys_and_tags(zotero_data)
 sel_pres = (
     # Get items which only these tags with a self-inner join on the sets containing each tag
-    key_tags.filter((_.tags["tag"] == "mypresentation"))
-    .join(key_tags.filter((_.tags["tag"] == "selectedworks")), ["id"])
+    key_tags.filter(_.tags["tag"] == "mypresentation")
+    .join(key_tags.filter(_.tags["tag"] == "selectedworks"), ["id"])
     .drop(s.contains("tags"))
     .join(csl_pubs, ["id"])
     .execute()
@@ -84,8 +84,8 @@ with open("sel_pres.json", "w") as f:
     json.dump(remove_null_fields(sel_pres), f)
 
 sel_pubs = (
-    key_tags.filter((_.tags["tag"] == "mypublication"))
-    .join(key_tags.filter((_.tags["tag"] == "selectedworks")), ["id"])
+    key_tags.filter(_.tags["tag"] == "mypublication")
+    .join(key_tags.filter(_.tags["tag"] == "selectedworks"), ["id"])
     .drop("tags")
     .join(csl_pubs, ["id"])
     .execute()
@@ -96,7 +96,7 @@ with open("sel_pubs.json", "w") as f:
     json.dump(remove_null_fields(sel_pubs), f)
 
 sel_works = (
-    key_tags.filter((_.tags["tag"] == "selectedworks"))
+    key_tags.filter(_.tags["tag"] == "selectedworks")
     .drop("tags")
     .join(csl_pubs, ["id"])
     .execute()
@@ -108,7 +108,7 @@ with open("sel_works.json", "w") as f:
 
 all_pres = (
     # Get items which only these tags with a self-inner join on the sets containing each tag
-    key_tags.filter((_.tags["tag"] == "mypresentation"))
+    key_tags.filter(_.tags["tag"] == "mypresentation")
     .join(key_tags, ["id"])
     .drop(s.contains("tags"))
     .join(csl_pubs, ["id"])
@@ -120,7 +120,7 @@ with open("all_pres.json", "w") as f:
     json.dump(remove_null_fields(all_pres), f)
 
 all_pubs = (
-    key_tags.filter((_.tags["tag"] == "mypublication"))
+    key_tags.filter(_.tags["tag"] == "mypublication")
     .join(key_tags, ["id"])
     .drop("tags")
     .join(csl_pubs, ["id"])
