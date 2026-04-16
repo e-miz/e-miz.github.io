@@ -1,4 +1,5 @@
 # %%
+from ibis.expr.rewrites import name
 import json
 from typing import Any
 
@@ -68,65 +69,70 @@ def remove_null_fields(data: dict[Any, Any]) -> None | dict[Any, Any] | list[Any
 
 
 # %%
-# Again, we can't print to json from df since it will fill fields with null values which break citeproc
-key_tags = get_keys_and_tags(zotero_data, "2014-08-01")
-sel_pres = (
-    # Get items which only these tags with a self-inner join on the sets containing each tag
-    key_tags.filter(_.tags["tag"] == "mypresentation")
-    .join(key_tags.filter(_.tags["tag"] == "selectedworks"), ["id"])
-    .drop(s.contains("tags"))
-    .join(csl_pubs, ["id"])
-    .execute()
-    .to_dict(orient="records")
-)
 
-with open("sel_pres.json", "w") as f:
-    json.dump(remove_null_fields(sel_pres), f)
+def generate_pres_and_pub_json(after_date: str) -> None:
+    # Again, we can't print to json from df since it will fill fields with null values which break citeproc
+    key_tags = get_keys_and_tags(zotero_data, after_date)
+    sel_pres = (
+        # Get items which only these tags with a self-inner join on the sets containing each tag
+        key_tags.filter(_.tags["tag"] == "mypresentation")
+        .join(key_tags.filter(_.tags["tag"] == "selectedworks"), ["id"])
+        .drop(s.contains("tags"))
+        .join(csl_pubs, ["id"])
+        .execute()
+        .to_dict(orient="records")
+    )
 
-sel_pubs = (
-    key_tags.filter(_.tags["tag"] == "mypublication")
-    .join(key_tags.filter(_.tags["tag"] == "selectedworks"), ["id"])
-    .drop("tags")
-    .join(csl_pubs, ["id"])
-    .execute()
-    .to_dict(orient="records")
-)
+    with open("sel_pres.json", "w") as f:
+        json.dump(remove_null_fields(sel_pres), f)
 
-with open("sel_pubs.json", "w") as f:
-    json.dump(remove_null_fields(sel_pubs), f)
+    sel_pubs = (
+        key_tags.filter(_.tags["tag"] == "mypublication")
+        .join(key_tags.filter(_.tags["tag"] == "selectedworks"), ["id"])
+        .drop("tags")
+        .join(csl_pubs, ["id"])
+        .execute()
+        .to_dict(orient="records")
+    )
 
-sel_works = (
-    key_tags.filter(_.tags["tag"] == "selectedworks")
-    .drop("tags")
-    .join(csl_pubs, ["id"])
-    .execute()
-    .to_dict(orient="records")
-)
+    with open("sel_pubs.json", "w") as f:
+        json.dump(remove_null_fields(sel_pubs), f)
 
-with open("sel_works.json", "w") as f:
-    json.dump(remove_null_fields(sel_works), f)
+    sel_works = (
+        key_tags.filter(_.tags["tag"] == "selectedworks")
+        .drop("tags")
+        .join(csl_pubs, ["id"])
+        .execute()
+        .to_dict(orient="records")
+    )
 
-all_pres = (
-    # Get items which only these tags with a self-inner join on the sets containing each tag
-    key_tags.filter(_.tags["tag"] == "mypresentation")
-    .join(key_tags, ["id"])
-    .drop(s.contains("tags"))
-    .join(csl_pubs, ["id"])
-    .execute()
-    .to_dict(orient="records")
-)
+    with open("sel_works.json", "w") as f:
+        json.dump(remove_null_fields(sel_works), f)
 
-with open("all_pres.json", "w") as f:
-    json.dump(remove_null_fields(all_pres), f)
+    all_pres = (
+        # Get items which only these tags with a self-inner join on the sets containing each tag
+        key_tags.filter(_.tags["tag"] == "mypresentation")
+        .join(key_tags, ["id"])
+        .drop(s.contains("tags"))
+        .join(csl_pubs, ["id"])
+        .execute()
+        .to_dict(orient="records")
+    )
 
-all_pubs = (
-    key_tags.filter(_.tags["tag"] == "mypublication")
-    .join(key_tags, ["id"])
-    .drop("tags")
-    .join(csl_pubs, ["id"])
-    .execute()
-    .to_dict(orient="records")
-)
+    with open("all_pres.json", "w") as f:
+        json.dump(remove_null_fields(all_pres), f)
 
-with open("all_pubs.json", "w") as f:
-    json.dump(remove_null_fields(all_pubs), f)
+    all_pubs = (
+        key_tags.filter(_.tags["tag"] == "mypublication")
+        .join(key_tags, ["id"])
+        .drop("tags")
+        .join(csl_pubs, ["id"])
+        .execute()
+        .to_dict(orient="records")
+    )
+
+    with open("all_pubs.json", "w") as f:
+        json.dump(remove_null_fields(all_pubs), f)
+
+if __name__ == "__main__":
+    generate_pres_and_pub_json(after_date="2014-08-01")

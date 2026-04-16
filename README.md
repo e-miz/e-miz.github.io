@@ -39,6 +39,13 @@ The CSL file has been customized for the following types:
     - As better bibtex CSL json
     - As better bibtext JSON: This one contains tags used for filtering
 - `pixi run multibib` to generate any derived bibliogrpahies
+  - The same code is also run with `quarto render`
+
+### Filtering Publications
+
+- Publications are tagged within Zotero as `mypublication` or `mypresentation` (exclusive or)
+- There is a `selectedworks` tag to indicate items with notable contributions.
+- The publication list is filtered with `generate_pres_and_pub_json`
 
 ## Further Reading
 
