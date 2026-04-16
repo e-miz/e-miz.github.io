@@ -19,7 +19,7 @@ about:
 
 # Hello!
 
-I'm Eli Mizrachi ("miz-rah-chee"). I use `they` or `she` pronouns. I'm currently a postdoc working with Dr. Maria Elena Monzani at SLAC on the LZ dark matter search experiment. 
+I'm Eli Mizrachi ("miz-rah-chee"). I use `they` or `she` pronouns. I'm currently working at [SLAC](https://www6.slac.stanford.edu/) as the Software Development Coordinator for the [LZ dark matter search experiment](https://lz.lbl.gov/). 
 
 You can find my dissertation [here](https://emiz.gitlab.io/thesis_public/) and see my CV for more information.
 
@@ -27,6 +27,6 @@ You can find my dissertation [here](https://emiz.gitlab.io/thesis_public/) and s
 
 * Cool science hardware, i.e. high-purity, high-vacuum, cryogenic gas systems.
 * Particle physics
-* Sustainable software development and documentation
 * Data engineering
+* Sustainable software development and documentation
 * [*Tikkun olam*](https://en.wikipedia.org/wiki/Tikkun_olam)

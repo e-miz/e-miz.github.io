@@ -14,7 +14,6 @@
       "autoExportPathReplaceDirSep": "-",
       "autoExportPathReplaceSpace": " ",
       "automaticTags": true,
-      "autoPinDelay": 0,
       "auxImport": false,
       "baseAttachmentPath": "",
       "biblatexExtendedDateFormat": true,
@@ -26,7 +25,6 @@
       "bibtexURL": "off",
       "cache": true,
       "cacheDelete": false,
-      "cacheRetain": false,
       "charmap": "",
       "chinese": false,
       "chineseSplitName": true,
@@ -45,6 +43,7 @@
       "extraMergeCitekeys": false,
       "extraMergeCSL": false,
       "extraMergeTeX": false,
+      "fillKeyAfter": 1,
       "git": "config",
       "import": true,
       "importBibTeXStrings": true,
@@ -62,7 +61,6 @@
       "itemObserverDelay": 5,
       "jabrefFormat": 0,
       "japanese": false,
-      "keyConflictPolicy": "keep",
       "keyScope": "library",
       "language": "langid",
       "mapMath": "",
@@ -82,6 +80,8 @@
       "rawImports": false,
       "rawLaTag": "#LaTeX",
       "relativeFilePaths": false,
+      "remigrate": false,
+      "resetKeyOnChange": false,
       "separatorList": "and",
       "separatorNames": "and",
       "skipFields": "abstract",
@@ -100,20 +100,19 @@
       "exportFileData": false,
       "exportNotes": false,
       "keepUpdated": false,
-      "worker": true,
-      "exportDir": "\\\\wsl.localhost\\Ubuntu\\home\\emiz\\projects\\e-miz.github.io\\cv",
-      "exportPath": "\\\\wsl.localhost\\Ubuntu\\home\\emiz\\projects\\e-miz.github.io\\cv\\zotero_bbt_export.json"
+      "worker": false,
+      "exportDir": "C:\\Users\\emiz\\Desktop",
+      "exportPath": "C:\\Users\\emiz\\Desktop\\zotero_bbt_export.json"
     }
   },
   "version": {
-    "zotero": "8.0-beta.13+d1f478fc4",
-    "bbt": "7.0.61"
+    "zotero": "9.0-beta.21+1a89239a1",
+    "bbt": "9.0.13"
   },
   "collections": {},
   "items": [
     {
-      "key": "59YIJGPE",
-      "version": 12199,
+      "version": 12827,
       "itemType": "journalArticle",
       "title": "Background determination for the LUX-ZEPLIN dark matter experiment",
       "abstractNote": "The LUX-ZEPLIN experiment recently reported limits on WIMP-nucleus interactions from its initial science run, down to 9.2×10−48 cm2 for the spin-independent interaction of a 36 GeV/c2 WIMP at 90% confidence level. In this paper, we present a comprehensive analysis of the backgrounds important for this result and for other upcoming physics analyses, including neutrinoless double-beta decay searches and effective field theory interpretations of LUX-ZEPLIN data. We confirm that the in-situ determinations of bulk and fixed radioactive backgrounds are consistent with expectations from the ex-situ assays. The observed background rate after WIMP search criteria were applied was (6.3±0.5)×10−5 events/keVee/kg/day in the low-energy region, approximately 60 times lower than the equivalent rate reported by the LUX experiment.",
@@ -121,13 +120,14 @@
       "libraryCatalog": "APS",
       "url": "https://link.aps.org/doi/10.1103/PhysRevD.108.012010",
       "accessDate": "2023-10-29T06:38:07Z",
-      "extra": "Publisher: American Physical Society",
       "volume": "108",
+      "publisher": "American Physical Society",
       "pages": "012010",
       "publicationTitle": "Physical Review D",
       "DOI": "10.1103/PhysRevD.108.012010",
       "issue": "1",
       "journalAbbreviation": "Phys. Rev. D",
+      "citationKey": "aalbersBackgroundDeterminationLUXZEPLIN2023",
       "creators": [
         {
           "firstName": "J.",
@@ -1157,7 +1157,6 @@
       "dateAdded": "2023-10-29T06:38:07Z",
       "dateModified": "2025-10-15T03:10:27Z",
       "uri": "http://zotero.org/users/9614022/items/59YIJGPE",
-      "itemID": 1385,
       "attachments": [
         {
           "itemType": "attachment",
@@ -1178,7 +1177,7 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2024-07-24T20:53:12Z",
-          "dateModified": "2025-10-15T23:48:13Z",
+          "dateModified": "2026-03-03T23:48:45Z",
           "uri": "http://zotero.org/users/9614022/items/M2QEWWUS",
           "select": "zotero://select/library/items/M2QEWWUS"
         },
@@ -1195,14 +1194,13 @@
         }
       ],
       "notes": [],
-      "citationKey": "aalbersBackgroundDeterminationLUXZEPLIN2023",
+      "itemID": 1385,
       "itemKey": "59YIJGPE",
       "libraryID": 1,
       "select": "zotero://select/library/items/59YIJGPE"
     },
     {
-      "key": "Y95T4HNW",
-      "version": 11925,
+      "version": 12821,
       "itemType": "journalArticle",
       "title": "Cosmogenic production of $^{37}$Ar in the context of the LUX-ZEPLIN experiment",
       "abstractNote": "We estimate the amount of $^{37}$Ar produced in natural xenon via cosmic ray-induced spallation, an inevitable consequence of the transportation and storage of xenon on the Earth's surface. We then calculate the resulting $^{37}$Ar concentration in a 10-tonne payload~(similar to that of the LUX-ZEPLIN experiment) assuming a representative schedule of xenon purification, storage and delivery to the underground facility. Using the spallation model by Silberberg and Tsao, the sea level production rate of $^{37}$Ar in natural xenon is estimated to be 0.024~atoms/kg/day. Assuming the xenon is successively purified to remove radioactive contaminants in 1-tonne batches at a rate of 1~tonne/month, the average $^{37}$Ar activity after 10~tonnes are purified and transported underground is 0.058--0.090~$\\mu$Bq/kg, depending on the degree of argon removal during above-ground purification. Such cosmogenic $^{37}$Ar will appear as a noticeable background in the early science data, while decaying with a 35~day half-life. This newly-noticed production mechanism of $^{37}$Ar should be considered when planning for future liquid xenon-based experiments.",
@@ -1218,6 +1216,7 @@
       "issue": "8",
       "journalAbbreviation": "Phys. Rev. D",
       "ISSN": "2470-0010, 2470-0029",
+      "citationKey": "aalbersCosmogenicProduction372022",
       "creators": [
         {
           "firstName": "J.",
@@ -2272,7 +2271,6 @@
       "dateAdded": "2023-01-02T21:54:01Z",
       "dateModified": "2024-07-24T20:55:58Z",
       "uri": "http://zotero.org/users/9614022/items/Y95T4HNW",
-      "itemID": 373,
       "attachments": [
         {
           "itemType": "attachment",
@@ -2292,20 +2290,19 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2024-07-24T20:55:58Z",
-          "dateModified": "2024-08-18T20:18:18Z",
+          "dateModified": "2026-03-03T23:48:59Z",
           "uri": "http://zotero.org/users/9614022/items/8II4KSXP",
           "select": "zotero://select/library/items/8II4KSXP"
         }
       ],
       "notes": [],
-      "citationKey": "aalbersCosmogenicProduction372022",
+      "itemID": 373,
       "itemKey": "Y95T4HNW",
       "libraryID": 1,
       "select": "zotero://select/library/items/Y95T4HNW"
     },
     {
-      "key": "GIQMPWRE",
-      "version": 12288,
+      "version": 12838,
       "itemType": "preprint",
       "title": "The Data Acquisition System of the LZ Dark Matter Detector: FADR",
       "abstractNote": "The Data Acquisition System (DAQ) for the LUX-ZEPLIN (LZ) dark matter detector is described. The signals from 745 PMTs, distributed across three subsystems, are sampled with 100-MHz 32-channel digitizers (DDC-32s). A basic waveform analysis is carried out on the on-board Field Programmable Gate Arrays (FPGAs) to extract information about the observed scintillation and electroluminescence signals. This information is used to determine if the digitized waveforms should be preserved for offline analysis. The system is designed around the Kintex-7 FPGA. In addition to digitizing the PMT signals and providing basic event selection in real time, the flexibility provided by the use of FPGAs allows us to monitor the performance of the detector and the DAQ in parallel to normal data acquisition. The hardware and software/firmware of this FPGA-based Architecture for Data acquisition and Realtime monitoring (FADR) are discussed and performance measurements are described.",
@@ -2318,6 +2315,7 @@
       "DOI": "10.48550/arXiv.2405.14732",
       "repository": "arXiv",
       "archiveID": "arXiv:2405.14732",
+      "citationKey": "aalbersDataAcquisitionSystem2024",
       "creators": [
         {
           "firstName": "J.",
@@ -3402,14 +3400,14 @@
       ],
       "tags": [
         {
-          "tag": "High Energy Physics - Experiment",
-          "type": 1
+          "tag": "notion"
         },
         {
           "tag": "mypublication"
         },
         {
-          "tag": "notion"
+          "tag": "High Energy Physics - Experiment",
+          "type": 1
         },
         {
           "tag": "Physics - Instrumentation and Detectors",
@@ -3420,7 +3418,6 @@
       "dateAdded": "2025-10-14T06:13:21Z",
       "dateModified": "2025-10-26T19:20:21Z",
       "uri": "http://zotero.org/users/9614022/items/GIQMPWRE",
-      "itemID": 2620,
       "attachments": [
         {
           "itemType": "attachment",
@@ -3441,7 +3438,7 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2025-10-14T06:13:25Z",
-          "dateModified": "2025-10-26T19:20:24Z",
+          "dateModified": "2026-03-03T23:48:24Z",
           "uri": "http://zotero.org/users/9614022/items/NWWTN3DJ",
           "select": "zotero://select/library/items/NWWTN3DJ"
         },
@@ -3472,14 +3469,13 @@
           "uri": "http://zotero.org/users/9614022/items/AT675JC3"
         }
       ],
-      "citationKey": "aalbersDataAcquisitionSystem2024",
+      "itemID": 2620,
       "itemKey": "GIQMPWRE",
       "libraryID": 1,
       "select": "zotero://select/library/items/GIQMPWRE"
     },
     {
-      "key": "NJLHUJCP",
-      "version": 12326,
+      "version": 12839,
       "itemType": "journalArticle",
       "title": "The design, implementation, and performance of the LZ calibration systems",
       "abstractNote": "LUX-ZEPLIN (LZ) is a tonne-scale experiment searching for direct dark matter interactions and other rare events. It is located at the Sanford Underground Research Facility (SURF) in Lead, South Dakota, USA. The core of the LZ detector is a dual-phase xenon time projection chamber (TPC), designed with the primary goal of detecting Weakly Interacting Massive Particles (WIMPs) via their induced low energy nuclear recoils. Surrounding the TPC, two veto detectors immersed in an ultra-pure water tank enable reducing background events to enhance the discovery potential. Intricate calibration systems are purposely designed to precisely understand the responses of these three detector volumes to various types of particle interactions and to demonstrate LZ's ability to discriminate between signals and backgrounds. In this paper, we present a comprehensive discussion of the key features, requirements, and performance of the LZ calibration systems, which play a crucial role in enabling LZ's WIMP-search and its broad science program. The thorough description of these calibration systems, with an emphasis on their novel aspects, is valuable for future calibration efforts in direct dark matter and other rare-event search experiments.",
@@ -3488,14 +3484,15 @@
       "libraryCatalog": "Institute of Physics",
       "url": "https://doi.org/10.1088/1748-0221/19/08/P08027",
       "accessDate": "2025-10-14T06:13:58Z",
-      "extra": "Publisher: IOP Publishing",
       "volume": "19",
+      "publisher": "IOP Publishing",
       "pages": "P08027",
       "publicationTitle": "Journal of Instrumentation",
       "DOI": "10.1088/1748-0221/19/08/P08027",
       "issue": "08",
       "journalAbbreviation": "J. Inst.",
       "ISSN": "1748-0221",
+      "citationKey": "aalbersDesignImplementationPerformance2024",
       "creators": [
         {
           "firstName": "J.",
@@ -4525,17 +4522,16 @@
       ],
       "tags": [
         {
-          "tag": "mypublication"
+          "tag": "notion"
         },
         {
-          "tag": "notion"
+          "tag": "mypublication"
         }
       ],
       "relations": {},
       "dateAdded": "2025-10-14T06:13:58Z",
       "dateModified": "2025-10-27T05:09:12Z",
       "uri": "http://zotero.org/users/9614022/items/NJLHUJCP",
-      "itemID": 2626,
       "attachments": [
         {
           "itemType": "attachment",
@@ -4556,34 +4552,35 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2025-10-14T06:14:00Z",
-          "dateModified": "2025-10-27T05:09:15Z",
+          "dateModified": "2026-03-03T23:48:17Z",
           "uri": "http://zotero.org/users/9614022/items/GWUNZ6PH",
           "select": "zotero://select/library/items/GWUNZ6PH"
         }
       ],
       "notes": [],
-      "citationKey": "aalbersDesignImplementationPerformance2024",
+      "itemID": 2626,
       "itemKey": "NJLHUJCP",
       "libraryID": 1,
       "select": "zotero://select/library/items/NJLHUJCP"
     },
     {
-      "key": "GWTKJC92",
-      "version": 12198,
+      "version": 12826,
       "itemType": "journalArticle",
       "title": "First Dark Matter Search Results from the LUX-ZEPLIN (LZ) Experiment",
-      "abstractNote": "The LUX-ZEPLIN experiment is a dark matter detector centered on a dual-phase xenon time projection chamber operating at the Sanford Underground Research Facility in Lead, South Dakota, USA. This Letter reports results from LUX-ZEPLIN’s first search for weakly interacting massive particles (WIMPs) with an exposure of 60 live days using a fiducial mass of 5.5 t. A profile-likelihood ratio analysis shows the data to be consistent with a background-only hypothesis, setting new limits on spin-independent WIMP-nucleon, spin-dependent WIMP-neutron, and spin-dependent WIMP-proton cross sections for WIMP masses above 9 GeV/c2. The most stringent limit is set for spin-independent scattering at 36 GeV/c2, rejecting cross sections above 9.2×10−48 cm2 at the 90% confidence level.",
+      "abstractNote": "The LUX-ZEPLIN experiment is a dark matter detector centered on a dual-phase xenon time projection chamber operating at the Sanford Underground Research Facility in Lead, South Dakota, USA. This Letter reports results from LUX-ZEPLIN's first search for weakly interacting massive particles (WIMPs) with an exposure of 60~live days using a fiducial mass of 5.5 t. A profile-likelihood ratio analysis shows the data to be consistent with a background-only hypothesis, setting new limits on spin-independent WIMP-nucleon, spin-dependent WIMP-neutron, and spin-dependent WIMP-proton cross sections for WIMP masses above 9 GeV/c$^2$. The most stringent limit is set for spin-independent scattering at 36 GeV/c$^2$, rejecting cross sections above 9.2$\\times 10^{-48}$ cm$^2$ at the 90% confidence level.",
       "date": "2023-07-28",
-      "libraryCatalog": "APS",
-      "url": "https://link.aps.org/doi/10.1103/PhysRevLett.131.041002",
-      "accessDate": "2023-10-29T06:42:53Z",
-      "extra": "Publisher: American Physical Society",
+      "libraryCatalog": "arXiv.org",
+      "url": "http://arxiv.org/abs/2207.03764",
+      "accessDate": "2023-08-15T19:51:37Z",
+      "extra": "arXiv:2207.03764 [astro-ph, physics:hep-ex]",
       "volume": "131",
       "pages": "041002",
       "publicationTitle": "Physical Review Letters",
       "DOI": "10.1103/PhysRevLett.131.041002",
       "issue": "4",
       "journalAbbreviation": "Phys. Rev. Lett.",
+      "ISSN": "0031-9007, 1079-7114",
+      "citationKey": "aalbersFirstDarkMatter2023",
       "creators": [
         {
           "firstName": "J.",
@@ -4591,18 +4588,18 @@
           "creatorType": "author"
         },
         {
-          "firstName": "D. S.",
+          "firstName": "D. S.",
           "lastName": "Akerib",
           "creatorType": "author"
         },
         {
-          "firstName": "C. W.",
+          "firstName": "C. W.",
           "lastName": "Akerlof",
           "creatorType": "author"
         },
         {
-          "firstName": "A. K.",
-          "lastName": "Al Musalhi",
+          "firstName": "A. K. Al",
+          "lastName": "Musalhi",
           "creatorType": "author"
         },
         {
@@ -4616,12 +4613,12 @@
           "creatorType": "author"
         },
         {
-          "firstName": "S. K.",
+          "firstName": "S. K.",
           "lastName": "Alsum",
           "creatorType": "author"
         },
         {
-          "firstName": "C. S.",
+          "firstName": "C. S.",
           "lastName": "Amarasinghe",
           "creatorType": "author"
         },
@@ -4631,7 +4628,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "T. J.",
+          "firstName": "T. J.",
           "lastName": "Anderson",
           "creatorType": "author"
         },
@@ -4641,12 +4638,12 @@
           "creatorType": "author"
         },
         {
-          "firstName": "H. M.",
+          "firstName": "H. M.",
           "lastName": "Araújo",
           "creatorType": "author"
         },
         {
-          "firstName": "J. E.",
+          "firstName": "J. E.",
           "lastName": "Armstrong",
           "creatorType": "author"
         },
@@ -4661,7 +4658,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "A. J.",
+          "firstName": "A. J.",
           "lastName": "Bailey",
           "creatorType": "author"
         },
@@ -4686,12 +4683,12 @@
           "creatorType": "author"
         },
         {
-          "firstName": "J. W.",
+          "firstName": "J. W.",
           "lastName": "Bargemann",
           "creatorType": "author"
         },
         {
-          "firstName": "M. J.",
+          "firstName": "M. J.",
           "lastName": "Barry",
           "creatorType": "author"
         },
@@ -4736,7 +4733,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "E. P.",
+          "firstName": "E. P.",
           "lastName": "Bernard",
           "creatorType": "author"
         },
@@ -4751,12 +4748,12 @@
           "creatorType": "author"
         },
         {
-          "firstName": "T. P.",
+          "firstName": "T. P.",
           "lastName": "Biesiadzinski",
           "creatorType": "author"
         },
         {
-          "firstName": "H. J.",
+          "firstName": "H. J.",
           "lastName": "Birch",
           "creatorType": "author"
         },
@@ -4766,12 +4763,12 @@
           "creatorType": "author"
         },
         {
-          "firstName": "G. M.",
+          "firstName": "G. M.",
           "lastName": "Blockinger",
           "creatorType": "author"
         },
         {
-          "firstName": "K. E.",
+          "firstName": "K. E.",
           "lastName": "Boast",
           "creatorType": "author"
         },
@@ -4786,7 +4783,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "C. A. J.",
+          "firstName": "C. A. J.",
           "lastName": "Brew",
           "creatorType": "author"
         },
@@ -4796,12 +4793,12 @@
           "creatorType": "author"
         },
         {
-          "firstName": "J. H.",
+          "firstName": "J. H.",
           "lastName": "Buckley",
           "creatorType": "author"
         },
         {
-          "firstName": "V. V.",
+          "firstName": "V. V.",
           "lastName": "Bugaev",
           "creatorType": "author"
         },
@@ -4811,7 +4808,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "J. K.",
+          "firstName": "J. K.",
           "lastName": "Busenitz",
           "creatorType": "author"
         },
@@ -4831,7 +4828,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "D. L.",
+          "firstName": "D. L.",
           "lastName": "Carlsmith",
           "creatorType": "author"
         },
@@ -4841,7 +4838,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "M. C.",
+          "firstName": "M. C.",
           "lastName": "Carmona-Benitez",
           "creatorType": "author"
         },
@@ -4866,12 +4863,12 @@
           "creatorType": "author"
         },
         {
-          "firstName": "J. J.",
+          "firstName": "J. J.",
           "lastName": "Cherwinka",
           "creatorType": "author"
         },
         {
-          "firstName": "N. I.",
+          "firstName": "N. I.",
           "lastName": "Chott",
           "creatorType": "author"
         },
@@ -4886,7 +4883,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "M. V.",
+          "firstName": "M. V.",
           "lastName": "Converse",
           "creatorType": "author"
         },
@@ -4901,7 +4898,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "W. W.",
+          "firstName": "W. W.",
           "lastName": "Craddock",
           "creatorType": "author"
         },
@@ -4921,12 +4918,12 @@
           "creatorType": "author"
         },
         {
-          "firstName": "J. E.",
+          "firstName": "J. E.",
           "lastName": "Cutter",
           "creatorType": "author"
         },
         {
-          "firstName": "C. E.",
+          "firstName": "C. E.",
           "lastName": "Dahl",
           "creatorType": "author"
         },
@@ -4941,7 +4938,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "T. J. R.",
+          "firstName": "T. J. R.",
           "lastName": "Davison",
           "creatorType": "author"
         },
@@ -4966,7 +4963,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "J. E. Y.",
+          "firstName": "J. E. Y.",
           "lastName": "Dobson",
           "creatorType": "author"
         },
@@ -4981,32 +4978,32 @@
           "creatorType": "author"
         },
         {
-          "firstName": "T. K.",
+          "firstName": "T. K.",
           "lastName": "Edberg",
           "creatorType": "author"
         },
         {
-          "firstName": "W. R.",
+          "firstName": "W. R.",
           "lastName": "Edwards",
           "creatorType": "author"
         },
         {
-          "firstName": "M. M.",
+          "firstName": "M. M.",
           "lastName": "Elnimr",
           "creatorType": "author"
         },
         {
-          "firstName": "W. T.",
+          "firstName": "W. T.",
           "lastName": "Emmet",
           "creatorType": "author"
         },
         {
-          "firstName": "S. R.",
+          "firstName": "S. R.",
           "lastName": "Eriksen",
           "creatorType": "author"
         },
         {
-          "firstName": "C. H.",
+          "firstName": "C. H.",
           "lastName": "Faham",
           "creatorType": "author"
         },
@@ -5021,7 +5018,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "N. M.",
+          "firstName": "N. M.",
           "lastName": "Fearon",
           "creatorType": "author"
         },
@@ -5041,12 +5038,12 @@
           "creatorType": "author"
         },
         {
-          "firstName": "V. B.",
+          "firstName": "V. B.",
           "lastName": "Francis",
           "creatorType": "author"
         },
         {
-          "firstName": "E. D.",
+          "firstName": "E. D.",
           "lastName": "Fraser",
           "creatorType": "author"
         },
@@ -5056,12 +5053,12 @@
           "creatorType": "author"
         },
         {
-          "firstName": "R. J.",
+          "firstName": "R. J.",
           "lastName": "Gaitskell",
           "creatorType": "author"
         },
         {
-          "firstName": "N. J.",
+          "firstName": "N. J.",
           "lastName": "Gantos",
           "creatorType": "author"
         },
@@ -5076,7 +5073,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "V. M.",
+          "firstName": "V. M.",
           "lastName": "Gehman",
           "creatorType": "author"
         },
@@ -5101,7 +5098,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "M. G. D.",
+          "firstName": "M. G. D.",
           "lastName": "Gilchriese",
           "creatorType": "author"
         },
@@ -5131,17 +5128,17 @@
           "creatorType": "author"
         },
         {
-          "firstName": "M. G. D.",
+          "firstName": "M. G. D.",
           "lastName": "van der Grinten",
           "creatorType": "author"
         },
         {
-          "firstName": "C. B.",
+          "firstName": "C. B.",
           "lastName": "Gwilliam",
           "creatorType": "author"
         },
         {
-          "firstName": "C. R.",
+          "firstName": "C. R.",
           "lastName": "Hall",
           "creatorType": "author"
         },
@@ -5162,21 +5159,16 @@
         },
         {
           "firstName": "E.",
-          "lastName": "Hartigan-O’Connor",
+          "lastName": "Hartigan-O'Connor",
           "creatorType": "author"
         },
         {
-          "firstName": "S. J.",
+          "firstName": "S. J.",
           "lastName": "Haselschwardt",
           "creatorType": "author"
         },
         {
-          "firstName": "M. A.",
-          "lastName": "Hernandez",
-          "creatorType": "author"
-        },
-        {
-          "firstName": "S. A.",
+          "firstName": "S. A.",
           "lastName": "Hertel",
           "creatorType": "author"
         },
@@ -5191,7 +5183,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "M. D.",
+          "firstName": "M. D.",
           "lastName": "Hoff",
           "creatorType": "author"
         },
@@ -5201,7 +5193,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "J. Y-K.",
+          "firstName": "J. Y.-K.",
           "lastName": "Hor",
           "creatorType": "author"
         },
@@ -5211,7 +5203,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "D. Q.",
+          "firstName": "D. Q.",
           "lastName": "Huang",
           "creatorType": "author"
         },
@@ -5221,12 +5213,12 @@
           "creatorType": "author"
         },
         {
-          "firstName": "C. M.",
+          "firstName": "C. M.",
           "lastName": "Ignarra",
           "creatorType": "author"
         },
         {
-          "firstName": "R. G.",
+          "firstName": "R. G.",
           "lastName": "Jacobsen",
           "creatorType": "author"
         },
@@ -5236,12 +5228,12 @@
           "creatorType": "author"
         },
         {
-          "firstName": "R. S.",
+          "firstName": "R. S.",
           "lastName": "James",
           "creatorType": "author"
         },
         {
-          "firstName": "S. N.",
+          "firstName": "S. N.",
           "lastName": "Jeffery",
           "creatorType": "author"
         },
@@ -5256,12 +5248,12 @@
           "creatorType": "author"
         },
         {
-          "firstName": "A. C.",
+          "firstName": "A. C.",
           "lastName": "Kaboth",
           "creatorType": "author"
         },
         {
-          "firstName": "A. C.",
+          "firstName": "A. C.",
           "lastName": "Kamaha",
           "creatorType": "author"
         },
@@ -5306,12 +5298,12 @@
           "creatorType": "author"
         },
         {
-          "firstName": "Y. D.",
+          "firstName": "Y. D.",
           "lastName": "Kim",
           "creatorType": "author"
         },
         {
-          "firstName": "C. D.",
+          "firstName": "C. D.",
           "lastName": "Kocher",
           "creatorType": "author"
         },
@@ -5326,7 +5318,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "E. V.",
+          "firstName": "E. V.",
           "lastName": "Korolkova",
           "creatorType": "author"
         },
@@ -5346,7 +5338,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "H. J.",
+          "firstName": "H. J.",
           "lastName": "Krebs",
           "creatorType": "author"
         },
@@ -5361,7 +5353,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "V. A.",
+          "firstName": "V. A.",
           "lastName": "Kudryavtsev",
           "creatorType": "author"
         },
@@ -5376,7 +5368,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "E. A.",
+          "firstName": "E. A.",
           "lastName": "Leason",
           "creatorType": "author"
         },
@@ -5391,7 +5383,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "D. S.",
+          "firstName": "D. S.",
           "lastName": "Leonard",
           "creatorType": "author"
         },
@@ -5401,7 +5393,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "K. T.",
+          "firstName": "K. T.",
           "lastName": "Lesko",
           "creatorType": "author"
         },
@@ -5441,7 +5433,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "W. H.",
+          "firstName": "W. H.",
           "lastName": "Lippincott",
           "creatorType": "author"
         },
@@ -5466,18 +5458,18 @@
           "creatorType": "author"
         },
         {
-          "firstName": "M. I.",
+          "firstName": "M. I.",
           "lastName": "Lopes",
           "creatorType": "author"
         },
         {
-          "firstName": "E.",
-          "lastName": "Lopez Asamar",
+          "firstName": "E. Lopez",
+          "lastName": "Asamar",
           "creatorType": "author"
         },
         {
-          "firstName": "B.",
-          "lastName": "López Paredes",
+          "firstName": "B. López",
+          "lastName": "Paredes",
           "creatorType": "author"
         },
         {
@@ -5496,12 +5488,12 @@
           "creatorType": "author"
         },
         {
-          "firstName": "J. M.",
+          "firstName": "J. M.",
           "lastName": "Lyle",
           "creatorType": "author"
         },
         {
-          "firstName": "P. A.",
+          "firstName": "P. A.",
           "lastName": "Majewski",
           "creatorType": "author"
         },
@@ -5511,7 +5503,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "D. C.",
+          "firstName": "D. C.",
           "lastName": "Malling",
           "creatorType": "author"
         },
@@ -5526,7 +5518,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "R. L.",
+          "firstName": "R. L.",
           "lastName": "Mannino",
           "creatorType": "author"
         },
@@ -5536,7 +5528,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "M. F.",
+          "firstName": "M. F.",
           "lastName": "Marzioni",
           "creatorType": "author"
         },
@@ -5546,17 +5538,17 @@
           "creatorType": "author"
         },
         {
-          "firstName": "M. E.",
+          "firstName": "M. E.",
           "lastName": "McCarthy",
           "creatorType": "author"
         },
         {
-          "firstName": "C. T.",
+          "firstName": "C. T.",
           "lastName": "McConnell",
           "creatorType": "author"
         },
         {
-          "firstName": "D. N.",
+          "firstName": "D. N.",
           "lastName": "McKinsey",
           "creatorType": "author"
         },
@@ -5576,7 +5568,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "E. H.",
+          "firstName": "E. H.",
           "lastName": "Miller",
           "creatorType": "author"
         },
@@ -5586,7 +5578,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "J. A.",
+          "firstName": "J. A.",
           "lastName": "Mock",
           "creatorType": "author"
         },
@@ -5596,18 +5588,18 @@
           "creatorType": "author"
         },
         {
-          "firstName": "M. E.",
+          "firstName": "M. E.",
           "lastName": "Monzani",
           "creatorType": "author"
         },
         {
-          "firstName": "J. A.",
+          "firstName": "J. A.",
           "lastName": "Morad",
           "creatorType": "author"
         },
         {
-          "firstName": "J. D.",
-          "lastName": "Morales Mendoza",
+          "firstName": "J. D. Morales",
+          "lastName": "Mendoza",
           "creatorType": "author"
         },
         {
@@ -5616,7 +5608,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "B. J.",
+          "firstName": "B. J.",
           "lastName": "Mount",
           "creatorType": "author"
         },
@@ -5626,7 +5618,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "A. St. J.",
+          "firstName": "A. St J.",
           "lastName": "Murphy",
           "creatorType": "author"
         },
@@ -5661,7 +5653,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "J. A.",
+          "firstName": "J. A.",
           "lastName": "Nikoleyczik",
           "creatorType": "author"
         },
@@ -5672,17 +5664,17 @@
         },
         {
           "firstName": "J.",
-          "lastName": "O’Dell",
+          "lastName": "O'Dell",
           "creatorType": "author"
         },
         {
-          "firstName": "F. G.",
-          "lastName": "O’Neill",
+          "firstName": "F. G.",
+          "lastName": "O'Neill",
           "creatorType": "author"
         },
         {
           "firstName": "K.",
-          "lastName": "O’Sullivan",
+          "lastName": "O'Sullivan",
           "creatorType": "author"
         },
         {
@@ -5691,12 +5683,12 @@
           "creatorType": "author"
         },
         {
-          "firstName": "M. A.",
+          "firstName": "M. A.",
           "lastName": "Olevitch",
           "creatorType": "author"
         },
         {
-          "firstName": "K. C.",
+          "firstName": "K. C.",
           "lastName": "Oliver-Mallory",
           "creatorType": "author"
         },
@@ -5716,7 +5708,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "K. J.",
+          "firstName": "K. J.",
           "lastName": "Palladino",
           "creatorType": "author"
         },
@@ -5736,12 +5728,12 @@
           "creatorType": "author"
         },
         {
-          "firstName": "S. J.",
+          "firstName": "S. J.",
           "lastName": "Patton",
           "creatorType": "author"
         },
         {
-          "firstName": "E. K.",
+          "firstName": "E. K.",
           "lastName": "Pease",
           "creatorType": "author"
         },
@@ -5771,7 +5763,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "I. B.",
+          "firstName": "I. B.",
           "lastName": "Peterson",
           "creatorType": "author"
         },
@@ -5796,7 +5788,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "R. M.",
+          "firstName": "R. M.",
           "lastName": "Preece",
           "creatorType": "author"
         },
@@ -5811,7 +5803,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "B. N.",
+          "firstName": "B. N.",
           "lastName": "Ratcliff",
           "creatorType": "author"
         },
@@ -5826,7 +5818,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "C. A.",
+          "firstName": "C. A.",
           "lastName": "Rhyne",
           "creatorType": "author"
         },
@@ -5841,12 +5833,12 @@
           "creatorType": "author"
         },
         {
-          "firstName": "G. R. C.",
+          "firstName": "G. R. C.",
           "lastName": "Rischbieter",
           "creatorType": "author"
         },
         {
-          "firstName": "J. P.",
+          "firstName": "J. P.",
           "lastName": "Rodrigues",
           "creatorType": "author"
         },
@@ -5856,7 +5848,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "H. J.",
+          "firstName": "H. J.",
           "lastName": "Rose",
           "creatorType": "author"
         },
@@ -5886,7 +5878,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "J. S.",
+          "firstName": "J. S.",
           "lastName": "Saba",
           "creatorType": "author"
         },
@@ -5896,17 +5888,17 @@
           "creatorType": "author"
         },
         {
-          "firstName": "A. B. M. R.",
+          "firstName": "A. B. M. R.",
           "lastName": "Sazzad",
           "creatorType": "author"
         },
         {
-          "firstName": "R. W.",
+          "firstName": "R. W.",
           "lastName": "Schnee",
           "creatorType": "author"
         },
         {
-          "firstName": "P. R.",
+          "firstName": "P. R.",
           "lastName": "Scovell",
           "creatorType": "author"
         },
@@ -5926,7 +5918,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "J. J.",
+          "firstName": "J. J.",
           "lastName": "Silk",
           "creatorType": "author"
         },
@@ -5961,7 +5953,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "V. N.",
+          "firstName": "V. N.",
           "lastName": "Solovov",
           "creatorType": "author"
         },
@@ -5981,7 +5973,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "M. R.",
+          "firstName": "M. R.",
           "lastName": "Stark",
           "creatorType": "author"
         },
@@ -5991,7 +5983,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "T. M.",
+          "firstName": "T. M.",
           "lastName": "Stiegler",
           "creatorType": "author"
         },
@@ -6011,7 +6003,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "T. J.",
+          "firstName": "T. J.",
           "lastName": "Sumner",
           "creatorType": "author"
         },
@@ -6036,7 +6028,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "D. J.",
+          "firstName": "D. J.",
           "lastName": "Taylor",
           "creatorType": "author"
         },
@@ -6046,32 +6038,32 @@
           "creatorType": "author"
         },
         {
-          "firstName": "W. C.",
+          "firstName": "W. C.",
           "lastName": "Taylor",
           "creatorType": "author"
         },
         {
-          "firstName": "D. J.",
+          "firstName": "D. J.",
           "lastName": "Temples",
           "creatorType": "author"
         },
         {
-          "firstName": "B. P.",
+          "firstName": "B. P.",
           "lastName": "Tennyson",
           "creatorType": "author"
         },
         {
-          "firstName": "P. A.",
+          "firstName": "P. A.",
           "lastName": "Terman",
           "creatorType": "author"
         },
         {
-          "firstName": "K. J.",
+          "firstName": "K. J.",
           "lastName": "Thomas",
           "creatorType": "author"
         },
         {
-          "firstName": "D. R.",
+          "firstName": "D. R.",
           "lastName": "Tiedt",
           "creatorType": "author"
         },
@@ -6081,7 +6073,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "W. H.",
+          "firstName": "W. H.",
           "lastName": "To",
           "creatorType": "author"
         },
@@ -6096,7 +6088,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "D. R.",
+          "firstName": "D. R.",
           "lastName": "Tovey",
           "creatorType": "author"
         },
@@ -6116,12 +6108,12 @@
           "creatorType": "author"
         },
         {
-          "firstName": "D. R.",
+          "firstName": "D. R.",
           "lastName": "Tronstad",
           "creatorType": "author"
         },
         {
-          "firstName": "C. E.",
+          "firstName": "C. E.",
           "lastName": "Tull",
           "creatorType": "author"
         },
@@ -6142,7 +6134,7 @@
         },
         {
           "firstName": "J.",
-          "lastName": "Va’vra",
+          "lastName": "Va'vra",
           "creatorType": "author"
         },
         {
@@ -6151,12 +6143,12 @@
           "creatorType": "author"
         },
         {
-          "firstName": "A. C.",
+          "firstName": "A. C.",
           "lastName": "Vaitkus",
           "creatorType": "author"
         },
         {
-          "firstName": "J. R.",
+          "firstName": "J. R.",
           "lastName": "Verbus",
           "creatorType": "author"
         },
@@ -6166,7 +6158,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "W. L.",
+          "firstName": "W. L.",
           "lastName": "Waldron",
           "creatorType": "author"
         },
@@ -6181,7 +6173,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "J. J.",
+          "firstName": "J. J.",
           "lastName": "Wang",
           "creatorType": "author"
         },
@@ -6196,12 +6188,12 @@
           "creatorType": "author"
         },
         {
-          "firstName": "J. R.",
+          "firstName": "J. R.",
           "lastName": "Watson",
           "creatorType": "author"
         },
         {
-          "firstName": "R. C.",
+          "firstName": "R. C.",
           "lastName": "Webb",
           "creatorType": "author"
         },
@@ -6211,22 +6203,22 @@
           "creatorType": "author"
         },
         {
-          "firstName": "D. T.",
+          "firstName": "D. T.",
           "lastName": "White",
           "creatorType": "author"
         },
         {
-          "firstName": "J. T.",
+          "firstName": "J. T.",
           "lastName": "White",
           "creatorType": "author"
         },
         {
-          "firstName": "R. G.",
+          "firstName": "R. G.",
           "lastName": "White",
           "creatorType": "author"
         },
         {
-          "firstName": "T. J.",
+          "firstName": "T. J.",
           "lastName": "Whitis",
           "creatorType": "author"
         },
@@ -6236,22 +6228,22 @@
           "creatorType": "author"
         },
         {
-          "firstName": "W. J.",
+          "firstName": "W. J.",
           "lastName": "Wisniewski",
           "creatorType": "author"
         },
         {
-          "firstName": "M. S.",
+          "firstName": "M. S.",
           "lastName": "Witherell",
           "creatorType": "author"
         },
         {
-          "firstName": "F. L. H.",
+          "firstName": "F. L. H.",
           "lastName": "Wolfs",
           "creatorType": "author"
         },
         {
-          "firstName": "J. D.",
+          "firstName": "J. D.",
           "lastName": "Wolfs",
           "creatorType": "author"
         },
@@ -6266,12 +6258,12 @@
           "creatorType": "author"
         },
         {
-          "firstName": "S. D.",
+          "firstName": "S. D.",
           "lastName": "Worm",
           "creatorType": "author"
         },
         {
-          "firstName": "C. J.",
+          "firstName": "C. J.",
           "lastName": "Wright",
           "creatorType": "author"
         },
@@ -6321,7 +6313,7 @@
           "creatorType": "author"
         },
         {
-          "firstName": "E. A.",
+          "firstName": "E. A.",
           "lastName": "Zweig",
           "creatorType": "author"
         }
@@ -6334,12 +6326,31 @@
           "tag": "mypublication"
         }
       ],
-      "relations": {},
-      "dateAdded": "2023-10-29T06:42:53Z",
-      "dateModified": "2025-10-15T03:10:20Z",
-      "uri": "http://zotero.org/users/9614022/items/GWTKJC92",
-      "itemID": 1389,
+      "relations": {
+        "dc:replaces": [
+          "http://zotero.org/users/9614022/items/GWTKJC92",
+          "http://zotero.org/users/9614022/items/NC5YZZVG"
+        ]
+      },
+      "dateAdded": "2023-08-15T19:51:28Z",
+      "dateModified": "2025-12-29T06:32:10Z",
+      "uri": "http://zotero.org/users/9614022/items/2N6454NX",
       "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Aalbers et al. - 2023 - First Dark Matter Search Results from the LUX-ZEPL.pdf",
+          "path": "G:\\Shared drives\\Research\\Sources\\Zotero\\Aalbers et al. - 2023 - First Dark Matter Search Results from the LUX-ZEPL2.pdf",
+          "tags": [],
+          "relations": {
+            "dc:replaces": [
+              "http://zotero.org/users/9614022/items/3FPXWGKS"
+            ]
+          },
+          "dateAdded": "2023-08-15T19:51:50Z",
+          "dateModified": "2025-01-09T19:54:56Z",
+          "uri": "http://zotero.org/users/9614022/items/LZ8AQTLV",
+          "select": "zotero://select/library/items/LZ8AQTLV"
+        },
         {
           "itemType": "attachment",
           "title": "APS Snapshot",
@@ -6347,10 +6358,26 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2023-10-29T06:43:00Z",
-          "dateModified": "2023-10-29T06:43:00Z",
+          "dateModified": "2025-12-29T06:32:10Z",
           "uri": "http://zotero.org/users/9614022/items/FIBN3CS8",
           "path": "C:\\Users\\emiz\\Zotero\\storage\\FIBN3CS8\\PhysRevLett.131.html",
           "select": "zotero://select/library/items/FIBN3CS8"
+        },
+        {
+          "itemType": "attachment",
+          "title": "arXiv.org Snapshot",
+          "url": "https://arxiv.org/abs/2207.03764",
+          "tags": [],
+          "relations": {
+            "dc:replaces": [
+              "http://zotero.org/users/9614022/items/GAA3SJE5"
+            ]
+          },
+          "dateAdded": "2023-08-15T19:51:58Z",
+          "dateModified": "2025-01-09T19:54:56Z",
+          "uri": "http://zotero.org/users/9614022/items/8ESQ5LVY",
+          "path": "C:\\Users\\emiz\\Zotero\\storage\\8ESQ5LVY\\2207.html",
+          "select": "zotero://select/library/items/8ESQ5LVY"
         },
         {
           "itemType": "attachment",
@@ -6359,31 +6386,48 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2023-10-29T06:42:57Z",
-          "dateModified": "2025-01-09T19:52:50Z",
+          "dateModified": "2025-12-29T06:32:10Z",
           "uri": "http://zotero.org/users/9614022/items/P3DMMACK",
           "select": "zotero://select/library/items/P3DMMACK"
         },
         {
           "itemType": "attachment",
           "title": "Notion",
-          "url": "notion://www.notion.so/Aalbers-et-al-2023-bb57d61f714c4115b94759fcd0157808",
+          "url": "notion://www.notion.so/Aalbers-et-al-2023-16a9e1c1ad014920aabfad04cea30ad2",
           "tags": [],
-          "relations": {},
-          "dateAdded": "2024-07-24T20:53:52Z",
-          "dateModified": "2025-10-15T23:48:13Z",
-          "uri": "http://zotero.org/users/9614022/items/742LRWWT",
-          "select": "zotero://select/library/items/742LRWWT"
+          "relations": {
+            "dc:replaces": [
+              "http://zotero.org/users/9614022/items/742LRWWT",
+              "http://zotero.org/users/9614022/items/AZF8ATVP"
+            ]
+          },
+          "dateAdded": "2024-06-07T21:33:17Z",
+          "dateModified": "2026-03-03T23:47:56Z",
+          "uri": "http://zotero.org/users/9614022/items/XIF9C5UB",
+          "select": "zotero://select/library/items/XIF9C5UB"
         }
       ],
-      "notes": [],
-      "citationKey": "aalbersFirstDarkMatter2023a",
-      "itemKey": "GWTKJC92",
+      "notes": [
+        {
+          "key": "TYZWVI3T",
+          "version": 12004,
+          "itemType": "note",
+          "parentItem": "2N6454NX",
+          "note": "<p xmlns=\"http://www.w3.org/1999/xhtml\" id=\"title\"><strong>Contents</strong></p><ul xmlns=\"http://www.w3.org/1999/xhtml\" style=\"list-style-type: none; padding-left:0px\" id=\"toc\"><li><a href=\"zotero://open-pdf/0_3FPXWGKS/2\">Abstract</a></li><li style=\"padding-top:4px\"><a href=\"zotero://open-pdf/0_3FPXWGKS/8\">Appendix - Spin Dependent Results</a></li><li style=\"padding-top:4px\"><a href=\"zotero://open-pdf/0_3FPXWGKS/9\">References</a></li><li style=\"padding-top:4px\"><a href=\"zotero://open-pdf/0_3FPXWGKS/12\">Detailed Event Rates</a></li><li style=\"padding-top:4px\"><a href=\"zotero://open-pdf/0_3FPXWGKS/12\">Tuned Detector and Xenon Response Model Details</a></li><li style=\"padding-top:4px\"><a href=\"zotero://open-pdf/0_3FPXWGKS/12\">Limits in terms of number of WIMP events</a></li><li style=\"padding-top:4px\"><a href=\"zotero://open-pdf/0_3FPXWGKS/13\">Data Release</a></li></ul>",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2025-01-09T19:54:56Z",
+          "dateModified": "2025-01-09T19:54:56Z",
+          "uri": "http://zotero.org/users/9614022/items/TYZWVI3T"
+        }
+      ],
+      "itemID": 758,
+      "itemKey": "2N6454NX",
       "libraryID": 1,
-      "select": "zotero://select/library/items/GWTKJC92"
+      "select": "zotero://select/library/items/2N6454NX"
     },
     {
-      "key": "J6K8MC43",
-      "version": 12103,
+      "version": 12839,
       "itemType": "preprint",
       "title": "Flow-dependent tagging of $^{214}$Pb decays in the LZ dark matter detector",
       "abstractNote": "The LUX-ZEPLIN (LZ) experiment is searching for dark matter interactions in a liquid xenon time projection chamber (LXe-TPC). This article demonstrates how control of the flow state in the LXe-TPC enables the identification of pairs of sequential alpha-decays, which are used to map fluid flow and ion drift in the liquid target. The resulting transport model is used to tag $^{214}$Pb beta-decays, a leading background to dark matter signals in LZ. Temporally evolving volume selections, at a cost of 9.0% of exposure, target the decay of each $^{214}$Pb atom up to 81 minutes after production, resulting in (63 $\\pm$ 6$_{\\mathrm{stat}}$ $\\pm$ 7$_{\\mathrm{sys}}$)% identification of $^{214}$Pb decays to ground state. We also demonstrate how flow-based tagging techniques enable a novel calibration side band that is concurrent with science data.",
@@ -6395,6 +6439,7 @@
       "DOI": "10.48550/arXiv.2508.19117",
       "repository": "arXiv",
       "archiveID": "arXiv:2508.19117",
+      "citationKey": "aalbersFlowdependentTagging$^214$Pb2025",
       "creators": [
         {
           "firstName": "J.",
@@ -7457,7 +7502,6 @@
       "dateAdded": "2025-10-14T06:15:08Z",
       "dateModified": "2025-10-14T06:16:33Z",
       "uri": "http://zotero.org/users/9614022/items/J6K8MC43",
-      "itemID": 2643,
       "attachments": [
         {
           "itemType": "attachment",
@@ -7478,7 +7522,7 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2025-10-14T06:15:14Z",
-          "dateModified": "2025-10-15T23:49:10Z",
+          "dateModified": "2026-03-03T23:48:55Z",
           "uri": "http://zotero.org/users/9614022/items/IEZG4FGA",
           "select": "zotero://select/library/items/IEZG4FGA"
         },
@@ -7509,14 +7553,13 @@
           "uri": "http://zotero.org/users/9614022/items/LGFSBAZ8"
         }
       ],
-      "citationKey": "aalbersFlowdependentTagging$^214$Pb2025",
+      "itemID": 2643,
       "itemKey": "J6K8MC43",
       "libraryID": 1,
       "select": "zotero://select/library/items/J6K8MC43"
     },
     {
-      "key": "MJEWBSEC",
-      "version": 12103,
+      "version": 12839,
       "itemType": "preprint",
       "title": "Low-energy nuclear recoil calibration of the LUX-ZEPLIN experiment with a photoneutron source",
       "abstractNote": "The LZ experiment is a liquid xenon time-projection chamber (TPC) searching for evidence of particle dark matter interactions. In the simplest assumption of elastic scattering, many dark matter models predict an energy spectrum which rises quasi-exponentially with decreasing energy transfer to a target atom. LZ expects to detect coherent neutrino-nucleus scattering of $^{8}$B solar neutrinos, the signal from which is very similar to a dark matter particle with mass of about 5.5 GeV/$c^{2}$, which result in typical nuclear recoil energies of $<$5 keV$_{\\text{nr}}$. Therefore, it is of crucial importance to calibrate the response of recoiling xenon nuclei to keV-energy recoils. This analysis details the first in situ photoneutron calibration of the LZ detector and probes its response in this energy regime.",
@@ -7528,6 +7571,7 @@
       "DOI": "10.48550/arXiv.2509.16281",
       "repository": "arXiv",
       "archiveID": "arXiv:2509.16281",
+      "citationKey": "aalbersLowenergyNuclearRecoil2025",
       "creators": [
         {
           "firstName": "J.",
@@ -8600,7 +8644,6 @@
       "dateAdded": "2025-10-14T06:15:20Z",
       "dateModified": "2025-10-14T06:16:33Z",
       "uri": "http://zotero.org/users/9614022/items/MJEWBSEC",
-      "itemID": 2650,
       "attachments": [
         {
           "itemType": "attachment",
@@ -8621,7 +8664,7 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2025-10-14T06:15:24Z",
-          "dateModified": "2025-10-15T23:48:45Z",
+          "dateModified": "2026-03-03T23:48:54Z",
           "uri": "http://zotero.org/users/9614022/items/LUKS2MWA",
           "select": "zotero://select/library/items/LUKS2MWA"
         },
@@ -8639,14 +8682,13 @@
         }
       ],
       "notes": [],
-      "citationKey": "aalbersLowenergyNuclearRecoil2025",
+      "itemID": 2650,
       "itemKey": "MJEWBSEC",
       "libraryID": 1,
       "select": "zotero://select/library/items/MJEWBSEC"
     },
     {
-      "key": "264J2F7T",
-      "version": 12322,
+      "version": 12839,
       "itemType": "journalArticle",
       "title": "Neutrinoless double beta decay sensitivity of the XLZD rare event observatory",
       "abstractNote": "The XLZD collaboration is developing a two-phase xenon time projection chamber with an active mass of 60–80 t capable of probing the remaining weakly interacting massive particle-nucleon interaction parameter space down to the so-called neutrino fog. In this work we show that, based on the performance of currently operating detectors using the same technology and a realistic reduction of radioactivity in detector materials, such an experiment will also be able to competitively search for neutrinoless double beta decay in 136Xe using a natural-abundance xenon target. XLZD can reach a 3σ discovery potential half-life of 5.7 × 1027 years (and a 90% CL exclusion of 1.3 × 1028 years) with 10 years of data taking, corresponding to a Majorana mass range of 7.3–31.3 meV (4.8–20.5 meV). XLZD will thus exclude the inverted neutrino mass ordering parameter space and will start to probe the normal ordering region for most of the nuclear matrix elements commonly considered by the community.",
@@ -8655,14 +8697,15 @@
       "libraryCatalog": "Institute of Physics",
       "url": "https://doi.org/10.1088/1361-6471/adb900",
       "accessDate": "2025-10-14T06:14:55Z",
-      "extra": "Publisher: IOP Publishing",
       "volume": "52",
+      "publisher": "IOP Publishing",
       "pages": "045102",
       "publicationTitle": "Journal of Physics G: Nuclear and Particle Physics",
       "DOI": "10.1088/1361-6471/adb900",
       "issue": "4",
       "journalAbbreviation": "J. Phys. G: Nucl. Part. Phys.",
       "ISSN": "0954-3899",
+      "citationKey": "aalbersNeutrinolessDoubleBeta2025",
       "creators": [
         {
           "firstName": "J",
@@ -10867,17 +10910,16 @@
       ],
       "tags": [
         {
-          "tag": "mypublication"
+          "tag": "notion"
         },
         {
-          "tag": "notion"
+          "tag": "mypublication"
         }
       ],
       "relations": {},
       "dateAdded": "2025-10-14T06:14:56Z",
       "dateModified": "2025-10-27T05:07:57Z",
       "uri": "http://zotero.org/users/9614022/items/264J2F7T",
-      "itemID": 2639,
       "attachments": [
         {
           "itemType": "attachment",
@@ -10898,20 +10940,19 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2025-10-14T06:15:13Z",
-          "dateModified": "2025-10-27T05:08:01Z",
+          "dateModified": "2026-03-03T23:48:20Z",
           "uri": "http://zotero.org/users/9614022/items/X87KGD8Q",
           "select": "zotero://select/library/items/X87KGD8Q"
         }
       ],
       "notes": [],
-      "citationKey": "aalbersNeutrinolessDoubleBeta2025",
+      "itemID": 2639,
       "itemKey": "264J2F7T",
       "libraryID": 1,
       "select": "zotero://select/library/items/264J2F7T"
     },
     {
-      "key": "8YQEHHCD",
-      "version": 11925,
+      "version": 12821,
       "itemType": "journalArticle",
       "title": "A Next-Generation Liquid Xenon Observatory for Dark Matter and Neutrino Physics",
       "abstractNote": "The nature of dark matter and properties of neutrinos are among the most pressing issues in contemporary particle physics. The dual-phase xenon time-projection chamber is the leading technology to cover the available parameter space for Weakly Interacting Massive Particles (WIMPs), while featuring extensive sensitivity to many alternative dark matter candidates. These detectors can also study neutrinos through neutrinoless double-beta decay and through a variety of astrophysical sources. A next-generation xenon-based detector will therefore be a true multi-purpose observatory to significantly advance particle physics, nuclear physics, astrophysics, solar physics, and cosmology. This review article presents the science cases for such a detector.",
@@ -10925,6 +10966,7 @@
       "publicationTitle": "Journal of Physics G: Nuclear and Particle Physics",
       "DOI": "10.48550/arXiv.2203.02309",
       "issue": "1",
+      "citationKey": "aalbersNextGenerationLiquidXenon2022",
       "creators": [
         {
           "firstName": "J.",
@@ -13928,7 +13970,6 @@
       "dateAdded": "2023-01-02T21:54:58Z",
       "dateModified": "2024-07-24T20:56:04Z",
       "uri": "http://zotero.org/users/9614022/items/8YQEHHCD",
-      "itemID": 371,
       "attachments": [
         {
           "itemType": "attachment",
@@ -13948,20 +13989,19 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2024-07-24T20:56:04Z",
-          "dateModified": "2024-08-18T20:18:16Z",
+          "dateModified": "2026-03-03T23:48:59Z",
           "uri": "http://zotero.org/users/9614022/items/VI9CGR9Z",
           "select": "zotero://select/library/items/VI9CGR9Z"
         }
       ],
       "notes": [],
-      "citationKey": "aalbersNextGenerationLiquidXenon2022",
+      "itemID": 371,
       "itemKey": "8YQEHHCD",
       "libraryID": 1,
       "select": "zotero://select/library/items/8YQEHHCD"
     },
     {
-      "key": "TFG2BJD2",
-      "version": 12327,
+      "version": 12839,
       "itemType": "journalArticle",
       "title": "Two-neutrino double electron capture of 124Xe in the first LUX-ZEPLIN exposure",
       "abstractNote": "The broad physics reach of the LUX-ZEPLIN (LZ) experiment covers rare phenomena beyond the direct detection of dark matter. We report precise measurements of the extremely rare decay of 124Xe through the process of two-neutrino double electron capture, utilizing a 1.39 kg × yr isotopic exposure from the first LZ science run. A half-life of is observed with a statistical significance of 8.3σ, in agreement with literature. First empirical measurements of the KK capture fraction relative to other K-shell modes were conducted, and demonstrate consistency with respect to recent signal models at the 1.4σ level.",
@@ -13970,14 +14010,15 @@
       "libraryCatalog": "Institute of Physics",
       "url": "https://doi.org/10.1088/1361-6471/ad9039",
       "accessDate": "2025-10-14T06:14:22Z",
-      "extra": "Publisher: IOP Publishing",
       "volume": "52",
+      "publisher": "IOP Publishing",
       "pages": "015103",
       "publicationTitle": "Journal of Physics G: Nuclear and Particle Physics",
       "DOI": "10.1088/1361-6471/ad9039",
       "issue": "1",
       "journalAbbreviation": "J. Phys. G: Nucl. Part. Phys.",
       "ISSN": "0954-3899",
+      "citationKey": "aalbersTwoneutrinoDoubleElectron2024",
       "creators": [
         {
           "firstName": "J",
@@ -15012,17 +15053,16 @@
       ],
       "tags": [
         {
-          "tag": "mypublication"
+          "tag": "notion"
         },
         {
-          "tag": "notion"
+          "tag": "mypublication"
         }
       ],
       "relations": {},
       "dateAdded": "2025-10-14T06:14:22Z",
       "dateModified": "2025-10-27T05:09:24Z",
       "uri": "http://zotero.org/users/9614022/items/TFG2BJD2",
-      "itemID": 2630,
       "attachments": [
         {
           "itemType": "attachment",
@@ -15043,20 +15083,19 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2025-10-14T06:14:27Z",
-          "dateModified": "2025-10-27T05:09:27Z",
+          "dateModified": "2026-03-03T23:48:17Z",
           "uri": "http://zotero.org/users/9614022/items/G46QWNS6",
           "select": "zotero://select/library/items/G46QWNS6"
         }
       ],
       "notes": [],
-      "citationKey": "aalbersTwoneutrinoDoubleElectron2024",
+      "itemID": 2630,
       "itemKey": "TFG2BJD2",
       "libraryID": 1,
       "select": "zotero://select/library/items/TFG2BJD2"
     },
     {
-      "key": "4PKNQDH5",
-      "version": 12200,
+      "version": 12839,
       "itemType": "preprint",
       "title": "The XLZD Design Book: Towards the Next-Generation Liquid Xenon Observatory for Dark Matter and Neutrino Physics",
       "abstractNote": "This report describes the experimental strategy and technologies for XLZD, the next-generation xenon observatory sensitive to dark matter and neutrino physics. In the baseline design, the detector will have an active liquid xenon target of 60 tonnes, which could be increased to 80 tonnes if the market conditions for xenon are favorable. It is based on the mature liquid xenon time projection chamber technology used in current-generation experiments, LZ and XENONnT. The report discusses the baseline design and opportunities for further optimization of the individual detector components. The experiment envisaged here has the capability to explore parameter space for Weakly Interacting Massive Particle (WIMP) dark matter down to the neutrino fog, with a 3$\\sigma$ evidence potential for WIMP-nucleon cross sections as low as $3\\times10^{-49}\\rm\\,cm^2$ (at 40 GeV/c$^2$ WIMP mass). The observatory will also have leading sensitivity to a wide range of alternative dark matter models. It is projected to have a 3$\\sigma$ observation potential of neutrinoless double beta decay of $^{136}$Xe at a half-life of up to $5.7\\times 10^{27}$ years. Additionally, it is sensitive to astrophysical neutrinos from the sun and galactic supernovae.",
@@ -15069,6 +15108,7 @@
       "DOI": "10.48550/arXiv.2410.17137",
       "repository": "arXiv",
       "archiveID": "arXiv:2410.17137",
+      "citationKey": "aalbersXLZDDesignBook2025",
       "creators": [
         {
           "firstName": "J.",
@@ -17310,7 +17350,6 @@
       "dateAdded": "2025-10-14T06:14:38Z",
       "dateModified": "2025-10-15T03:10:38Z",
       "uri": "http://zotero.org/users/9614022/items/4PKNQDH5",
-      "itemID": 2634,
       "attachments": [
         {
           "itemType": "attachment",
@@ -17331,7 +17370,7 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2025-10-14T06:14:41Z",
-          "dateModified": "2025-10-15T23:49:13Z",
+          "dateModified": "2026-03-03T23:48:40Z",
           "uri": "http://zotero.org/users/9614022/items/62HYMBZT",
           "select": "zotero://select/library/items/62HYMBZT"
         },
@@ -17362,14 +17401,13 @@
           "uri": "http://zotero.org/users/9614022/items/LBI4CLPX"
         }
       ],
-      "citationKey": "aalbersXLZDDesignBook2025",
+      "itemID": 2634,
       "itemKey": "4PKNQDH5",
       "libraryID": 1,
       "select": "zotero://select/library/items/4PKNQDH5"
     },
     {
-      "key": "YRP3DZ6D",
-      "version": 11897,
+      "version": 12822,
       "itemType": "preprint",
       "title": "Enhancing the sensitivity of the LUX-ZEPLIN (LZ) dark matter experiment to low energy signals",
       "abstractNote": "Two-phase xenon detectors, such as that at the core of the forthcoming LZ dark matter experiment, use photomultiplier tubes to sense the primary (S1) and secondary (S2) scintillation signals resulting from particle interactions in their liquid xenon target. This paper describes a simulation study exploring two techniques to lower the energy threshold of LZ to gain sensitivity to low-mass dark matter and astrophysical neutrinos, which will be applicable to other liquid xenon detectors. The energy threshold is determined by the number of detected S1 photons; typically, these must be recorded in three or more photomultiplier channels to avoid dark count coincidences that mimic real signals. To lower this threshold: a) we take advantage of the double photoelectron emission effect, whereby a single vacuum ultraviolet photon has a $\\sim20\\%$ probability of ejecting two photoelectrons from a photomultiplier tube photocathode; and b) we drop the requirement of an S1 signal altogether, and use only the ionization signal, which can be detected more efficiently. For both techniques we develop signal and background models for the nominal exposure, and explore accompanying systematic effects, including the dependence on the free electron lifetime in the liquid xenon. When incorporating double photoelectron signals, we predict a factor of $\\sim 4$ sensitivity improvement to the dark matter-nucleon scattering cross-section at $2.5$ GeV/c$^2$, and a factor of $\\sim1.6$ increase in the solar $^8$B neutrino detection rate. Dropping the S1 requirement may allow sensitivity gains of two orders of magnitude in both cases. Finally, we apply these techniques to even lower masses by taking into account the atomic Migdal effect; this could lower the dark matter particle mass threshold to $80$ MeV/c$^2$.",
@@ -17381,6 +17419,7 @@
       "DOI": "10.48550/arXiv.2101.08753",
       "repository": "arXiv",
       "archiveID": "arXiv:2101.08753",
+      "citationKey": "akeribEnhancingSensitivityLUXZEPLIN2021",
       "creators": [
         {
           "firstName": "D. S.",
@@ -18330,7 +18369,6 @@
       "dateAdded": "2023-01-02T21:51:52Z",
       "dateModified": "2024-07-24T20:52:51Z",
       "uri": "http://zotero.org/users/9614022/items/YRP3DZ6D",
-      "itemID": 376,
       "attachments": [
         {
           "itemType": "attachment",
@@ -18350,20 +18388,19 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2024-07-24T20:52:51Z",
-          "dateModified": "2024-08-18T20:20:10Z",
+          "dateModified": "2026-03-03T23:49:27Z",
           "uri": "http://zotero.org/users/9614022/items/QFHBP4CA",
           "select": "zotero://select/library/items/QFHBP4CA"
         }
       ],
       "notes": [],
-      "citationKey": "akeribEnhancingSensitivityLUXZEPLIN2021",
+      "itemID": 376,
       "itemKey": "YRP3DZ6D",
       "libraryID": 1,
       "select": "zotero://select/library/items/YRP3DZ6D"
     },
     {
-      "key": "4EKZJUMH",
-      "version": 12333,
+      "version": 12822,
       "itemType": "journalArticle",
       "title": "Identification of Radiopure Titanium for the LZ Dark Matter Experiment and Future Rare Event Searches",
       "abstractNote": "The LUX-ZEPLIN (LZ) experiment will search for dark matter particle interactions with a detector containing a total of 10 tonnes of liquid xenon within a double-vessel cryostat. The large mass and proximity of the cryostat to the active detector volume demand the use of material with extremely low intrinsic radioactivity. We report on the radioassay campaign conducted to identify suitable metals, the determination of factors limiting radiopure production, and the selection of titanium for construction of the LZ cryostat and other detector components. This titanium has been measured with activities of $^{238}$U$_{e}$~$<$1.6~mBq/kg, $^{238}$U$_{l}$~$<$0.09~mBq/kg, $^{232}$Th$_{e}$~$=0.28\\pm 0.03$~mBq/kg, $^{232}$Th$_{l}$~$=0.25\\pm 0.02$~mBq/kg, $^{40}$K~$<$0.54~mBq/kg, and $^{60}$Co~$<$0.02~mBq/kg (68\\% CL). Such low intrinsic activities, which are some of the lowest ever reported for titanium, enable its use for future dark matter and other rare event searches. Monte Carlo simulations have been performed to assess the expected background contribution from the LZ cryostat with this radioactivity. In 1,000 days of WIMP search exposure of a 5.6-tonne fiducial mass, the cryostat will contribute only a mean background of $0.160\\pm0.001$(stat)$\\pm0.030$(sys) counts.",
@@ -18378,6 +18415,7 @@
       "DOI": "10.1016/j.astropartphys.2017.09.002",
       "journalAbbreviation": "Astroparticle Physics",
       "ISSN": "09276505",
+      "citationKey": "akeribIdentificationRadiopureTitanium2017",
       "creators": [
         {
           "firstName": "D. S.",
@@ -19407,17 +19445,16 @@
       ],
       "tags": [
         {
-          "tag": "mypublication"
+          "tag": "notion"
         },
         {
-          "tag": "notion"
+          "tag": "mypublication"
         }
       ],
       "relations": {},
       "dateAdded": "2023-01-02T21:43:42Z",
       "dateModified": "2025-10-27T05:11:15Z",
       "uri": "http://zotero.org/users/9614022/items/4EKZJUMH",
-      "itemID": 382,
       "attachments": [
         {
           "itemType": "attachment",
@@ -19437,20 +19474,19 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2024-07-24T20:55:51Z",
-          "dateModified": "2025-10-27T05:11:19Z",
+          "dateModified": "2026-03-03T23:48:06Z",
           "uri": "http://zotero.org/users/9614022/items/PLIB39FW",
           "select": "zotero://select/library/items/PLIB39FW"
         }
       ],
       "notes": [],
-      "citationKey": "akeribIdentificationRadiopureTitanium2017",
+      "itemID": 382,
       "itemKey": "4EKZJUMH",
       "libraryID": 1,
       "select": "zotero://select/library/items/4EKZJUMH"
     },
     {
-      "key": "6EVDE72D",
-      "version": 12332,
+      "version": 12822,
       "itemType": "journalArticle",
       "title": "The LUX-ZEPLIN (LZ) Experiment",
       "abstractNote": "We describe the design and assembly of the LUX-ZEPLIN experiment, a direct detection search for cosmic WIMP dark matter particles. The centerpiece of the experiment is a large liquid xenon time projection chamber sensitive to low energy nuclear recoils. Rejection of backgrounds is enhanced by a Xe skin veto detector and by a liquid scintillator Outer Detector loaded with gadolinium for efficient neutron capture and tagging. LZ is located in the Davis Cavern at the 4850' level of the Sanford Underground Research Facility in Lead, South Dakota, USA. We describe the major subsystems of the experiment and its key design features and requirements.",
@@ -19465,6 +19501,7 @@
       "DOI": "10.1016/j.nima.2019.163047",
       "journalAbbreviation": "Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment",
       "ISSN": "01689002",
+      "citationKey": "akeribLUXZEPLINLZExperiment2020",
       "creators": [
         {
           "firstName": "D. S.",
@@ -21374,17 +21411,16 @@
       ],
       "tags": [
         {
-          "tag": "mypublication"
+          "tag": "notion"
         },
         {
-          "tag": "notion"
+          "tag": "mypublication"
         }
       ],
       "relations": {},
       "dateAdded": "2023-01-02T21:48:47Z",
       "dateModified": "2025-10-27T05:10:55Z",
       "uri": "http://zotero.org/users/9614022/items/6EVDE72D",
-      "itemID": 380,
       "attachments": [
         {
           "itemType": "attachment",
@@ -21393,7 +21429,7 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2024-07-24T20:53:12Z",
-          "dateModified": "2025-10-27T05:10:58Z",
+          "dateModified": "2026-03-03T23:48:13Z",
           "uri": "http://zotero.org/users/9614022/items/XXDN6JE7",
           "select": "zotero://select/library/items/XXDN6JE7"
         },
@@ -21410,14 +21446,13 @@
         }
       ],
       "notes": [],
-      "citationKey": "akeribLUXZEPLINLZExperiment2020",
+      "itemID": 380,
       "itemKey": "6EVDE72D",
       "libraryID": 1,
       "select": "zotero://select/library/items/6EVDE72D"
     },
     {
-      "key": "C44AK2GK",
-      "version": 12331,
+      "version": 12822,
       "itemType": "journalArticle",
       "title": "The LUX-ZEPLIN (LZ) radioactivity and cleanliness control programs",
       "abstractNote": "LUX-ZEPLIN (LZ) is a second-generation direct dark matter experiment with spin-independent WIMP-nucleon scattering sensitivity above $1.4 \\times 10^{-48}$ cm$^{2}$ for a WIMP mass of 40 GeV/c$^{2}$ and a 1000 d exposure. LZ achieves this sensitivity through a combination of a large 5.6 t fiducial volume, active inner and outer veto systems, and radio-pure construction using materials with inherently low radioactivity content. The LZ collaboration performed an extensive radioassay campaign over a period of six years to inform material selection for construction and provide an input to the experimental background model against which any possible signal excess may be evaluated. The campaign and its results are described in this paper. We present assays of dust and radon daughters depositing on the surface of components as well as cleanliness controls necessary to maintain background expectations through detector construction and assembly. Finally, examples from the campaign to highlight fixed contaminant radioassays for the LZ photomultiplier tubes, quality control and quality assurance procedures through fabrication, radon emanation measurements of major sub-systems, and bespoke detector systems to assay scintillator are presented.",
@@ -21433,6 +21468,7 @@
       "issue": "11",
       "journalAbbreviation": "Eur. Phys. J. C",
       "ISSN": "1434-6044, 1434-6052",
+      "citationKey": "akeribLUXZEPLINLZRadioactivity2020",
       "creators": [
         {
           "firstName": "D. S.",
@@ -23387,17 +23423,16 @@
       ],
       "tags": [
         {
-          "tag": "mypublication"
+          "tag": "notion"
         },
         {
-          "tag": "notion"
+          "tag": "mypublication"
         }
       ],
       "relations": {},
       "dateAdded": "2023-01-02T21:51:27Z",
       "dateModified": "2025-10-27T05:10:36Z",
       "uri": "http://zotero.org/users/9614022/items/C44AK2GK",
-      "itemID": 377,
       "attachments": [
         {
           "itemType": "attachment",
@@ -23417,20 +23452,19 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2024-07-24T20:55:45Z",
-          "dateModified": "2025-10-27T05:10:39Z",
+          "dateModified": "2026-03-03T23:48:14Z",
           "uri": "http://zotero.org/users/9614022/items/ZIXE45A8",
           "select": "zotero://select/library/items/ZIXE45A8"
         }
       ],
       "notes": [],
-      "citationKey": "akeribLUXZEPLINLZRadioactivity2020",
+      "itemID": 377,
       "itemKey": "C44AK2GK",
       "libraryID": 1,
       "select": "zotero://select/library/items/C44AK2GK"
     },
     {
-      "key": "A32XPQJJ",
-      "version": 12200,
+      "version": 12822,
       "itemType": "journalArticle",
       "title": "Projected sensitivities of the LUX-ZEPLIN (LZ) experiment to new physics via low-energy electron recoils",
       "abstractNote": "LUX-ZEPLIN (LZ) is a dark matter detector expected to obtain world-leading sensitivity to weakly interacting massive particles (WIMPs) interacting via nuclear recoils with a ~7-tonne xenon target mass. This manuscript presents sensitivity projections to several low-energy signals of the complementary electron recoil signal type: 1) an effective neutrino magnetic moment and 2) an effective neutrino millicharge, both for pp-chain solar neutrinos, 3) an axion flux generated by the Sun, 4) axion-like particles forming the galactic dark matter, 5) hidden photons, 6) mirror dark matter, and 7) leptophilic dark matter. World-leading sensitivities are expected in each case, a result of the large 5.6t 1000d exposure and low expected rate of electron recoil backgrounds in the < 100keV energy regime. A consistent signal generation, background model and profile-likelihood analysis framework is used throughout.",
@@ -23446,6 +23480,7 @@
       "issue": "9",
       "journalAbbreviation": "Phys. Rev. D",
       "ISSN": "2470-0010, 2470-0029",
+      "citationKey": "akeribProjectedSensitivitiesLUXZEPLIN2021",
       "creators": [
         {
           "firstName": "D. S.",
@@ -24440,7 +24475,6 @@
       "dateAdded": "2023-01-02T21:52:15Z",
       "dateModified": "2025-10-15T03:10:35Z",
       "uri": "http://zotero.org/users/9614022/items/A32XPQJJ",
-      "itemID": 375,
       "attachments": [
         {
           "itemType": "attachment",
@@ -24449,7 +24483,7 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2024-07-24T20:53:08Z",
-          "dateModified": "2025-10-15T23:48:12Z",
+          "dateModified": "2026-03-03T23:48:44Z",
           "uri": "http://zotero.org/users/9614022/items/AT2E2J4W",
           "select": "zotero://select/library/items/AT2E2J4W"
         },
@@ -24466,14 +24500,13 @@
         }
       ],
       "notes": [],
-      "citationKey": "akeribProjectedSensitivitiesLUXZEPLIN2021",
+      "itemID": 375,
       "itemKey": "A32XPQJJ",
       "libraryID": 1,
       "select": "zotero://select/library/items/A32XPQJJ"
     },
     {
-      "key": "Q57H3EGE",
-      "version": 11920,
+      "version": 12822,
       "itemType": "journalArticle",
       "title": "Projected sensitivity of the LUX-ZEPLIN experiment to the $0\\nu\\beta\\beta$ decay of $^{136}$Xe",
       "abstractNote": "The LUX-ZEPLIN (LZ) experiment will enable a neutrinoless double beta decay search in parallel to the main science goal of discovering dark matter particle interactions. We report the expected LZ sensitivity to $^{136}$Xe neutrinoless double beta decay, taking advantage of the significant ($>$600 kg) $^{136}$Xe mass contained within the active volume of LZ without isotopic enrichment. After 1000 live-days, the median exclusion sensitivity to the half-life of $^{136}$Xe is projected to be 1.06$\\times$10$^{26}$ years (90% confidence level), similar to existing constraints. We also report the expected sensitivity of a possible subsequent dedicated exposure using 90% enrichment with $^{136}$Xe at 1.06$\\times$10$^{27}$ years.",
@@ -24489,6 +24522,7 @@
       "issue": "1",
       "journalAbbreviation": "Phys. Rev. C",
       "ISSN": "2469-9985, 2469-9993",
+      "citationKey": "akeribProjectedSensitivityLUXZEPLIN2020",
       "creators": [
         {
           "firstName": "D. S.",
@@ -25463,7 +25497,6 @@
       "dateAdded": "2023-01-02T21:49:53Z",
       "dateModified": "2024-07-24T20:55:44Z",
       "uri": "http://zotero.org/users/9614022/items/Q57H3EGE",
-      "itemID": 379,
       "attachments": [
         {
           "itemType": "attachment",
@@ -25483,20 +25516,19 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2024-07-24T20:55:44Z",
-          "dateModified": "2024-08-18T20:18:24Z",
+          "dateModified": "2026-03-03T23:49:01Z",
           "uri": "http://zotero.org/users/9614022/items/EH936TFU",
           "select": "zotero://select/library/items/EH936TFU"
         }
       ],
       "notes": [],
-      "citationKey": "akeribProjectedSensitivityLUXZEPLIN2020",
+      "itemID": 379,
       "itemKey": "Q57H3EGE",
       "libraryID": 1,
       "select": "zotero://select/library/items/Q57H3EGE"
     },
     {
-      "key": "Y6BXS4DH",
-      "version": 12202,
+      "version": 12821,
       "itemType": "journalArticle",
       "title": "Projected sensitivity of the LUX-ZEPLIN (LZ) experiment to the two-neutrino and neutrinoless double beta decays of $^{134}$Xe",
       "abstractNote": "The projected sensitivity of the LUX-ZEPLIN (LZ) experiment to two-neutrino and neutrinoless double beta decay of $^{134}$Xe is presented. LZ is a 10-tonne xenon time projection chamber optimized for the detection of dark matter particles, that is expected to start operating in 2021 at Sanford Underground Research Facility, USA. Its large mass of natural xenon provides an exceptional opportunity to search for the double beta decay of $^{134}$Xe, for which xenon detectors enriched in $^{136}$Xe are less effective. For the two-neutrino decay mode, LZ is predicted to exclude values of the half-life up to 1.7$\\times$10$^{24}$ years at 90% confidence level (CL), and has a three-sigma observation potential of 8.7$\\times$10$^{23}$ years, approaching the predictions of nuclear models. For the neutrinoless decay mode LZ, is projected to exclude values of the half-life up to 7.3$\\times$10$^{24}$ years at 90% CL.",
@@ -25512,6 +25544,7 @@
       "issue": "6",
       "journalAbbreviation": "Phys. Rev. C",
       "ISSN": "2469-9985, 2469-9993",
+      "citationKey": "akeribProjectedSensitivityLUXZEPLIN2021",
       "creators": [
         {
           "firstName": "D. S.",
@@ -26496,7 +26529,6 @@
       "dateAdded": "2023-01-02T21:52:41Z",
       "dateModified": "2025-10-15T03:10:43Z",
       "uri": "http://zotero.org/users/9614022/items/Y6BXS4DH",
-      "itemID": 374,
       "attachments": [
         {
           "itemType": "attachment",
@@ -26516,20 +26548,19 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2024-07-24T20:53:51Z",
-          "dateModified": "2025-10-15T23:48:09Z",
+          "dateModified": "2026-03-03T23:48:38Z",
           "uri": "http://zotero.org/users/9614022/items/376K8V2V",
           "select": "zotero://select/library/items/376K8V2V"
         }
       ],
       "notes": [],
-      "citationKey": "akeribProjectedSensitivityLUXZEPLIN2021",
+      "itemID": 374,
       "itemKey": "Y6BXS4DH",
       "libraryID": 1,
       "select": "zotero://select/library/items/Y6BXS4DH"
     },
     {
-      "key": "IJ864FF4",
-      "version": 12329,
+      "version": 12822,
       "itemType": "journalArticle",
       "title": "Simulations of Events for the LUX-ZEPLIN (LZ) Dark Matter Experiment",
       "abstractNote": "The LUX-ZEPLIN dark matter search aims to achieve a sensitivity to the WIMP-nucleon spin-independent cross-section down to (1--2)$\\times10^{-12}$\\,pb at a WIMP mass of 40 GeV/$c^2$. This paper describes the simulations framework that, along with radioactivity measurements, was used to support this projection, and also to provide mock data for validating reconstruction and analysis software. Of particular note are the event generators, which allow us to model the background radiation, and the detector response physics used in the production of raw signals, which can be converted into digitized waveforms similar to data from the operational detector. Inclusion of the detector response allows us to process simulated data using the same analysis routines as developed to process the experimental data.",
@@ -26544,6 +26575,7 @@
       "DOI": "10.1016/j.astropartphys.2020.102480",
       "journalAbbreviation": "Astroparticle Physics",
       "ISSN": "09276505",
+      "citationKey": "akeribSimulationsEventsLUXZEPLIN2021",
       "creators": [
         {
           "firstName": "D. S.",
@@ -27528,17 +27560,16 @@
       ],
       "tags": [
         {
-          "tag": "mypublication"
+          "tag": "notion"
         },
         {
-          "tag": "notion"
+          "tag": "mypublication"
         }
       ],
       "relations": {},
       "dateAdded": "2023-01-02T21:50:49Z",
       "dateModified": "2025-10-27T05:10:10Z",
       "uri": "http://zotero.org/users/9614022/items/IJ864FF4",
-      "itemID": 378,
       "attachments": [
         {
           "itemType": "attachment",
@@ -27558,20 +27589,19 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2024-07-24T20:54:55Z",
-          "dateModified": "2025-10-27T05:10:16Z",
+          "dateModified": "2026-03-03T23:48:15Z",
           "uri": "http://zotero.org/users/9614022/items/C2JW9HWZ",
           "select": "zotero://select/library/items/C2JW9HWZ"
         }
       ],
       "notes": [],
-      "citationKey": "akeribSimulationsEventsLUXZEPLIN2021",
+      "itemID": 378,
       "itemKey": "IJ864FF4",
       "libraryID": 1,
       "select": "zotero://select/library/items/IJ864FF4"
     },
     {
-      "key": "Q5LSLMRY",
-      "version": 12103,
+      "version": 12839,
       "itemType": "preprint",
       "title": "Study of few-electron backgrounds in the LUX-ZEPLIN detector",
       "abstractNote": "The LUX-ZEPLIN (LZ) experiment aims to detect rare interactions between dark matter particles and xenon. Although the detector is designed to be the most sensitive to GeV/$c^2$--TeV/$c^2$ Weakly Interacting Massive Particles (WIMPs), it is also capable of measuring low-energy ionization signals down to a single electron that may be produced by scatters of sub-GeV/$c^2$ dark matter. The major challenge in exploiting this sensitivity is to understand and suppress the ionization background in the few-electron regime. We report a characterization of the delayed electron backgrounds following energy depositions in the LZ detector under different detector conditions. In addition, we quantify the probability for photons to be emitted in coincidence with electron emission from the high voltage grids. We then demonstrate that spontaneous grid electron emission can be identified and rejected with a high efficiency using a coincident photon tag, which provides a tool to improve the sensitivity of future dark matter searches.",
@@ -27583,6 +27613,7 @@
       "DOI": "10.48550/arXiv.2510.06500",
       "repository": "arXiv",
       "archiveID": "arXiv:2510.06500",
+      "citationKey": "akeribStudyFewelectronBackgrounds2025",
       "creators": [
         {
           "firstName": "D. S.",
@@ -28628,7 +28659,6 @@
       "dateAdded": "2025-10-14T06:15:34Z",
       "dateModified": "2025-10-14T06:16:33Z",
       "uri": "http://zotero.org/users/9614022/items/Q5LSLMRY",
-      "itemID": 2655,
       "attachments": [
         {
           "itemType": "attachment",
@@ -28649,7 +28679,7 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2025-10-14T06:15:39Z",
-          "dateModified": "2025-10-15T23:49:07Z",
+          "dateModified": "2026-03-03T23:48:53Z",
           "uri": "http://zotero.org/users/9614022/items/XLZ7VSIP",
           "select": "zotero://select/library/items/XLZ7VSIP"
         },
@@ -28680,14 +28710,13 @@
           "uri": "http://zotero.org/users/9614022/items/U83K7X5G"
         }
       ],
-      "citationKey": "akeribStudyFewelectronBackgrounds2025",
+      "itemID": 2655,
       "itemKey": "Q5LSLMRY",
       "libraryID": 1,
       "select": "zotero://select/library/items/Q5LSLMRY"
     },
     {
-      "key": "3P2JLFF5",
-      "version": 8128,
+      "version": 12827,
       "itemType": "journalArticle",
       "title": "Thermodynamic stability of xenon-doped liquid argon detectors",
       "abstractNote": "Liquid argon detectors are employed in a wide variety of nuclear and particle physics experiments. The addition of small quantities of xenon to argon modifies its scintillation, ionization, and electroluminescence properties and can improve its performance as a detection medium. However, a liquid argon-xenon mixture can develop instabilities, especially in systems that require phase transitions or that utilize high xenon concentrations. In this work, we analyze the causes of these instabilities and describe a small (liter-scale) apparatus with a unique cryogenic circuit specifically designed to handle argon-xenon mixtures. The system is capable of condensing argon gas mixed with O(1%) xenon by volume and maintains a stable liquid mixture near the xenon saturation limit while actively circulating it in the gas phase. We also demonstrate control over instabilities that develop when the detector condition is allowed to deviate from optimized settings. This progress enables future liquid argon detectors to benefit from the effects of high concentrations of xenon doping, such as more efficient detection of low-energy ionization signals. This work also develops tools to study and mitigate instabilities in large argon detectors that use low concentration xenon doping.",
@@ -28695,13 +28724,14 @@
       "libraryCatalog": "APS",
       "url": "https://link.aps.org/doi/10.1103/PhysRevC.108.045503",
       "accessDate": "2023-10-29T06:35:29Z",
-      "extra": "Publisher: American Physical Society",
       "volume": "108",
+      "publisher": "American Physical Society",
       "pages": "045503",
       "publicationTitle": "Physical Review C",
       "DOI": "10.1103/PhysRevC.108.045503",
       "issue": "4",
       "journalAbbreviation": "Phys. Rev. C",
+      "citationKey": "bernardThermodynamicStabilityXenondoped2023",
       "creators": [
         {
           "firstName": "E. P.",
@@ -28794,7 +28824,6 @@
       "dateAdded": "2023-10-29T06:35:29Z",
       "dateModified": "2024-01-23T19:25:54Z",
       "uri": "http://zotero.org/users/9614022/items/3P2JLFF5",
-      "itemID": 1381,
       "attachments": [
         {
           "itemType": "attachment",
@@ -28826,7 +28855,7 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2024-07-24T20:55:15Z",
-          "dateModified": "2024-07-24T20:55:15Z",
+          "dateModified": "2026-02-27T02:08:01Z",
           "uri": "http://zotero.org/users/9614022/items/I22RZMRX",
           "select": "zotero://select/library/items/I22RZMRX"
         }
@@ -28857,14 +28886,65 @@
           "uri": "http://zotero.org/users/9614022/items/ZCBL2X92"
         }
       ],
-      "citationKey": "bernardThermodynamicStabilityXenondoped2023",
+      "itemID": 1381,
       "itemKey": "3P2JLFF5",
       "libraryID": 1,
       "select": "zotero://select/library/items/3P2JLFF5"
     },
     {
-      "key": "GRTPYNVK",
-      "version": 12154,
+      "version": 13002,
+      "itemType": "conferencePaper",
+      "title": "Data Modeling and SQL Databases",
+      "date": "2026-02-11T22:59:01Z",
+      "url": "https://github.com/e-miz/2026-sql-data-modeling",
+      "accessDate": "2026-03-09T04:58:55Z",
+      "extra": "original-date: 2026-02-11T09:00:33Z",
+      "place": "Menlo Park, California",
+      "conferenceName": "Weekly Group Meeting",
+      "citationKey": "e-mizEmiz2026sqldatamodeling2026",
+      "creators": [
+        {
+          "firstName": "Eli",
+          "lastName": "Mizrachi",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "notion"
+        },
+        {
+          "tag": "mypresentation"
+        },
+        {
+          "tag": "selectedworks"
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2026-03-09T04:58:55Z",
+      "dateModified": "2026-04-16T05:20:45Z",
+      "uri": "http://zotero.org/users/9614022/items/KZN36VP6",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Notion",
+          "url": "notion://www.notion.so/Mizrachi-2026-31e5dac18dde8147bccafd8bec035738",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-03-09T04:58:59Z",
+          "dateModified": "2026-04-16T05:20:49Z",
+          "uri": "http://zotero.org/users/9614022/items/TNHQEYIN",
+          "select": "zotero://select/library/items/TNHQEYIN"
+        }
+      ],
+      "notes": [],
+      "itemID": 2812,
+      "itemKey": "KZN36VP6",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/KZN36VP6"
+    },
+    {
+      "version": 12822,
       "itemType": "conferencePaper",
       "title": "Acoustic tests of Lorentz symmetry using Bulk Acoustic Wave quartz oscillators",
       "abstractNote": "A new method of probing Lorentz invariance in the neutron sector is described. The method is baed on stable quartz bulk acoustic wave oscillators compared on a rotating table. Due to Lorentz-invariance violation, the resonance frequencies of acoustic wave resonators depend on the direction in space via a corresponding dependence of masses of the constituent elements of solids. This dependence is measured via observation of oscillator phase noise built around such devices. The first such experiment now shows sensitivity to violation down to the limit $\\tilde{c}^n_Q=(-1.8\\pm2.2)\\times 10^{-14}$ GeV. Methods to improve the sensitivity are described together with some other applications of the technology in tests of fundamental physics.",
@@ -28876,6 +28956,7 @@
       "place": "Bloomington, Indiana",
       "conferenceName": "Seventh Meeting on CPT and Lorentz Symmetry",
       "DOI": "10.48550/arXiv.1607.07179",
+      "citationKey": "goryachevAcousticTestsLorentz2016",
       "creators": [
         {
           "firstName": "M.",
@@ -28930,7 +29011,6 @@
       "dateAdded": "2023-01-02T21:42:54Z",
       "dateModified": "2025-10-15T01:40:28Z",
       "uri": "http://zotero.org/users/9614022/items/GRTPYNVK",
-      "itemID": 383,
       "attachments": [
         {
           "itemType": "attachment",
@@ -28950,20 +29030,19 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2024-07-24T20:56:25Z",
-          "dateModified": "2025-10-15T23:48:34Z",
+          "dateModified": "2026-03-03T23:48:50Z",
           "uri": "http://zotero.org/users/9614022/items/XSUUJJ5E",
           "select": "zotero://select/library/items/XSUUJJ5E"
         }
       ],
       "notes": [],
-      "citationKey": "goryachevAcousticTestsLorentz2016",
+      "itemID": 383,
       "itemKey": "GRTPYNVK",
       "libraryID": 1,
       "select": "zotero://select/library/items/GRTPYNVK"
     },
     {
-      "key": "YJGX4T9M",
-      "version": 12338,
+      "version": 12821,
       "itemType": "conferencePaper",
       "title": "Absolute Electron Extraction Efficiency of Liquid Xenon",
       "abstractNote": "Dual phase liquid/gas xenon time projection chambers (TPCs) currently set the world’s most sensitive limits on weakly interacting massive particles (WIMPs), a favored dark matter candidate. These detectors rely on extracting electrons from liquid xenon into gaseous xenon, where they produce proportional scintillation. The proportional scintillation from the extracted electrons serves to internally amplify the WIMP signal; even a single extracted electron is detectable. Credible dark matter searches can proceed with electron extraction efficiency (EEE) lower than 100\\%. However, electrons systematically left at the liquid/gas boundary are a concern. Possible effects include spontaneous single or multi-electron proportional scintillation signals in the gas, or charging of the liquid/gas interface or detector materials. Understanding EEE is consequently a serious concern for this class of rare event search detectors. Previous EEE measurements have mostly been relative, not absolute, assuming efficiency plateaus at 100\\%. I will present an absolute EEE measurement with a small liquid/gas xenon TPC test bed located at Lawrence Berkeley National Laboratory.",
@@ -28973,6 +29052,7 @@
       "extra": "Presentation",
       "place": "Salt Lake City, Utah",
       "conferenceName": "APS April Meeting 2016",
+      "citationKey": "kamdinAbsoluteElectronExtraction2016",
       "creators": [
         {
           "firstName": "K.",
@@ -29004,7 +29084,6 @@
       "dateAdded": "2023-01-02T23:01:11Z",
       "dateModified": "2025-10-27T05:11:38Z",
       "uri": "http://zotero.org/users/9614022/items/YJGX4T9M",
-      "itemID": 366,
       "attachments": [
         {
           "itemType": "attachment",
@@ -29013,20 +29092,19 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2024-07-24T20:56:24Z",
-          "dateModified": "2025-10-27T05:11:42Z",
+          "dateModified": "2026-03-03T23:48:02Z",
           "uri": "http://zotero.org/users/9614022/items/IF5ARG7L",
           "select": "zotero://select/library/items/IF5ARG7L"
         }
       ],
       "notes": [],
-      "citationKey": "kamdinAbsoluteElectronExtraction2016",
+      "itemID": 366,
       "itemKey": "YJGX4T9M",
       "libraryID": 1,
       "select": "zotero://select/library/items/YJGX4T9M"
     },
     {
-      "key": "X77RMS2V",
-      "version": 12336,
+      "version": 12822,
       "itemType": "journalArticle",
       "title": "Acoustic tests of Lorentz symmetry using quartz oscillators",
       "abstractNote": "We propose and demonstrate a test of Lorentz symmetry based on new, compact, and reliable quartz oscillator technology. Violations of Lorentz invariance in the matter and photon-sector of the standard model extension (SME) generate anisotropies in particles' inertial masses and the elastic constants, giving rise to measurable anisotopies in the resonance frequencies of acoustic modes in solids. A first realization of such a \"phonon-sector\" test of Lorentz symmetry using room-temperature SC-cut crystals provides a limit of $\\tilde c_Q^{\\rm n}=(-1.8 \\pm 2.2)\\times 10^{-14}$\\,GeV on the most weakly constrained neutron-sector $c-$coefficient of the SME. Future experiments with cryogenic oscillators promise significant improvements in accuracy, opening up the potential for improved limits on Lorentz violation in the neutron, proton, electron and photon sector.",
@@ -29042,6 +29120,7 @@
       "issue": "1",
       "journalAbbreviation": "Phys. Rev. X",
       "ISSN": "2160-3308",
+      "citationKey": "loAcousticTestsLorentz2016",
       "creators": [
         {
           "firstName": "Anthony",
@@ -29086,10 +29165,10 @@
       ],
       "tags": [
         {
-          "tag": "mypublication"
+          "tag": "notion"
         },
         {
-          "tag": "notion"
+          "tag": "mypublication"
         },
         {
           "tag": "selectedworks"
@@ -29099,7 +29178,6 @@
       "dateAdded": "2023-01-02T21:38:10Z",
       "dateModified": "2025-10-27T05:11:29Z",
       "uri": "http://zotero.org/users/9614022/items/X77RMS2V",
-      "itemID": 384,
       "attachments": [
         {
           "itemType": "attachment",
@@ -29119,20 +29197,19 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2024-07-24T20:53:55Z",
-          "dateModified": "2025-10-27T05:11:32Z",
+          "dateModified": "2026-03-03T23:48:03Z",
           "uri": "http://zotero.org/users/9614022/items/HREJX9GW",
           "select": "zotero://select/library/items/HREJX9GW"
         }
       ],
       "notes": [],
-      "citationKey": "loAcousticTestsLorentz2016",
+      "itemID": 384,
       "itemKey": "X77RMS2V",
       "libraryID": 1,
       "select": "zotero://select/library/items/X77RMS2V"
     },
     {
-      "key": "EBSVA4AY",
-      "version": 12335,
+      "version": 12823,
       "itemType": "conferencePaper",
       "title": "Absolute Measurement of the Electron Extraction Efficiency of Liquid Xenon",
       "abstractNote": "Weakly interacting massive particles (WIMPs) are promising candidates in the search for dark matter. WIMP interactions in a dual phase liquid xenon time projection chamber (TPC) are theorized to produce photons and ionized electrons, the latter of which are extracted out of the liquid into a gaseous region of xenon. Proportional scintillation from the electrons occurs as they pass the liquid-gas interface, and this additional light is used to verify that a WIMP- xenon interaction has taken place. The electron extraction efficiency (EEE) is crucial for ensuring that an accurate signal is received. Consistently inefficient extraction results in leftover charges in the detector, which may scintillate or accumulate on detector materials. This behavior is detrimental to experiments which demand record breaking levels of sensitivity. Moreover, previous liquid xenon EEE measurements have mostly been relative. Using a, dual phase liquid xenon TPC at Lawrence Berkeley National Laboratory, we aim to provide an absolute EEE measurement instead.",
@@ -29141,6 +29218,7 @@
       "extra": "Poster",
       "place": "Davis, California",
       "conferenceName": "UC LEADS Student Research symposium",
+      "citationKey": "mizrachiAbsoluteMeasurementElectron2016",
       "creators": [
         {
           "firstName": "E.",
@@ -29165,10 +29243,10 @@
       ],
       "tags": [
         {
-          "tag": "mypresentation"
+          "tag": "notion"
         },
         {
-          "tag": "notion"
+          "tag": "mypresentation"
         },
         {
           "tag": "selectedworks"
@@ -29178,7 +29256,6 @@
       "dateAdded": "2023-01-06T04:42:58Z",
       "dateModified": "2025-10-27T05:11:23Z",
       "uri": "http://zotero.org/users/9614022/items/EBSVA4AY",
-      "itemID": 421,
       "attachments": [
         {
           "itemType": "attachment",
@@ -29187,20 +29264,19 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2024-07-24T20:52:30Z",
-          "dateModified": "2025-10-27T05:11:26Z",
+          "dateModified": "2026-03-03T23:48:05Z",
           "uri": "http://zotero.org/users/9614022/items/BKYLK4BT",
           "select": "zotero://select/library/items/BKYLK4BT"
         }
       ],
       "notes": [],
-      "citationKey": "mizrachiAbsoluteMeasurementElectron2016",
+      "itemID": 421,
       "itemKey": "EBSVA4AY",
       "libraryID": 1,
       "select": "zotero://select/library/items/EBSVA4AY"
     },
     {
-      "key": "GU4V8I3Z",
-      "version": 12259,
+      "version": 12823,
       "itemType": "conferencePaper",
       "title": "Addressing Electron Backgrounds in a Dual-Phase Liquid Xenon Time Projection Chamber",
       "date": "2019-07-30",
@@ -29208,6 +29284,7 @@
       "extra": "Poster",
       "place": "Livermore, California",
       "conferenceName": "LLNL Student Summer Research Symposium",
+      "citationKey": "mizrachiAddressingElectronBackgrounds2019",
       "creators": [
         {
           "firstName": "Eli",
@@ -29232,10 +29309,10 @@
       ],
       "tags": [
         {
-          "tag": "mypresentation"
+          "tag": "notion"
         },
         {
-          "tag": "notion"
+          "tag": "mypresentation"
         },
         {
           "tag": "selectedworks"
@@ -29245,7 +29322,6 @@
       "dateAdded": "2023-01-06T04:32:43Z",
       "dateModified": "2025-10-25T23:55:24Z",
       "uri": "http://zotero.org/users/9614022/items/GU4V8I3Z",
-      "itemID": 420,
       "attachments": [
         {
           "itemType": "attachment",
@@ -29254,20 +29330,19 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2024-07-24T20:52:24Z",
-          "dateModified": "2025-10-25T23:55:27Z",
+          "dateModified": "2026-03-03T23:48:27Z",
           "uri": "http://zotero.org/users/9614022/items/RNRZ7PEC",
           "select": "zotero://select/library/items/RNRZ7PEC"
         }
       ],
       "notes": [],
-      "citationKey": "mizrachiAddressingElectronBackgrounds2019",
+      "itemID": 420,
       "itemKey": "GU4V8I3Z",
       "libraryID": 1,
       "select": "zotero://select/library/items/GU4V8I3Z"
     },
     {
-      "key": "QIG29HTE",
-      "version": 12282,
+      "version": 12827,
       "itemType": "conferencePaper",
       "title": "Characterization of Delayed Ionization Backgrounds in the LZ Experiment",
       "date": "2023-11-07",
@@ -29276,6 +29351,7 @@
       "extra": "Presentation",
       "place": "Menlo Park, California",
       "conferenceName": "CPAD 2023",
+      "citationKey": "mizrachiCharacterizationDelayedIonization2023",
       "creators": [
         {
           "firstName": "Eli",
@@ -29285,10 +29361,10 @@
       ],
       "tags": [
         {
-          "tag": "mypresentation"
+          "tag": "notion"
         },
         {
-          "tag": "notion"
+          "tag": "mypresentation"
         },
         {
           "tag": "selectedworks"
@@ -29298,7 +29374,6 @@
       "dateAdded": "2023-10-29T06:56:26Z",
       "dateModified": "2025-10-26T19:17:42Z",
       "uri": "http://zotero.org/users/9614022/items/QIG29HTE",
-      "itemID": 1398,
       "attachments": [
         {
           "itemType": "attachment",
@@ -29307,7 +29382,7 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2024-07-24T20:52:28Z",
-          "dateModified": "2025-10-26T19:17:48Z",
+          "dateModified": "2026-03-03T23:48:25Z",
           "uri": "http://zotero.org/users/9614022/items/PB37ET8R",
           "select": "zotero://select/library/items/PB37ET8R"
         },
@@ -29325,14 +29400,13 @@
         }
       ],
       "notes": [],
-      "citationKey": "mizrachiCharacterizationDelayedIonization2023",
+      "itemID": 1398,
       "itemKey": "QIG29HTE",
       "libraryID": 1,
       "select": "zotero://select/library/items/QIG29HTE"
     },
     {
-      "key": "ZGJNPWFC",
-      "version": 12148,
+      "version": 12838,
       "itemType": "conferencePaper",
       "title": "Characterization of Delayed Ionization Backgrounds in the LZ Experiment",
       "date": "2024-04-15",
@@ -29342,6 +29416,7 @@
       "extra": "Presentation",
       "place": "Rutherford Appelton Laboratory",
       "conferenceName": "XLZD April Meeting",
+      "citationKey": "mizrachiCharacterizationDelayedIonization2024",
       "creators": [
         {
           "firstName": "E.",
@@ -29361,7 +29436,6 @@
       "dateAdded": "2024-05-30T00:51:23Z",
       "dateModified": "2025-10-15T00:31:06Z",
       "uri": "http://zotero.org/users/9614022/items/ZGJNPWFC",
-      "itemID": 2258,
       "attachments": [
         {
           "itemType": "attachment",
@@ -29370,7 +29444,7 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2024-07-24T20:52:31Z",
-          "dateModified": "2025-10-15T23:48:36Z",
+          "dateModified": "2026-03-03T23:48:52Z",
           "uri": "http://zotero.org/users/9614022/items/DSQXSEGT",
           "select": "zotero://select/library/items/DSQXSEGT"
         },
@@ -29388,14 +29462,13 @@
         }
       ],
       "notes": [],
-      "citationKey": "mizrachiCharacterizationDelayedIonization2024",
+      "itemID": 2258,
       "itemKey": "ZGJNPWFC",
       "libraryID": 1,
       "select": "zotero://select/library/items/ZGJNPWFC"
     },
     {
-      "key": "PTJ4RV2N",
-      "version": 12260,
+      "version": 12839,
       "itemType": "conferencePaper",
       "title": "Deployment of Complex Cloud-Native Applications on Rancher for Unified Metadata Discovery in LZ",
       "date": "2025-06-05",
@@ -29403,6 +29476,7 @@
       "extra": "Poster",
       "place": "Stanford, California",
       "conferenceName": "Center for Decoding the Universe Annual Conference",
+      "citationKey": "mizrachiDeploymentComplexCloudNative2025",
       "creators": [
         {
           "firstName": "Eli",
@@ -29412,10 +29486,10 @@
       ],
       "tags": [
         {
-          "tag": "mypresentation"
+          "tag": "notion"
         },
         {
-          "tag": "notion"
+          "tag": "mypresentation"
         },
         {
           "tag": "selectedworks"
@@ -29425,7 +29499,6 @@
       "dateAdded": "2025-10-25T23:50:23Z",
       "dateModified": "2025-10-25T23:56:48Z",
       "uri": "http://zotero.org/users/9614022/items/PTJ4RV2N",
-      "itemID": 2661,
       "attachments": [
         {
           "itemType": "attachment",
@@ -29434,20 +29507,19 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2025-10-25T23:50:29Z",
-          "dateModified": "2025-10-25T23:56:51Z",
+          "dateModified": "2026-03-03T23:48:26Z",
           "uri": "http://zotero.org/users/9614022/items/TP482YDM",
           "select": "zotero://select/library/items/TP482YDM"
         }
       ],
       "notes": [],
-      "citationKey": "mizrachiDeploymentComplexCloudNative2025",
+      "itemID": 2661,
       "itemKey": "PTJ4RV2N",
       "libraryID": 1,
       "select": "zotero://select/library/items/PTJ4RV2N"
     },
     {
-      "key": "XDXUQ97A",
-      "version": 12186,
+      "version": 12811,
       "itemType": "conferencePaper",
       "title": "Development of a Xenon-Doped Dual-Phase Argon Time Projection Chamber",
       "abstractNote": "Utilizing a ppm level of xenon dopant in the gas region of a dual-phase argon time projection chamber (TPC) presents the enticing prospect of enhanced electroluminescence with xenon, and low-mass particle detection with argon. However, at low temperatures xenon is known to remain in the liquid bulk due to its low vapor pressure, and it is liable to deposit on surfaces when exposed to cold components in the gas phase. This further complicates circulation, which must maintain a stable mixture and composition without disturbing equilibrium between the liquid and gas phases. These details introduce novel technical challenges, as successfully boosting electroluminescence requires at least 10ppm of xenon in the gas phase. Nevertheless, the possibility of realizing the benefits from both argon and xenon has compelled the development of CoHerent Ionization Limits in Liquid Argon and Xenon (CHILLAX), a new xenon-doped, dual-phase argon TPC. This talk will examine the specially tailored systems used in CHILLAX that are expected to avoid xenon freezeout, including direct detector cooling, and gas-phase circulation. Recent developments with CHILLAX, as well as the relevant technical background behind cryogenic mixtures of xenon and argon will also be discussed.\n*Prepared by LLNL under Contract DE-AC52-07NA27344. The SCGSR program is administered by ORISE under Contract DE-SC0014664.",
@@ -29456,6 +29528,7 @@
       "accessDate": "2022-08-30T00:09:55Z",
       "extra": "Presentation",
       "conferenceName": "APS April Meeting",
+      "citationKey": "mizrachiDevelopmentXenonDopedDualPhase2021",
       "creators": [
         {
           "firstName": "Eli",
@@ -29498,7 +29571,6 @@
       "dateAdded": "2022-08-30T00:09:55Z",
       "dateModified": "2025-10-15T02:51:25Z",
       "uri": "http://zotero.org/users/9614022/items/XDXUQ97A",
-      "itemID": 9,
       "attachments": [
         {
           "itemType": "attachment",
@@ -29507,20 +29579,19 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2024-07-24T20:45:05Z",
-          "dateModified": "2025-10-15T23:48:19Z",
+          "dateModified": "2026-03-03T23:48:45Z",
           "uri": "http://zotero.org/users/9614022/items/2U3LD9AG",
           "select": "zotero://select/library/items/2U3LD9AG"
         }
       ],
       "notes": [],
-      "citationKey": "mizrachiDevelopmentXenonDopedDualPhase2021",
+      "itemID": 9,
       "itemKey": "XDXUQ97A",
       "libraryID": 1,
       "select": "zotero://select/library/items/XDXUQ97A"
     },
     {
-      "key": "PI5HSHA2",
-      "version": 12340,
+      "version": 12823,
       "itemType": "conferencePaper",
       "title": "Electric Field Simulation of a Liquid Xenon Purity Monitor",
       "date": "2015-08-20",
@@ -29528,6 +29599,7 @@
       "extra": "Presentation",
       "place": "Davis, California",
       "conferenceName": "UC Davis LEADS Scholar Summer Student Symposium",
+      "citationKey": "mizrachiElectricFieldSimulation2015",
       "creators": [
         {
           "firstName": "E.",
@@ -29547,10 +29619,10 @@
       ],
       "tags": [
         {
-          "tag": "mypresentation"
+          "tag": "notion"
         },
         {
-          "tag": "notion"
+          "tag": "mypresentation"
         },
         {
           "tag": "selectedworks"
@@ -29560,7 +29632,6 @@
       "dateAdded": "2023-01-06T05:19:27Z",
       "dateModified": "2025-10-27T05:11:46Z",
       "uri": "http://zotero.org/users/9614022/items/PI5HSHA2",
-      "itemID": 426,
       "attachments": [
         {
           "itemType": "attachment",
@@ -29569,26 +29640,26 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2024-07-24T20:52:28Z",
-          "dateModified": "2025-10-27T05:11:49Z",
+          "dateModified": "2026-03-03T23:48:00Z",
           "uri": "http://zotero.org/users/9614022/items/7RDXHJLY",
           "select": "zotero://select/library/items/7RDXHJLY"
         }
       ],
       "notes": [],
-      "citationKey": "mizrachiElectricFieldSimulation2015",
+      "itemID": 426,
       "itemKey": "PI5HSHA2",
       "libraryID": 1,
       "select": "zotero://select/library/items/PI5HSHA2"
     },
     {
-      "key": "8YM4NZRK",
-      "version": 12227,
+      "version": 12833,
       "itemType": "computerProgram",
       "title": "emiz/daqman2py",
       "date": "2022-12-01",
       "url": "https://lc.llnl.gov/gitlab/nlwg/users/emiz/daqman2py",
       "accessDate": "2024-03-12T20:15:27Z",
       "extra": "Requires LLNL CZ Gitlab to access",
+      "citationKey": "mizrachiEmizDaqman2py2022",
       "creators": [
         {
           "firstName": "E.",
@@ -29605,7 +29676,6 @@
       "dateAdded": "2024-03-12T20:15:27Z",
       "dateModified": "2025-10-15T04:33:29Z",
       "uri": "http://zotero.org/users/9614022/items/8YM4NZRK",
-      "itemID": 2035,
       "attachments": [
         {
           "itemType": "attachment",
@@ -29614,7 +29684,7 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2024-07-24T20:52:11Z",
-          "dateModified": "2025-10-15T23:48:06Z",
+          "dateModified": "2026-03-03T23:48:36Z",
           "uri": "http://zotero.org/users/9614022/items/PN84P26L",
           "select": "zotero://select/library/items/PN84P26L"
         },
@@ -29632,20 +29702,20 @@
         }
       ],
       "notes": [],
-      "citationKey": "mizrachiEmizDaqman2py2022",
+      "itemID": 2035,
       "itemKey": "8YM4NZRK",
       "libraryID": 1,
       "select": "zotero://select/library/items/8YM4NZRK"
     },
     {
-      "key": "WCL84J5W",
-      "version": 12223,
+      "version": 12832,
       "itemType": "computerProgram",
       "title": "emiz/rgaplot",
       "date": "2023-11-01",
       "url": "https://lc.llnl.gov/gitlab/nlwg/users/emiz/rgaplot",
       "accessDate": "2024-02-14T20:58:27Z",
       "extra": "Requires LLNL CZ Gitlab to access",
+      "citationKey": "mizrachiEmizRgaplot2023",
       "creators": [
         {
           "firstName": "E.",
@@ -29662,7 +29732,6 @@
       "dateAdded": "2024-02-14T20:58:27Z",
       "dateModified": "2025-10-15T04:32:44Z",
       "uri": "http://zotero.org/users/9614022/items/WCL84J5W",
-      "itemID": 1852,
       "attachments": [
         {
           "itemType": "attachment",
@@ -29671,7 +29740,7 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2024-07-24T20:52:08Z",
-          "dateModified": "2025-10-15T23:48:07Z",
+          "dateModified": "2026-03-03T23:48:38Z",
           "uri": "http://zotero.org/users/9614022/items/X3GCYLB2",
           "select": "zotero://select/library/items/X3GCYLB2"
         },
@@ -29689,19 +29758,19 @@
         }
       ],
       "notes": [],
-      "citationKey": "mizrachiEmizRgaplot2023",
+      "itemID": 1852,
       "itemKey": "WCL84J5W",
       "libraryID": 1,
       "select": "zotero://select/library/items/WCL84J5W"
     },
     {
-      "key": "MQFSCKTB",
-      "version": 12219,
+      "version": 12835,
       "itemType": "computerProgram",
       "title": "LUXZEPLIN / analysis / ALPACA / modules / sv_SEdecaytime",
       "date": "2024-01-02",
       "url": "https://gitlab.com/luxzeplin/analysis/alpaca/modules/sv_SEdecaytime",
       "accessDate": "2024-04-18T22:25:17Z",
+      "citationKey": "mizrachiLUXZEPLINAnalysisALPACA2024",
       "creators": [
         {
           "firstName": "E.",
@@ -29718,7 +29787,6 @@
       "dateAdded": "2024-04-18T22:25:17Z",
       "dateModified": "2025-10-15T04:32:01Z",
       "uri": "http://zotero.org/users/9614022/items/MQFSCKTB",
-      "itemID": 2152,
       "attachments": [
         {
           "itemType": "attachment",
@@ -29727,7 +29795,7 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2024-07-24T20:52:07Z",
-          "dateModified": "2025-10-15T23:48:08Z",
+          "dateModified": "2026-03-03T23:48:38Z",
           "uri": "http://zotero.org/users/9614022/items/22FPYC3Z",
           "select": "zotero://select/library/items/22FPYC3Z"
         },
@@ -29745,14 +29813,13 @@
         }
       ],
       "notes": [],
-      "citationKey": "mizrachiLUXZEPLINAnalysisALPACA2024",
+      "itemID": 2152,
       "itemKey": "MQFSCKTB",
       "libraryID": 1,
       "select": "zotero://select/library/items/MQFSCKTB"
     },
     {
-      "key": "IYFI8VZY",
-      "version": 12160,
+      "version": 12823,
       "itemType": "conferencePaper",
       "title": "LZ Analysis Workshop Python Tutorial",
       "date": "2023-06-29",
@@ -29761,6 +29828,7 @@
       "extra": "Presentation",
       "place": "Lead, South Dakota",
       "conferenceName": "LZ Analysis Workshop",
+      "citationKey": "mizrachiLZAnalysisWorkshop2023",
       "creators": [
         {
           "firstName": "E.",
@@ -29788,7 +29856,6 @@
       "dateAdded": "2023-07-09T21:42:15Z",
       "dateModified": "2025-10-15T02:09:56Z",
       "uri": "http://zotero.org/users/9614022/items/IYFI8VZY",
-      "itemID": 459,
       "attachments": [
         {
           "itemType": "attachment",
@@ -29797,20 +29864,19 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2024-07-24T20:52:33Z",
-          "dateModified": "2025-10-15T23:48:20Z",
+          "dateModified": "2026-03-03T23:48:46Z",
           "uri": "http://zotero.org/users/9614022/items/W6ZFWR4U",
           "select": "zotero://select/library/items/W6ZFWR4U"
         }
       ],
       "notes": [],
-      "citationKey": "mizrachiLZAnalysisWorkshop2023",
+      "itemID": 459,
       "itemKey": "IYFI8VZY",
       "libraryID": 1,
       "select": "zotero://select/library/items/IYFI8VZY"
     },
     {
-      "key": "4V45QWU6",
-      "version": 12291,
+      "version": 12838,
       "itemType": "conferencePaper",
       "title": "Studies of Ionization Backgrounds in Noble Liquid Detectors For Dark Matter Searches",
       "date": "2024-04-11",
@@ -29818,6 +29884,7 @@
       "extra": "Presentation",
       "place": "Menlo Park, California",
       "conferenceName": "SLAC Fundamental Physics Directorate Seminar",
+      "citationKey": "mizrachiStudiesIonizationBackgrounds2024",
       "creators": [
         {
           "firstName": "E.",
@@ -29827,10 +29894,10 @@
       ],
       "tags": [
         {
-          "tag": "mypresentation"
+          "tag": "notion"
         },
         {
-          "tag": "notion"
+          "tag": "mypresentation"
         },
         {
           "tag": "selectedworks"
@@ -29840,7 +29907,6 @@
       "dateAdded": "2024-05-30T00:56:16Z",
       "dateModified": "2025-10-26T19:23:42Z",
       "uri": "http://zotero.org/users/9614022/items/4V45QWU6",
-      "itemID": 2260,
       "attachments": [
         {
           "itemType": "attachment",
@@ -29849,20 +29915,19 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2024-07-24T20:52:32Z",
-          "dateModified": "2025-10-26T19:23:48Z",
+          "dateModified": "2026-03-03T23:48:21Z",
           "uri": "http://zotero.org/users/9614022/items/IWI6AQE3",
           "select": "zotero://select/library/items/IWI6AQE3"
         }
       ],
       "notes": [],
-      "citationKey": "mizrachiStudiesIonizationBackgrounds2024",
+      "itemID": 2260,
       "itemKey": "4V45QWU6",
       "libraryID": 1,
       "select": "zotero://select/library/items/4V45QWU6"
     },
     {
-      "key": "TMXCA3GA",
-      "version": 12324,
+      "version": 12839,
       "itemType": "thesis",
       "title": "Studies of Ionization Backgrounds in Noble Liquid Detectors For Dark Matter Searches",
       "abstractNote": "Dark matter is believed to make up almost 85% of the total mass of the universe, yet its identity remains unclear. Weakly Interacting Massive Particles (WIMPs) have historically been a favored dark matter candidate, and dual-phase noble liquid time projection chambers (TPCs) have set the strongest interaction limits to date on WIMPs with a mass greater than several GeV. However, because no definitive interactions have been observed, the parameter space for conventional WIMPs is highly constrained. This has sparked greater interest in new sub-GeV dark matter models. At this mass scale, dark matter interactions with xenon or argon target media may still produce detectable signals at or near the single electron limit. However, these signals are currently obscured by delayed ionization backgrounds (“electron trains”) which persist for seconds after an ionization event occurs. Electron trains have been observed in many different experiments and exhibit similar characteristics, but their cause is only partially understood. This work examines the nature of electron trains in various contexts, as well as possible strategies to mitigate them. First, a characterization of electron trains in the LZ experiment is presented, including new evidence of a dependence on detector conditions. The characterization also informed the development of an electron-train veto for LZ's first WIMP search, which set world-leading limits on the spin-independent and spin-dependent WIMP-nucleon cross-sections for medium and high-mass WIMPs. Next, to complement the analysis of LZ data, hardware upgrades were performed in XeNeu, a small xenon TPC at Lawrence Livermore National Lab. These included replacing plastics with low-outgassing metal and machinable ceramic components, as well as a replacement of XeNeu's photomultiplier tube array with silicon photomultipliers. The resulting reduction in the intensity of electron-trains and better position resolution from the respective upgrades will improve future studies of low energy interactions and phenomena. Concurrent with this work, XeNeu was used to perform a nuclear recoil calibration and a search for the Migdal effect, the latter of which can substantially enhance an experiment's low-mass dark matter sensitivity. Finally, the development of CoHerent Ionization Limits in Liquid Argon and Xenon (CHILLAX), is reported. CHILLAX is a new xenon-doped, dual-phase argon test stand that has the potential to have a higher sensitivity to low-mass dark matter interactions and lower backgrounds than current liquid xenon TPCs. The system is designed to handle high (percent level) xenon concentrations in liquid argon that can enable a range of ionization signal production and collection benefits. CHILLAX demonstrated the feasibility of such concepts by achieving a world record xenon doping concentration with stable operation.",
@@ -29873,6 +29938,7 @@
       "accessDate": "2025-10-26T20:04:44Z",
       "place": "College Park, Maryland",
       "numPages": "468",
+      "citationKey": "mizrachiStudiesIonizationBackgrounds2024a",
       "university": "University of Maryland at College Park",
       "creators": [
         {
@@ -29883,10 +29949,10 @@
       ],
       "tags": [
         {
-          "tag": "mypublication"
+          "tag": "notion"
         },
         {
-          "tag": "notion"
+          "tag": "mypublication"
         },
         {
           "tag": "selectedworks"
@@ -29896,7 +29962,6 @@
       "dateAdded": "2025-10-26T20:04:44Z",
       "dateModified": "2025-10-27T05:08:55Z",
       "uri": "http://zotero.org/users/9614022/items/TMXCA3GA",
-      "itemID": 2667,
       "attachments": [
         {
           "itemType": "attachment",
@@ -29917,20 +29982,19 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2025-10-26T20:04:47Z",
-          "dateModified": "2025-10-27T05:08:58Z",
+          "dateModified": "2026-03-03T23:48:18Z",
           "uri": "http://zotero.org/users/9614022/items/DVPZGX5V",
           "select": "zotero://select/library/items/DVPZGX5V"
         }
       ],
       "notes": [],
-      "citationKey": "mizrachiStudiesIonizationBackgrounds2024a",
+      "itemID": 2667,
       "itemKey": "TMXCA3GA",
       "libraryID": 1,
       "select": "zotero://select/library/items/TMXCA3GA"
     },
     {
-      "key": "VCY7P3DA",
-      "version": 12342,
+      "version": 12823,
       "itemType": "conferencePaper",
       "title": "Testing Lorentz Symmetry Using Rotating Crystal Oscillators",
       "date": "2015-03-21",
@@ -29938,6 +30002,7 @@
       "extra": "Poster",
       "place": "Merced, California",
       "conferenceName": "UC LEADS Student Research Symposium",
+      "citationKey": "mizrachiTestingLorentzSymmetry2015",
       "creators": [
         {
           "firstName": "E.",
@@ -29967,10 +30032,10 @@
       ],
       "tags": [
         {
-          "tag": "mypresentation"
+          "tag": "notion"
         },
         {
-          "tag": "notion"
+          "tag": "mypresentation"
         },
         {
           "tag": "selectedworks"
@@ -29980,7 +30045,6 @@
       "dateAdded": "2023-01-06T05:22:51Z",
       "dateModified": "2025-10-27T05:12:05Z",
       "uri": "http://zotero.org/users/9614022/items/VCY7P3DA",
-      "itemID": 427,
       "attachments": [
         {
           "itemType": "attachment",
@@ -29989,20 +30053,19 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2024-07-24T20:52:29Z",
-          "dateModified": "2025-10-27T05:12:08Z",
+          "dateModified": "2026-03-03T23:47:57Z",
           "uri": "http://zotero.org/users/9614022/items/TPQLZ4NS",
           "select": "zotero://select/library/items/TPQLZ4NS"
         }
       ],
       "notes": [],
-      "citationKey": "mizrachiTestingLorentzSymmetry2015",
+      "itemID": 427,
       "itemKey": "VCY7P3DA",
       "libraryID": 1,
       "select": "zotero://select/library/items/VCY7P3DA"
     },
     {
-      "key": "9MNUYW66",
-      "version": 12341,
+      "version": 12823,
       "itemType": "conferencePaper",
       "title": "Testing Lorentz Symmetry Using Rotating Crystal Oscillators",
       "date": "2015-02-07",
@@ -30010,6 +30073,7 @@
       "extra": "Poster",
       "place": "Irvine, California",
       "conferenceName": "NSF CAMP Statewide Student Research Symposium",
+      "citationKey": "mizrachiTestingLorentzSymmetry2015a",
       "creators": [
         {
           "firstName": "E.",
@@ -30039,6 +30103,59 @@
       ],
       "tags": [
         {
+          "tag": "notion"
+        },
+        {
+          "tag": "mypresentation"
+        },
+        {
+          "tag": "selectedworks"
+        }
+      ],
+      "relations": {},
+      "dateAdded": "2023-01-06T05:28:32Z",
+      "dateModified": "2025-10-27T05:11:55Z",
+      "uri": "http://zotero.org/users/9614022/items/9MNUYW66",
+      "attachments": [
+        {
+          "itemType": "attachment",
+          "title": "Notion",
+          "url": "notion://www.notion.so/Mizrachi-et-al-2015-08aab53a7b684bb19c662e0292b5ceb7",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2024-07-24T20:52:30Z",
+          "dateModified": "2026-03-03T23:47:59Z",
+          "uri": "http://zotero.org/users/9614022/items/CMCTSH8N",
+          "select": "zotero://select/library/items/CMCTSH8N"
+        }
+      ],
+      "notes": [],
+      "itemID": 428,
+      "itemKey": "9MNUYW66",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/9MNUYW66"
+    },
+    {
+      "version": 12993,
+      "itemType": "conferencePaper",
+      "title": "Unified Cloud-Native Metadata Discovery with Trino, Superset and Ibis in the LZ Dark Matter Experiment",
+      "abstractNote": "ORAL | APR-S92 - Dark Matter II",
+      "date": "2026-03-18",
+      "language": "en",
+      "url": "https://emiz.gitlab.io/2026-aps-global-summit",
+      "accessDate": "2026-03-19T22:21:41Z",
+      "place": "Denver, CO",
+      "conferenceName": "APS Global Summit",
+      "citationKey": "mizrachiUnifiedCloudNativeMetadata2026",
+      "creators": [
+        {
+          "firstName": "Eli",
+          "lastName": "Mizrachi",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
           "tag": "mypresentation"
         },
         {
@@ -30049,32 +30166,42 @@
         }
       ],
       "relations": {},
-      "dateAdded": "2023-01-06T05:28:32Z",
-      "dateModified": "2025-10-27T05:11:55Z",
-      "uri": "http://zotero.org/users/9614022/items/9MNUYW66",
-      "itemID": 428,
+      "dateAdded": "2026-03-19T22:21:41Z",
+      "dateModified": "2026-04-16T04:47:32Z",
+      "uri": "http://zotero.org/users/9614022/items/UQWRSIL9",
       "attachments": [
         {
           "itemType": "attachment",
           "title": "Notion",
-          "url": "notion://www.notion.so/Mizrachi-et-al-2015-08aab53a7b684bb19c662e0292b5ceb7",
+          "url": "notion://www.notion.so/Mizrachi-2026-3285dac18dde81d3b2f3fcaff770b482",
           "tags": [],
           "relations": {},
-          "dateAdded": "2024-07-24T20:52:30Z",
-          "dateModified": "2025-10-27T05:11:58Z",
-          "uri": "http://zotero.org/users/9614022/items/CMCTSH8N",
-          "select": "zotero://select/library/items/CMCTSH8N"
+          "dateAdded": "2026-03-19T22:21:46Z",
+          "dateModified": "2026-04-16T04:47:35Z",
+          "uri": "http://zotero.org/users/9614022/items/C7DWV4JZ",
+          "select": "zotero://select/library/items/C7DWV4JZ"
+        },
+        {
+          "itemType": "attachment",
+          "title": "Snapshot",
+          "url": "https://summit.aps.org/template/event/3116484f/",
+          "tags": [],
+          "relations": {},
+          "dateAdded": "2026-03-19T22:21:47Z",
+          "dateModified": "2026-03-19T22:21:47Z",
+          "uri": "http://zotero.org/users/9614022/items/N59GLB2G",
+          "path": "C:\\Users\\emiz\\Zotero\\storage\\N59GLB2G\\3116484f.html",
+          "select": "zotero://select/library/items/N59GLB2G"
         }
       ],
       "notes": [],
-      "citationKey": "mizrachiTestingLorentzSymmetry2015a",
-      "itemKey": "9MNUYW66",
+      "itemID": 2814,
+      "itemKey": "UQWRSIL9",
       "libraryID": 1,
-      "select": "zotero://select/library/items/9MNUYW66"
+      "select": "zotero://select/library/items/UQWRSIL9"
     },
     {
-      "key": "ERKP9DLU",
-      "version": 11861,
+      "version": 12822,
       "itemType": "preprint",
       "title": "LUX-ZEPLIN (LZ) Technical Design Report",
       "abstractNote": "In this Technical Design Report (TDR) we describe the LZ detector to be built at the Sanford Underground Research Facility (SURF). The LZ dark matter experiment is designed to achieve sensitivity to a WIMP-nucleon spin-independent cross section of three times ten to the negative forty-eighth square centimeters.",
@@ -30087,6 +30214,7 @@
       "DOI": "10.48550/arXiv.1703.09144",
       "repository": "arXiv",
       "archiveID": "arXiv:1703.09144",
+      "citationKey": "mountLUXZEPLINLZTechnical2017",
       "creators": [
         {
           "firstName": "B. J.",
@@ -31416,7 +31544,6 @@
       "dateAdded": "2023-01-02T21:46:42Z",
       "dateModified": "2023-01-11T03:31:32Z",
       "uri": "http://zotero.org/users/9614022/items/ERKP9DLU",
-      "itemID": 381,
       "attachments": [
         {
           "itemType": "attachment",
@@ -31440,20 +31567,19 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2024-07-24T20:46:57Z",
-          "dateModified": "2024-07-24T20:52:37Z",
+          "dateModified": "2026-02-27T02:07:54Z",
           "uri": "http://zotero.org/users/9614022/items/5WGNRH6R",
           "select": "zotero://select/library/items/5WGNRH6R"
         }
       ],
       "notes": [],
-      "citationKey": "mountLUXZEPLINLZTechnical2017",
+      "itemID": 381,
       "itemKey": "ERKP9DLU",
       "libraryID": 1,
       "select": "zotero://select/library/items/ERKP9DLU"
     },
     {
-      "key": "V6AB6Q8D",
-      "version": 11905,
+      "version": 12821,
       "itemType": "journalArticle",
       "title": "Calibrating the scintillation and ionization responses of xenon recoils for high-energy dark matter searches",
       "abstractNote": "Liquid xenon-based direct detection dark matter experiments have recently expanded their searches to include high-energy nuclear recoil events as motivated by effective field theory dark matter and inelastic dark matter interaction models, but few xenon recoil calibrations above 100 keV are currently available. In this work, we measured the scintillation and ionization yields of xenon recoils up to 426 keV. The experiment uses 14.1 MeV neutrons to scatter off xenon in a compact liquid xenon time projection chamber and produce quasi-monoenergetic xenon recoils between 39 keV and 426 keV. We report the xenon recoil responses and their electric field-dependence for recoil energies up to 306 keV; due to the low event statistics and the relatively mild field dependence, the yield values at higher energies are reported as the average of xenon responses for electric fields between 0.2-2.0 kV/cm. This result will enable xenon-based dark matter experiments to significantly increase their high energy dark matter sensitivities by including energy regions that were previously inaccessible due to lack of calibrations.",
@@ -31469,6 +31595,7 @@
       "issue": "5",
       "journalAbbreviation": "Phys. Rev. D",
       "ISSN": "2470-0010, 2470-0029",
+      "citationKey": "pershingCalibratingScintillationIonization2022",
       "creators": [
         {
           "firstName": "Teal",
@@ -31541,7 +31668,6 @@
       "dateAdded": "2023-01-02T21:56:25Z",
       "dateModified": "2024-07-24T20:53:34Z",
       "uri": "http://zotero.org/users/9614022/items/V6AB6Q8D",
-      "itemID": 369,
       "attachments": [
         {
           "itemType": "attachment",
@@ -31550,7 +31676,7 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2024-07-24T20:53:34Z",
-          "dateModified": "2024-08-18T20:19:41Z",
+          "dateModified": "2026-03-03T23:49:25Z",
           "uri": "http://zotero.org/users/9614022/items/PPCDTELK",
           "select": "zotero://select/library/items/PPCDTELK"
         },
@@ -31567,14 +31693,13 @@
         }
       ],
       "notes": [],
-      "citationKey": "pershingCalibratingScintillationIonization2022",
+      "itemID": 369,
       "itemKey": "V6AB6Q8D",
       "libraryID": 1,
       "select": "zotero://select/library/items/V6AB6Q8D"
     },
     {
-      "key": "7DYLDZAZ",
-      "version": 11411,
+      "version": 12821,
       "itemType": "journalArticle",
       "title": "Performance of Hamamatsu VUV4 SiPMs for detecting liquid argon scintillation",
       "abstractNote": "Detection of light signals is crucial to a wide range of particle detectors. In particular, efficient detection of vacuum ultraviolet (VUV) light will provide new opportunities for some novel detectors currently being developed, but is technically challenging. In this article, we characterized the performance of Hamamatsu VUV4 silicon photomultipliers (SiPMs) for detecting VUV argon scintillation light without wavelength shifting. Using a customized cryogenic amplifier design, we operated two models of VUV4 SiPMs inside liquid argon and thoroughly examined their direct sensitivities to liquid argon scintillation. In addition to describing their cryogenic performance, we measured a photon detection efficiency of $14.7^{+1.1}_{-2.4}$% and $17.2^{+1.6}_{-3.0}$% at 128 nm for these two VUV4 models for operation at 4 V of overvoltage, with the main uncertainty arising from the SiPM reflectivity for VUV light.",
@@ -31590,6 +31715,7 @@
       "issue": "04",
       "journalAbbreviation": "J. Inst.",
       "ISSN": "1748-0221",
+      "citationKey": "pershingPerformanceHamamatsuVUV42022",
       "creators": [
         {
           "firstName": "Teal",
@@ -31662,7 +31788,6 @@
       "dateAdded": "2023-01-02T21:54:23Z",
       "dateModified": "2024-06-03T16:58:47Z",
       "uri": "http://zotero.org/users/9614022/items/7DYLDZAZ",
-      "itemID": 372,
       "attachments": [
         {
           "itemType": "attachment",
@@ -31671,7 +31796,7 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2024-07-24T20:53:34Z",
-          "dateModified": "2024-07-24T20:53:34Z",
+          "dateModified": "2026-03-03T23:49:56Z",
           "uri": "http://zotero.org/users/9614022/items/3RQ7LK2N",
           "select": "zotero://select/library/items/3RQ7LK2N"
         },
@@ -31688,14 +31813,13 @@
         }
       ],
       "notes": [],
-      "citationKey": "pershingPerformanceHamamatsuVUV42022",
+      "itemID": 372,
       "itemKey": "7DYLDZAZ",
       "libraryID": 1,
       "select": "zotero://select/library/items/7DYLDZAZ"
     },
     {
-      "key": "4WVUDRVM",
-      "version": 12290,
+      "version": 12839,
       "itemType": "conferencePaper",
       "title": "Dissertation as Code: Was it worth writing mine with Quarto?",
       "abstractNote": "Slide set of the accepted rapid access micro talks at USRSE 25.",
@@ -31706,6 +31830,7 @@
       "place": "Philadelphia, Pennsylvania",
       "conferenceName": "US Research Software Engineering Conference",
       "DOI": "10.5281/zenodo.17297728",
+      "citationKey": "ruchtiDissertationCodeWas2025",
       "creators": [
         {
           "firstName": "Carol",
@@ -31755,10 +31880,10 @@
       ],
       "tags": [
         {
-          "tag": "mypresentation"
+          "tag": "notion"
         },
         {
-          "tag": "notion"
+          "tag": "mypresentation"
         },
         {
           "tag": "selectedworks"
@@ -31768,7 +31893,6 @@
       "dateAdded": "2025-10-26T18:51:38Z",
       "dateModified": "2025-10-26T19:22:48Z",
       "uri": "http://zotero.org/users/9614022/items/4WVUDRVM",
-      "itemID": 2663,
       "attachments": [
         {
           "itemType": "attachment",
@@ -31777,7 +31901,7 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2025-10-26T18:51:43Z",
-          "dateModified": "2025-10-26T19:22:51Z",
+          "dateModified": "2026-03-03T23:48:23Z",
           "uri": "http://zotero.org/users/9614022/items/8ZCGTSJQ",
           "select": "zotero://select/library/items/8ZCGTSJQ"
         },
@@ -31795,14 +31919,13 @@
         }
       ],
       "notes": [],
-      "citationKey": "ruchtiDissertationCodeWas2025",
+      "itemID": 2663,
       "itemKey": "4WVUDRVM",
       "libraryID": 1,
       "select": "zotero://select/library/items/4WVUDRVM"
     },
     {
-      "key": "XN9QUPJV",
-      "version": 12192,
+      "version": 12827,
       "itemType": "preprint",
       "title": "Search for the Migdal effect in liquid xenon with keV-level nuclear recoils",
       "abstractNote": "The Migdal effect predicts that a nuclear recoil interaction can be accompanied by atomic ionization, allowing many dark matter direct detection experiments to gain sensitivity to sub-GeV masses. We report the first direct search for the Migdal effect for M- and L-shell electrons in liquid xenon using 7.0$\\pm$1.6 keV nuclear recoils produced by tagged neutron scatters. Despite an observed background rate lower than that of expected signals in the region of interest, we do not observe a signal consistent with predictions. We discuss possible explanations, including inaccurate predictions for either the Migdal rate or the signal response in liquid xenon. We comment on the implications for direct dark-matter searches and future Migdal characterization efforts.",
@@ -31813,6 +31936,7 @@
       "DOI": "10.48550/arXiv.2307.12952",
       "repository": "arXiv",
       "archiveID": "arXiv:2307.12952",
+      "citationKey": "xuSearchMigdalEffect2023",
       "creators": [
         {
           "firstName": "Jingke",
@@ -31900,7 +32024,6 @@
       "dateAdded": "2023-10-29T06:45:26Z",
       "dateModified": "2025-10-15T03:02:13Z",
       "uri": "http://zotero.org/users/9614022/items/XN9QUPJV",
-      "itemID": 1393,
       "attachments": [
         {
           "itemType": "attachment",
@@ -31921,7 +32044,7 @@
           "tags": [],
           "relations": {},
           "dateAdded": "2024-07-24T20:52:36Z",
-          "dateModified": "2025-10-15T23:48:23Z",
+          "dateModified": "2026-03-03T23:48:45Z",
           "uri": "http://zotero.org/users/9614022/items/FQYV3ZD4",
           "select": "zotero://select/library/items/FQYV3ZD4"
         },
@@ -31951,7 +32074,7 @@
           "uri": "http://zotero.org/users/9614022/items/2M2L46D2"
         }
       ],
-      "citationKey": "xuSearchMigdalEffect2023",
+      "itemID": 1393,
       "itemKey": "XN9QUPJV",
       "libraryID": 1,
       "select": "zotero://select/library/items/XN9QUPJV"

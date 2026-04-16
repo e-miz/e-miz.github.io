@@ -5,6 +5,7 @@
 *.toc
 *.fdb_latexmk
 *.pdf
+*.pyc
 /.quarto/
 site_libs
 /.luarc.json
