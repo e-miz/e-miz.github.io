@@ -13,7 +13,7 @@ zotero_data = con.read_json("zotero_bbt_export.json")
 
 
 # %%
-def get_keys_and_tags(zotero_data):
+def get_keys_and_tags(zotero_data, after_date: str):
     """
     Zotero data contains "items" which is an array of structs where each struct is a bib item
     We unnest the array into a column, then from there we split each field
@@ -23,7 +23,7 @@ def get_keys_and_tags(zotero_data):
     return (
         zotero_data.select(_.items.unnest())
         .items.lift()
-        .filter(_.date > "2023-08-01")
+        .filter(_.date > after_date)
         .select(
             # THEN, keeping the citation key we can unnest the array of tags (array of structs)
             # To get the citationkeys with a specific tag
@@ -69,7 +69,7 @@ def remove_null_fields(data: dict[Any, Any]) -> None | dict[Any, Any] | list[Any
 
 # %%
 # Again, we can't print to json from df since it will fill fields with null values which break citeproc
-key_tags = get_keys_and_tags(zotero_data)
+key_tags = get_keys_and_tags(zotero_data, "2014-08-01")
 sel_pres = (
     # Get items which only these tags with a self-inner join on the sets containing each tag
     key_tags.filter(_.tags["tag"] == "mypresentation")
